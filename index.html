@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>⚽ Pelada Manager — Shadow</title>
+<style>
+  :root{--canvas:#EEF0F4;--card:#FFF;--card2:#F7F8FA;--ink:#1C1C1E;--muted:#6B7280;--faint:#9AA1AC;
+  --accent:#0A84FF;--good:#34C759;--warn:#FF9500;--bad:#FF3B30;--grass:#3C9A46;--hair:rgba(60,60,67,.12)}
+  *{box-sizing:border-box;margin:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text',Segoe UI,Roboto,sans-serif;
+  background:var(--canvas);color:var(--ink);padding:14px;max-width:640px;margin:0 auto}
+  .hero{background:linear-gradient(150deg,#3C9A46,#2C7A38);border-radius:18px;padding:18px;color:#fff;margin-bottom:12px}
+  .hero h1{font-size:20px;font-weight:800;display:flex;align-items:center;gap:8px}
+  .badge{font-size:10px;font-weight:800;letter-spacing:.08em;background:rgba(255,255,255,.22);
+  padding:3px 8px;border-radius:99px;vertical-align:middle}
+  .hero .sub{opacity:.85;font-size:12.5px;margin-top:5px}
+  .hero .big{font-size:34px;font-weight:800;margin-top:10px}
+  .hero .big small{font-size:15px;font-weight:600;opacity:.8}
+  .card{background:var(--card);border-radius:16px;padding:14px 16px;margin-bottom:12px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+  .card h2{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .row{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--hair);font-size:14.5px}
+  .row:last-child{border-bottom:0}
+  .num{color:var(--faint);font-size:12px;width:20px;text-align:right;flex:none}
+  .tag{font-size:10px;font-weight:700;border-radius:6px;padding:2px 6px;flex:none}
+  .tag.m{background:rgba(60,154,70,.12);color:var(--grass)}
+  .tag.a{background:rgba(10,132,255,.12);color:var(--accent)}
+  .tag.w{background:rgba(255,149,0,.14);color:var(--warn)}
+  .tag.o{background:rgba(255,59,48,.12);color:var(--bad)}
+  .by{color:var(--faint);font-size:11.5px;margin-left:auto}
+  pre{background:var(--card2);border-radius:10px;padding:12px;font-size:12px;line-height:1.45;
+  white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .copy{all:unset;box-sizing:border-box;cursor:pointer;background:var(--accent);color:#fff;font-size:12px;
+  font-weight:700;border-radius:8px;padding:7px 12px;margin-top:8px;display:inline-block}
+  .flag{font-size:13px;padding:6px 0;border-bottom:1px solid var(--hair)}
+  .flag:last-child{border-bottom:0}
+  .flag .why{color:var(--warn);font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+  .flag .who{color:var(--muted);font-size:11.5px}
+  .foot{color:var(--faint);font-size:11px;text-align:center;padding:8px 0 24px}
+  .empty{color:var(--faint);font-size:13px;padding:6px 0}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>⚽ Pelada Manager <span class="badge">SHADOW</span></h1>
+  <div class="sub" id="meta">loading…</div>
+  <div class="big" id="count">–</div>
+</div>
+
+<div class="card"><h2>Roster (parsed live from WhatsApp)</h2><div id="roster"></div></div>
+<div class="card"><h2>Waiting list</h2><div id="wl"></div></div>
+<div class="card"><h2>Out this week</h2><div id="outs"></div></div>
+<div class="card"><h2>⚠ Review queue — messages the parser didn't auto-accept</h2><div id="flags"></div></div>
+<div class="card"><h2>Draft · Gates-closed post (what would be sent)</h2><pre id="draft"></pre>
+  <button class="copy" onclick="copyText('draft')">Copy</button></div>
+<div class="card"><h2>Ledger · Thyago's last payment report</h2><pre id="ledger"></pre></div>
+<div class="foot" id="foot">Phase 1 shadow mode — read-only. Nothing is ever posted to WhatsApp.</div>
+
+<script>
+function copyText(id){navigator.clipboard.writeText(document.getElementById(id).textContent)}
+function esc(s){return String(s??'').replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]))}
+async function load(){
+  const d = await (await fetch('data.json?ts='+Date.now())).json();
+  const c = d.cycle||{};
+  const r = c.roster||{members:[],adhocs:[],waitlist:[],outs:[]};
+  const n = r.members.length + r.adhocs.length;
+  document.getElementById('meta').textContent =
+    `Game: Tue ${c.game_date||'?'} · 9:00 PM · count ${c.gates_closed?'CLOSED':'OPEN'} (opened ${String(c.opened||'').slice(0,16).replace('T',' ')}) · updated ${String(d.updated||'').slice(11,16)}`;
+  document.getElementById('count').innerHTML = `${n}<small> / ${d.stats?.capacity??21} confirmed</small>`;
+  let i=1, html='';
+  for(const x of r.members) html += `<div class="row"><span class="num">${i++}</span><span>${esc(x)}</span><span class="tag m">MEMBER</span></div>`;
+  for(const x of r.adhocs)  html += `<div class="row"><span class="num">${i++}</span><span>${esc(x)}</span><span class="tag a">AD-HOC</span></div>`;
+  document.getElementById('roster').innerHTML = html || '<div class="empty">no signups yet</div>';
+  document.getElementById('wl').innerHTML = (r.waitlist||[]).map(x=>`<div class="row"><span>${esc(x)}</span><span class="tag w">WAIT</span></div>`).join('') || '<div class="empty">empty</div>';
+  document.getElementById('outs').innerHTML = (r.outs||[]).map(x=>`<div class="row"><span>${esc(x)}</span><span class="tag o">OUT</span></div>`).join('') || '<div class="empty">none</div>';
+  document.getElementById('flags').innerHTML = (c.flagged||[]).map(f=>
+    `<div class="flag"><span class="why">${esc(f.why)}</span> · <span class="who">${esc(f.sender)} · ${esc(String(f.dt).slice(5,16).replace('T',' '))}</span><br>${esc(f.text)}</div>`).join('')
+    || '<div class="empty">nothing needs review</div>';
+  document.getElementById('draft').textContent = d.drafts?.gates_closed || '';
+  document.getElementById('ledger').textContent = (d.ledger?.text||'—') ;
+  document.getElementById('foot').textContent =
+    `Phase 1 shadow — read-only · parser 96% precision / 87% recall on 2026 backtest · ${d.stats?.messages_total??'?'} msgs parsed (${d.stats?.live_logged??0} live) · members list ${d.members_month||'?'}`;
+}
+load(); setInterval(load, 60000);
+</script>
+</body>
+</html>
