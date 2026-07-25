@@ -1,0 +1,261 @@
+{
+ "updated": "2026-07-25T10:27:00",
+ "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
+ "cycle": {
+  "opened": "2026-07-24T08:20:57",
+  "open_text": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*",
+  "game_date": "2026-07-28",
+  "gates_closed": false,
+  "ins": [
+   {
+    "name": "Thyago",
+    "kind": "member",
+    "by": "Thyago",
+    "dt": "2026-07-24T08:21:11",
+    "self": true
+   },
+   {
+    "name": "David",
+    "kind": "member",
+    "by": "David",
+    "dt": "2026-07-24T08:21:11",
+    "self": true
+   },
+   {
+    "name": "Elio",
+    "kind": "member",
+    "by": "Elio",
+    "dt": "2026-07-24T08:21:31",
+    "self": true
+   },
+   {
+    "name": "Pedro",
+    "kind": "adhoc",
+    "by": "Link",
+    "dt": "2026-07-24T08:22:38",
+    "self": false
+   },
+   {
+    "name": "David (Link's guest)",
+    "kind": "adhoc",
+    "by": "Link",
+    "dt": "2026-07-24T08:22:58",
+    "self": false
+   },
+   {
+    "name": "Alberto",
+    "kind": "member",
+    "by": "Link",
+    "dt": "2026-07-24T08:23:11",
+    "self": false
+   },
+   {
+    "name": "Claudio",
+    "kind": "member",
+    "by": "Claudio",
+    "dt": "2026-07-24T08:41:06",
+    "self": true
+   },
+   {
+    "name": "Eneas",
+    "kind": "member",
+    "by": "Eneas",
+    "dt": "2026-07-24T08:41:31",
+    "self": true
+   },
+   {
+    "name": "Erivan",
+    "kind": "member",
+    "by": "Erivan",
+    "dt": "2026-07-24T08:50:16",
+    "self": true
+   },
+   {
+    "name": "Jorge",
+    "kind": "member",
+    "by": "Jorge",
+    "dt": "2026-07-24T09:01:54",
+    "self": true
+   },
+   {
+    "name": "Tony",
+    "kind": "member",
+    "by": "Tony",
+    "dt": "2026-07-24T09:02:31",
+    "self": true
+   },
+   {
+    "name": "Robson",
+    "kind": "adhoc",
+    "by": "Robson",
+    "dt": "2026-07-24T09:02:40",
+    "self": true
+   },
+   {
+    "name": "Leo",
+    "kind": "adhoc",
+    "by": "Eneas",
+    "dt": "2026-07-24T09:03:11",
+    "self": false
+   },
+   {
+    "name": "Marcio",
+    "kind": "member",
+    "by": "Marcio",
+    "dt": "2026-07-24T09:11:35",
+    "self": true
+   },
+   {
+    "name": "Willie",
+    "kind": "member",
+    "by": "Willie",
+    "dt": "2026-07-24T09:14:31",
+    "self": true
+   },
+   {
+    "name": "David (Willie's guest)",
+    "kind": "adhoc",
+    "by": "Willie",
+    "dt": "2026-07-24T09:14:31",
+    "self": false
+   },
+   {
+    "name": "Walter",
+    "kind": "member",
+    "by": "Walter",
+    "dt": "2026-07-24T09:38:52",
+    "self": true
+   },
+   {
+    "name": "Filippo",
+    "kind": "member",
+    "by": "Filippo",
+    "dt": "2026-07-24T09:39:05",
+    "self": true
+   },
+   {
+    "name": "Javier",
+    "kind": "adhoc",
+    "by": "Javier",
+    "dt": "2026-07-24T11:18:01",
+    "self": true
+   },
+   {
+    "name": "Miguel Alejandro",
+    "kind": "member",
+    "by": "Miguel Alejandro",
+    "dt": "2026-07-24T14:43:11",
+    "self": true
+   },
+   {
+    "name": "Everson",
+    "kind": "member",
+    "by": "Everson",
+    "dt": "2026-07-25T10:01:47",
+    "self": true
+   }
+  ],
+  "outs": [
+   {
+    "name": "Mauricio",
+    "dt": "2026-07-24T09:03:58"
+   },
+   {
+    "name": "Jader",
+    "dt": "2026-07-24T11:30:42"
+   },
+   {
+    "name": "Juliano Brandao",
+    "dt": "2026-07-24T11:36:36"
+   },
+   {
+    "name": "Henry",
+    "dt": "2026-07-25T09:23:54"
+   }
+  ],
+  "flagged": [
+   {
+    "dt": "2026-07-24T08:22:48",
+    "sender": "Link",
+    "text": "Vitor",
+    "why": "unknown name"
+   },
+   {
+    "dt": "2026-07-24T09:11:35",
+    "sender": "Marcio",
+    "text": "Pietro",
+    "why": "unknown name"
+   }
+  ],
+  "roster": {
+   "members": [
+    "Thyago",
+    "David",
+    "Elio",
+    "Alberto",
+    "Claudio",
+    "Eneas",
+    "Erivan",
+    "Jorge",
+    "Tony",
+    "Marcio",
+    "Willie",
+    "Walter",
+    "Filippo",
+    "Miguel Alejandro",
+    "Everson"
+   ],
+   "adhocs": [
+    "Robson",
+    "Javier",
+    "Pedro",
+    "David (Link's guest)",
+    "Leo",
+    "David (Willie's guest)"
+   ],
+   "waitlist": [],
+   "outs": [
+    "Mauricio",
+    "Jader",
+    "Juliano Brandao",
+    "Henry"
+   ]
+  }
+ },
+ "members_month": "2026-07",
+ "members": [
+  "Walter",
+  "Filippo",
+  "Alberto",
+  "Elber",
+  "Claudio",
+  "Marcio",
+  "Elio",
+  "Tony",
+  "David",
+  "Akbar",
+  "Eneas",
+  "Jader",
+  "Diego",
+  "Erivan",
+  "Miguel Alejandro",
+  "Everson",
+  "Rogerio A.",
+  "Thyago",
+  "Willie",
+  "Jorge"
+ ],
+ "drafts": {
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Thyago\n2 David\n3 Elio\n4 Alberto\n5 Claudio\n6 Eneas\n7 Erivan\n8 Jorge\n9 Tony\n10 Marcio\n11 Willie\n12 Walter\n13 Filippo\n14 Miguel Alejandro\n15 Everson\n*Ad-hocs*\n16 Robson\n17 Javier\n18 Pedro\n19 David (Link's guest)\n20 Leo\n21 David (Willie's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
+ },
+ "ledger": {
+  "as_of": "2026-07-20T22:24:15",
+  "text": "(ledger omitted from the public page)"
+ },
+ "stats": {
+  "messages_total": 59282,
+  "live_logged": 2,
+  "capacity": 21
+ }
+}
