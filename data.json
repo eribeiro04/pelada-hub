@@ -1,11 +1,11 @@
 {
- "updated": "2026-07-27T08:19:51",
+ "updated": "2026-07-27T08:30:22",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-07-24T08:20:57",
   "open_text": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*",
   "game_date": "2026-07-28",
-  "gates_closed": false,
+  "gates_closed": true,
   "ins": [
    {
     "name": "Thyago",
@@ -346,8 +346,8 @@
  },
  "review_url": "https://diego-pills-ser-buried.trycloudflare.com/decide",
  "stats": {
-  "messages_total": 59283,
-  "live_logged": 3,
+  "messages_total": 59284,
+  "live_logged": 4,
   "capacity": 21
  }
 }
