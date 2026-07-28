@@ -158,9 +158,9 @@ async function load(){
     `Game: Tue ${c.game_date||'?'} · 9:00 PM · count ${c.gates_closed?'CLOSED':'OPEN'} (opened ${String(c.opened||'').slice(0,16).replace('T',' ')}) · updated ${String(d.updated||'').slice(11,16)}`;
   document.getElementById('count').innerHTML = `${n}<small> / ${d.stats?.capacity??21} confirmed</small>`;
   let i=1, html='';
+  const pend = new Set(r.pending||[]), unver = new Set(r.unverified||[]);
   for(const x of r.members) html += `<div class="row"><span class="num">${i++}</span><span>${esc(x)}</span><span class="tag m">MEMBER</span>`
     + (unver.has(x) ? `<span class="tag w">CHECK</span><span class="by">engines disagree</span>` : '') + `</div>`;
-  const pend = new Set(r.pending||[]), unver = new Set(r.unverified||[]);
   for(const x of r.adhocs) html += `<div class="row"><span class="num">${i++}</span><span>${esc(x)}</span>`
     + `<span class="tag a">AD-HOC</span>`
     + (pend.has(x) ? `<span class="tag w">UNCONFIRMED</span><span class="by">promoted — awaiting reply</span>` : '')
