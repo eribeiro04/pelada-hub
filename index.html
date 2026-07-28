@@ -194,7 +194,7 @@ async function load(){
   document.getElementById('draft').textContent = d.drafts?.gates_closed || '';
   document.getElementById('ledger').textContent = (d.ledger?.text||'—') ;
   document.getElementById('foot').textContent =
-    `Phase 1 shadow — read-only · parser 96% precision / 87% recall on 2026 backtest · ${d.stats?.messages_total??'?'} msgs parsed (${d.stats?.live_logged??0} live) · members list ${d.members_month||'?'}`;
+    `Phase 1 shadow — read-only · dual-engine parser (rules + Claude), 0.96 precision/recall on 20-cycle backtest · ${d.stats?.messages_total??'?'} msgs parsed (${d.stats?.live_logged??0} live) · members list ${d.members_month||'?'}`;
 }
 load(); setInterval(load, 60000);
 </script>
