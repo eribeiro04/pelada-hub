@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28T13:56:08",
+ "updated": "2026-07-28T13:56:29",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-07-24T08:20:57",
@@ -206,7 +206,15 @@
     "dt": "2026-07-28T11:26:03"
    }
   ],
-  "flagged": [],
+  "flagged": [
+   {
+    "dt": "2026-07-28T13:56:23",
+    "sender": "Eneas Lobo",
+    "text": "He is out…",
+    "why": "out-like",
+    "kind": "drop"
+   }
+  ],
   "roster": {
    "members": [
     "Thyago",
@@ -364,8 +372,8 @@
  },
  "review_url": "https://diego-pills-ser-buried.trycloudflare.com/decide",
  "stats": {
-  "messages_total": 59290,
-  "live_logged": 10,
+  "messages_total": 59291,
+  "live_logged": 11,
   "capacity": 21
  }
 }
