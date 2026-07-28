@@ -127,7 +127,8 @@ function memberAdd(){
 }
 function memberSet(i){const m=MEMB[i]; if(m) memberOp({op:'set',name:m.name,temp:m.temp?'0':'1'});}
 function memberDel(i){const m=MEMB[i]; if(m&&confirm(`Remove ${m.name} from the members roster?`)) memberOp({op:'remove',name:m.name,temp:'0'});}
-const DECIDE_LABEL={member:'Member',adhoc:'Ad-hoc',ignore:'ignored',remove:'removed'};
+const DECIDE_LABEL={member:'Member',adhoc:'Ad-hoc',ignore:'ignored',remove:'removed',
+  confirm_in:'confirmed in',confirm_out:'removed'};
 async function decide(i,kind,btn,target){
   const f=FLAGS[i]; if(!f||!REVIEW_URL) return;
   const row=btn.closest('.flag');
@@ -157,11 +158,13 @@ async function load(){
     `Game: Tue ${c.game_date||'?'} · 9:00 PM · count ${c.gates_closed?'CLOSED':'OPEN'} (opened ${String(c.opened||'').slice(0,16).replace('T',' ')}) · updated ${String(d.updated||'').slice(11,16)}`;
   document.getElementById('count').innerHTML = `${n}<small> / ${d.stats?.capacity??21} confirmed</small>`;
   let i=1, html='';
-  for(const x of r.members) html += `<div class="row"><span class="num">${i++}</span><span>${esc(x)}</span><span class="tag m">MEMBER</span></div>`;
-  const pend = new Set(r.pending||[]);
+  for(const x of r.members) html += `<div class="row"><span class="num">${i++}</span><span>${esc(x)}</span><span class="tag m">MEMBER</span>`
+    + (unver.has(x) ? `<span class="tag w">CHECK</span><span class="by">engines disagree</span>` : '') + `</div>`;
+  const pend = new Set(r.pending||[]), unver = new Set(r.unverified||[]);
   for(const x of r.adhocs) html += `<div class="row"><span class="num">${i++}</span><span>${esc(x)}</span>`
     + `<span class="tag a">AD-HOC</span>`
     + (pend.has(x) ? `<span class="tag w">UNCONFIRMED</span><span class="by">promoted — awaiting reply</span>` : '')
+    + (unver.has(x) ? `<span class="tag w">CHECK</span><span class="by">engines disagree</span>` : '')
     + `</div>`;
   document.getElementById('roster').innerHTML = html || '<div class="empty">no signups yet</div>';
   document.getElementById('wl').innerHTML = (r.waitlist||[]).map(x=>`<div class="row"><span>${esc(x)}</span><span class="tag w">WAIT</span></div>`).join('') || '<div class="empty">empty</div>';
@@ -172,6 +175,11 @@ async function load(){
   // only makes sense for an unrecognised signup
   const btns = !REVIEW_URL ? ()=>'' : (i)=>{
     const f = FLAGS[i];
+    if(f.kind==='disagree'){
+      return '<span class="fbtns">'
+        + `<button class="fb" onclick="decide(${i},'confirm_in',this)">✓ In</button>`
+        + `<button class="fb r" onclick="decide(${i},'confirm_out',this)">✕ Not in</button></span>`;
+    }
     if(f.kind==='drop'){
       const cands = f.candidates||[];
       return '<span class="fbtns">' + cands.map(c=>
