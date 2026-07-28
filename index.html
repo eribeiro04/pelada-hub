@@ -127,15 +127,19 @@ function memberAdd(){
 }
 function memberSet(i){const m=MEMB[i]; if(m) memberOp({op:'set',name:m.name,temp:m.temp?'0':'1'});}
 function memberDel(i){const m=MEMB[i]; if(m&&confirm(`Remove ${m.name} from the members roster?`)) memberOp({op:'remove',name:m.name,temp:'0'});}
-async function decide(i,kind,btn){
+const DECIDE_LABEL={member:'Member',adhoc:'Ad-hoc',ignore:'ignored',remove:'removed'};
+async function decide(i,kind,btn,target){
   const f=FLAGS[i]; if(!f||!REVIEW_URL) return;
   const row=btn.closest('.flag');
   row.querySelectorAll('button').forEach(b=>b.disabled=true);
   try{
-    const r=await fetch(REVIEW_URL,{method:'POST',body:new URLSearchParams({name:f.text,kind:kind})});
+    const body={name:f.text,kind:kind};
+    if(target) body.target=target;
+    const r=await fetch(REVIEW_URL,{method:'POST',body:new URLSearchParams(body)});
     const j=await r.json();
     if(!j.accepted) throw new Error('rejected');
-    row.querySelector('.fbtns').outerHTML=` <span class="fdone">→ queued as ${kind==='member'?'Member':'Ad-hoc'} · moves to the list in ~1 min</span>`;
+    const what = kind==='remove' ? `${target} removed` : DECIDE_LABEL[kind]||kind;
+    row.querySelector('.fbtns').outerHTML=` <span class="fdone">→ ${esc(what)} · updates in ~1 min</span>`;
     row.style.opacity=.6;
   }catch(e){
     row.querySelectorAll('button').forEach(b=>b.disabled=false);
@@ -160,9 +164,18 @@ async function load(){
   document.getElementById('outs').innerHTML = (r.outs||[]).map(x=>`<div class="row"><span>${esc(x)}</span><span class="tag o">OUT</span></div>`).join('') || '<div class="empty">none</div>';
   FLAGS = c.flagged||[]; REVIEW_URL = d.review_url||null;
   renderMembers(d);
-  const btns = REVIEW_URL
-    ? (i)=>`<span class="fbtns"><button class="fb" onclick="decide(${i},'member',this)">Member</button><button class="fb a" onclick="decide(${i},'adhoc',this)">Ad-hoc</button></span>`
-    : ()=>'';
+  // a DROP asks "which player is out?" — never member/ad-hoc, that question
+  // only makes sense for an unrecognised signup
+  const btns = !REVIEW_URL ? ()=>'' : (i)=>{
+    const f = FLAGS[i];
+    if(f.kind==='drop'){
+      const cands = f.candidates||[];
+      return '<span class="fbtns">' + cands.map(c=>
+        `<button class="fb r" onclick="decide(${i},'remove',this,${JSON.stringify(c).replace(/"/g,'&quot;')})">Remove ${esc(c)}</button>`).join('')
+        + `<button class="fb" onclick="decide(${i},'ignore',this)">Not a drop</button></span>`;
+    }
+    return `<span class="fbtns"><button class="fb" onclick="decide(${i},'member',this)">Member</button><button class="fb a" onclick="decide(${i},'adhoc',this)">Ad-hoc</button></span>`;
+  };
   document.getElementById('flags').innerHTML = FLAGS.map((f,i)=>
     `<div class="flag"><span class="why">${esc(f.why)}</span> · <span class="who">${esc(f.sender)} · ${esc(String(f.dt).slice(5,16).replace('T',' '))}</span><br>${esc(f.text)}${btns(i)}</div>`).join('')
     || '<div class="empty">nothing needs review</div>';
