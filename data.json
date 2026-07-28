@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28T13:00:01",
+ "updated": "2026-07-28T13:00:17",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-07-24T08:20:57",
@@ -183,6 +183,13 @@
     "self": true
    },
    {
+    "name": "Hello, I'm Out Tonight",
+    "kind": "adhoc",
+    "by": "review",
+    "dt": "2026-07-28T11:26:03",
+    "self": true
+   },
+   {
     "name": "Felipe (Elber's Son)",
     "kind": "adhoc",
     "by": "Elber",
@@ -233,14 +240,7 @@
     "dt": "2026-07-28T08:35:31"
    }
   ],
-  "flagged": [
-   {
-    "dt": "2026-07-28T11:26:03",
-    "sender": "Robson",
-    "text": "Hello, I'm out tonight",
-    "why": "out-like"
-   }
-  ],
+  "flagged": [],
   "roster": {
    "members": [
     "Thyago",
@@ -263,11 +263,12 @@
    "adhocs": [
     "Robson",
     "Javier",
+    "Hello, I'm Out Tonight",
     "Pedro",
-    "Vitor (Link's guest)",
-    "David (Link's guest)"
+    "Vitor (Link's guest)"
    ],
    "waitlist": [
+    "David (Link's guest)",
     "Leo",
     "Pietro (Marcio's guest)",
     "David (Willie's guest)",
@@ -392,7 +393,7 @@
   }
  ],
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Thyago\n2 David\n3 Elio\n4 Alberto\n5 Claudio\n6 Eneas\n7 Erivan\n8 Jorge\n9 Tony\n10 Marcio\n11 Willie\n12 Walter\n13 Filippo\n14 Miguel Alejandro\n15 Everson\n16 Sorry Out Tonight\n*Ad-hocs*\n17 Robson\n18 Javier\n19 Pedro\n20 Vitor (Link's guest)\n21 David (Link's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nLeo\nPietro (Marcio's guest)\nDavid (Willie's guest)\nFelipe (Elber's Son)\nOwen (Elber's guest)\nNirvan (Elber's guest)\nConfirmed (Link's guest)",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Thyago\n2 David\n3 Elio\n4 Alberto\n5 Claudio\n6 Eneas\n7 Erivan\n8 Jorge\n9 Tony\n10 Marcio\n11 Willie\n12 Walter\n13 Filippo\n14 Miguel Alejandro\n15 Everson\n16 Sorry Out Tonight\n*Ad-hocs*\n17 Robson\n18 Javier\n19 Hello, I'm Out Tonight\n20 Pedro\n21 Vitor (Link's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nDavid (Link's guest)\nLeo\nPietro (Marcio's guest)\nDavid (Willie's guest)\nFelipe (Elber's Son)\nOwen (Elber's guest)\nNirvan (Elber's guest)\nConfirmed (Link's guest)",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
