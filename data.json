@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28T03:59:43",
+ "updated": "2026-07-28T07:53:44",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-07-24T08:20:57",
@@ -215,7 +215,14 @@
     "dt": "2026-07-27T08:19:46"
    }
   ],
-  "flagged": [],
+  "flagged": [
+   {
+    "dt": "2026-07-28T07:53:38",
+    "sender": "Miguel Alejandro",
+    "text": "sorry out tonight",
+    "why": "out-like"
+   }
+  ],
   "roster": {
    "members": [
     "Thyago",
@@ -373,8 +380,8 @@
  },
  "review_url": "https://diego-pills-ser-buried.trycloudflare.com/decide",
  "stats": {
-  "messages_total": 59284,
-  "live_logged": 4,
+  "messages_total": 59285,
+  "live_logged": 5,
   "capacity": 21
  }
 }
