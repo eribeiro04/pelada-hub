@@ -266,9 +266,15 @@ async function load(){
   const c = d.cycle||{};
   const r = c.roster||{members:[],adhocs:[],waitlist:[],outs:[]};
   const n = r.members.length + r.adhocs.length;
-  document.getElementById('meta').textContent =
-    `Game: Tue ${c.game_date||'?'} · 9:00 PM · count ${c.gates_closed?'CLOSED':'OPEN'} (opened ${String(c.opened||'').slice(0,16).replace('T',' ')}) · updated ${String(d.updated||'').slice(11,16)}`;
-  document.getElementById('count').innerHTML = `${n}<small> / ${d.stats?.capacity??21} confirmed</small>`;
+  if(c.phase==='between'){
+    document.getElementById('meta').textContent =
+      `Game of Tue ${c.game_date||'?'} finished · clean sheet — next count opens Thursday morning · updated ${String(d.updated||'').slice(11,16)}`;
+    document.getElementById('count').innerHTML = `⚽<small> see you next week</small>`;
+  } else {
+    document.getElementById('meta').textContent =
+      `Game: Tue ${c.game_date||'?'} · 9:00 PM · count ${c.gates_closed?'CLOSED':'OPEN'} (opened ${String(c.opened||'').slice(0,16).replace('T',' ')}) · updated ${String(d.updated||'').slice(11,16)}`;
+    document.getElementById('count').innerHTML = `${n}<small> / ${d.stats?.capacity??21} confirmed</small>`;
+  }
   let i=1, html='';
   const pend = new Set(r.pending||[]), unver = new Set(r.unverified||[]);
   for(const x of r.members) html += `<div class="row"><span class="num">${i++}</span><span>${esc(x)}</span><span class="tag m">MEMBER</span>`
