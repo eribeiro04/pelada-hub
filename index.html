@@ -187,7 +187,7 @@ async function decide(i,kind,btn,target){
     if(target) body.target=target;
     const r=await fetch(REVIEW_URL,{method:'POST',body:new URLSearchParams(body)});
     const j=await r.json();
-    if(!j.accepted){ if(confirm('Rejected — wrong admin key? OK to re-enter.')) localStorage.removeItem('pelada-key'); throw new Error('rejected'); }
+    if(!j.accepted){ alert('The server rejected this — the queue may have just changed. Refreshing…'); load(); throw new Error('rejected'); }
     const what = kind==='remove' ? `${target} removed` : DECIDE_LABEL[kind]||kind;
     row.querySelector('.fbtns').outerHTML=` <span class="fdone">→ ${esc(what)} · updates in ~1 min</span>`;
     row.style.opacity=.6;
