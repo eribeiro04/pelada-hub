@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-29T08:24:17",
+ "updated": "2026-07-29T08:43:26",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-07-24T08:20:57",
@@ -226,7 +226,8 @@
     "dt": "2026-07-28T20:28:23",
     "sender": "Guina",
     "text": "Melhor tirar time na tampinha",
-    "why": "not-a-name?"
+    "why": "not-a-name?",
+    "kind": "signup"
    },
    {
     "dt": "2026-07-24T08:21:11",
