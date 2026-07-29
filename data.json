@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28T19:24:10",
+ "updated": "2026-07-28T19:53:56",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-07-24T08:20:57",
@@ -12,8 +12,7 @@
     "kind": "member",
     "by": "David",
     "dt": "2026-07-24T08:21:11",
-    "self": true,
-    "unverified": "rules-only"
+    "self": true
    },
    {
     "name": "Elio",
@@ -41,8 +40,7 @@
     "kind": "adhoc",
     "by": "Alberto",
     "dt": "2026-07-24T08:22:58",
-    "self": false,
-    "unverified": "rules-only"
+    "self": false
    },
    {
     "name": "Alberto",
@@ -221,22 +219,7 @@
     "dt": "2026-07-28T13:56:23"
    }
   ],
-  "flagged": [
-   {
-    "dt": "2026-07-24T08:21:11",
-    "sender": "David",
-    "text": "David",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-07-24T08:22:58",
-    "sender": "Alberto",
-    "text": "David (Alberto's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   }
-  ],
+  "flagged": [],
   "roster": {
    "members": [
     "David",
@@ -279,10 +262,7 @@
     "Robson",
     "Leo"
    ],
-   "unverified": [
-    "David",
-    "David (Alberto's guest)"
-   ],
+   "unverified": [],
    "pending": [
     "Javier"
    ]
@@ -403,8 +383,8 @@
  },
  "review_url": "https://diego-pills-ser-buried.trycloudflare.com/decide",
  "stats": {
-  "messages_total": 59299,
-  "live_logged": 19,
+  "messages_total": 59300,
+  "live_logged": 20,
   "capacity": 21
  }
 }
