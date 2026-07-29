@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-28T19:53:56",
+ "updated": "2026-07-28T20:28:34",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-07-24T08:20:57",
@@ -219,7 +219,21 @@
     "dt": "2026-07-28T13:56:23"
    }
   ],
-  "flagged": [],
+  "flagged": [
+   {
+    "dt": "2026-07-28T20:28:23",
+    "sender": "Guina",
+    "text": "Melhor tirar time na tampinha",
+    "why": "not-a-name?"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Robson",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   }
+  ],
   "roster": {
    "members": [
     "David",
@@ -383,8 +397,8 @@
  },
  "review_url": "https://diego-pills-ser-buried.trycloudflare.com/decide",
  "stats": {
-  "messages_total": 59300,
-  "live_logged": 20,
+  "messages_total": 59301,
+  "live_logged": 21,
   "capacity": 21
  }
 }
