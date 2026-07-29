@@ -1,349 +1,21 @@
 {
- "updated": "2026-07-29T09:41:26",
+ "updated": "2026-07-29T12:17:16",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
-  "opened": "2026-07-29T08:30:00",
-  "open_text": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*",
-  "game_date": "2026-08-04",
-  "gates_closed": true,
-  "ins": [
-   {
-    "name": "Juliano",
-    "kind": "adhoc",
-    "by": "Juliano Brandao",
-    "dt": "2026-07-29T08:30:00",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Jorge",
-    "kind": "member",
-    "by": "Jorge",
-    "dt": "2026-07-29T08:30:00",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Pedro",
-    "kind": "adhoc",
-    "by": "Alberto",
-    "dt": "2026-07-29T08:30:00",
-    "self": false,
-    "cond": false
-   },
-   {
-    "name": "Alberto",
-    "kind": "member",
-    "by": "Alberto",
-    "dt": "2026-07-29T08:30:00",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Willie",
-    "kind": "member",
-    "by": "Willie",
-    "dt": "2026-07-29T08:30:01",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "David",
-    "kind": "member",
-    "by": "Willie",
-    "dt": "2026-07-29T08:30:01",
-    "self": false
-   },
-   {
-    "name": "Eli",
-    "kind": "adhoc",
-    "by": "Willie",
-    "dt": "2026-07-29T08:30:01",
-    "self": false,
-    "cond": true,
-    "unverified": "rules-only"
-   },
-   {
-    "name": "Chris",
-    "kind": "adhoc",
-    "by": "Willie",
-    "dt": "2026-07-29T08:30:01",
-    "self": false,
-    "cond": true,
-    "unverified": "rules-only"
-   },
-   {
-    "name": "Igor",
-    "kind": "adhoc",
-    "by": "Igor",
-    "dt": "2026-07-29T08:30:02",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Javier",
-    "kind": "adhoc",
-    "by": "Javier",
-    "dt": "2026-07-29T08:30:07",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Eneas",
-    "kind": "member",
-    "by": "Eneas",
-    "dt": "2026-07-29T08:30:07",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Henry",
-    "kind": "adhoc",
-    "by": "Henry",
-    "dt": "2026-07-29T08:30:08",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Erivan",
-    "kind": "member",
-    "by": "Erivan",
-    "dt": "2026-07-29T08:30:11",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Tony",
-    "kind": "member",
-    "by": "Tony",
-    "dt": "2026-07-29T08:30:15",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Marcio",
-    "kind": "member",
-    "by": "Marcio",
-    "dt": "2026-07-29T08:30:33",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Akbar",
-    "kind": "member",
-    "by": "Akbar",
-    "dt": "2026-07-29T08:30:33",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Jader",
-    "kind": "member",
-    "by": "Jader",
-    "dt": "2026-07-29T08:30:37",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Flavio",
-    "kind": "adhoc",
-    "by": "Flavio",
-    "dt": "2026-07-29T08:30:47",
-    "self": true
-   },
-   {
-    "name": "Rafa",
-    "kind": "adhoc",
-    "by": "Flavio",
-    "dt": "2026-07-29T08:30:47",
-    "self": false,
-    "cond": false,
-    "unverified": "rules-only"
-   },
-   {
-    "name": "Du (Flavio's guest)",
-    "kind": "adhoc",
-    "by": "Flavio",
-    "dt": "2026-07-29T08:30:48",
-    "self": false,
-    "cond": false,
-    "unverified": "rules-only"
-   },
-   {
-    "name": "Miguel Alejandro",
-    "kind": "member",
-    "by": "Miguel Alejandro",
-    "dt": "2026-07-29T08:48:59",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Walter",
-    "kind": "member",
-    "by": "Walter",
-    "dt": "2026-07-29T09:00:12",
-    "self": true,
-    "cond": false
-   },
-   {
-    "name": "Selim",
-    "kind": "adhoc",
-    "by": "Selim",
-    "dt": "2026-07-29T09:18:50",
-    "self": true,
-    "cond": true,
-    "unverified": "rules-only"
-   },
-   {
-    "name": "Elber",
-    "kind": "member",
-    "by": "Elber",
-    "dt": "2026-07-29T09:23:10",
-    "self": true
-   }
-  ],
-  "outs": [
-   {
-    "name": "Everson",
-    "dt": "2026-07-29T08:59:55"
-   },
-   {
-    "name": "Claudio",
-    "dt": "2026-07-29T09:12:06"
-   },
-   {
-    "name": "Elio",
-    "dt": "2026-07-29T09:23:01"
-   },
-   {
-    "name": "Robson",
-    "dt": "2026-07-29T09:23:10"
-   },
-   {
-    "name": "Filippo",
-    "dt": "2026-07-29T09:23:42"
-   }
-  ],
-  "flagged": [
-   {
-    "dt": "2026-07-29T09:23:05",
-    "sender": "~ Link",
-    "text": "If he doesn’t reply. Pedro is confirmed",
-    "why": "not-a-name?",
-    "kind": "signup"
-   },
-   {
-    "dt": "2026-07-29T09:23:14",
-    "sender": "Thyago Oricchio",
-    "text": "@⁨Elber⁩ confirmed",
-    "why": "not-a-name?",
-    "kind": "signup"
-   },
-   {
-    "dt": "2026-07-29T09:23:15",
-    "sender": "Willie Austin",
-    "text": "They live too far away with such late notice.  All are out",
-    "why": "out-like",
-    "kind": "drop"
-   },
-   {
-    "dt": "2026-07-29T08:30:01",
-    "sender": "Willie",
-    "text": "Eli",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-07-29T08:30:01",
-    "sender": "Willie",
-    "text": "Chris",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-07-29T08:30:47",
-    "sender": "Flavio",
-    "text": "Rafa",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-07-29T08:30:48",
-    "sender": "Flavio",
-    "text": "Du (Flavio's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-07-29T09:18:50",
-    "sender": "Selim",
-    "text": "Selim",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Rogerio A.",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Thyago",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
-   }
-  ],
+  "phase": "between",
+  "opened": "2026-07-24T08:20:57",
+  "game_date": "2026-07-28",
+  "gates_closed": false,
+  "ins": [],
+  "outs": [],
+  "flagged": [],
   "roster": {
-   "members": [
-    "Jorge",
-    "Alberto",
-    "Willie",
-    "David",
-    "Eneas",
-    "Erivan",
-    "Tony",
-    "Marcio",
-    "Akbar",
-    "Jader",
-    "Miguel Alejandro",
-    "Walter",
-    "Elber"
-   ],
-   "adhocs": [
-    "Juliano",
-    "Pedro",
-    "Igor",
-    "Javier",
-    "Henry",
-    "Flavio",
-    "Rafa",
-    "Du (Flavio's guest)"
-   ],
-   "waitlist": [
-    "Eli",
-    "Chris",
-    "Selim"
-   ],
-   "outs": [
-    "Everson",
-    "Claudio",
-    "Elio",
-    "Robson",
-    "Filippo"
-   ],
-   "unverified": [
-    "Chris",
-    "Du (Flavio's guest)",
-    "Eli",
-    "Rafa",
-    "Selim"
-   ],
-   "pending": [
-    "Du (Flavio's guest)"
-   ]
+   "members": [],
+   "adhocs": [],
+   "waitlist": [],
+   "outs": [],
+   "pending": [],
+   "unverified": []
   }
  },
  "members_month": "2026-07",
@@ -452,7 +124,7 @@
   }
  ],
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Alberto\n3 Willie\n4 David\n5 Eneas\n6 Erivan\n7 Tony\n8 Marcio\n9 Akbar\n10 Jader\n11 Miguel Alejandro\n12 Walter\n13 Elber\n*Ad-hocs*\n14 Juliano\n15 Pedro\n16 Igor\n17 Javier\n18 Henry\n19 Flavio\n20 Rafa\n21 Du (Flavio's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nEli\nChris\nSelim",
+  "gates_closed": "",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -461,8 +133,8 @@
  },
  "review_url": "https://diego-pills-ser-buried.trycloudflare.com/decide",
  "stats": {
-  "messages_total": 59359,
-  "live_logged": 80,
+  "messages_total": 59303,
+  "live_logged": 24,
   "capacity": 21
  }
 }
