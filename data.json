@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-29T09:26:37",
+ "updated": "2026-07-29T09:30:56",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-07-29T08:30:00",
@@ -8,57 +8,23 @@
   "gates_closed": true,
   "ins": [
    {
-    "name": "Javier",
+    "name": "Juliano",
     "kind": "adhoc",
-    "by": "Javier",
+    "by": "Juliano Brandao",
     "dt": "2026-07-29T08:30:00",
-    "self": true
+    "self": true,
+    "unverified": "rules-only"
    },
    {
-    "name": "Erivan",
+    "name": "Jorge",
     "kind": "member",
-    "by": "Erivan",
+    "by": "Jorge",
     "dt": "2026-07-29T08:30:00",
     "self": true
-   },
-   {
-    "name": "Tony",
-    "kind": "member",
-    "by": "Tony",
-    "dt": "2026-07-29T08:30:00",
-    "self": true
-   },
-   {
-    "name": "Marcio",
-    "kind": "member",
-    "by": "Marcio",
-    "dt": "2026-07-29T08:30:00",
-    "self": true
-   },
-   {
-    "name": "Pietro (son) (Marcio's guest)",
-    "kind": "adhoc",
-    "by": "Marcio",
-    "dt": "2026-07-29T08:30:00",
-    "self": false
    },
    {
     "name": "Pedro",
     "kind": "adhoc",
-    "by": "Alberto",
-    "dt": "2026-07-29T08:30:00",
-    "self": false
-   },
-   {
-    "name": "Vitor (Alberto's guest)",
-    "kind": "adhoc",
-    "by": "Alberto",
-    "dt": "2026-07-29T08:30:00",
-    "self": false
-   },
-   {
-    "name": "David",
-    "kind": "member",
     "by": "Alberto",
     "dt": "2026-07-29T08:30:00",
     "self": false
@@ -71,13 +37,6 @@
     "self": true
    },
    {
-    "name": "Henry",
-    "kind": "adhoc",
-    "by": "Henry",
-    "dt": "2026-07-29T08:30:01",
-    "self": true
-   },
-   {
     "name": "Willie",
     "kind": "member",
     "by": "Willie",
@@ -85,160 +44,384 @@
     "self": true
    },
    {
-    "name": "David (Willie's guest)",
-    "kind": "adhoc",
+    "name": "David",
+    "kind": "member",
     "by": "Willie",
     "dt": "2026-07-29T08:30:01",
     "self": false
    },
    {
-    "name": "Jorge",
-    "kind": "member",
-    "by": "Jorge",
-    "dt": "2026-07-29T08:30:01",
-    "self": true
-   },
-   {
-    "name": "Mauricio",
+    "name": "Eli",
     "kind": "adhoc",
-    "by": "Mauricio",
+    "by": "Willie",
     "dt": "2026-07-29T08:30:01",
+    "self": false,
+    "unverified": "rules-only"
+   },
+   {
+    "name": "Chris",
+    "kind": "adhoc",
+    "by": "Willie",
+    "dt": "2026-07-29T08:30:01",
+    "self": false,
+    "unverified": "rules-only"
+   },
+   {
+    "name": "Igor",
+    "kind": "adhoc",
+    "by": "Igor",
+    "dt": "2026-07-29T08:30:02",
     "self": true
    },
    {
-    "name": "Miguel Alejandro",
+    "name": "Javier",
+    "kind": "adhoc",
+    "by": "Javier",
+    "dt": "2026-07-29T08:30:07",
+    "self": true
+   },
+   {
+    "name": "Eneas",
     "kind": "member",
-    "by": "Miguel Alejandro",
+    "by": "Eneas",
+    "dt": "2026-07-29T08:30:07",
+    "self": true
+   },
+   {
+    "name": "Henry",
+    "kind": "adhoc",
+    "by": "Henry",
     "dt": "2026-07-29T08:30:08",
     "self": true
    },
    {
-    "name": "Claudio",
+    "name": "Robson",
+    "kind": "adhoc",
+    "by": "Robson",
+    "dt": "2026-07-29T08:30:09",
+    "self": true,
+    "unverified": "rules-only"
+   },
+   {
+    "name": "Erivan",
     "kind": "member",
-    "by": "Claudio",
+    "by": "Erivan",
     "dt": "2026-07-29T08:30:11",
     "self": true
    },
    {
-    "name": "Walter",
+    "name": "Tony",
     "kind": "member",
-    "by": "Walter",
+    "by": "Tony",
     "dt": "2026-07-29T08:30:15",
     "self": true
    },
    {
-    "name": "Filippo",
+    "name": "Marcio",
     "kind": "member",
-    "by": "Filippo",
-    "dt": "2026-07-29T08:30:17",
-    "self": true
-   },
-   {
-    "name": "Elber",
-    "kind": "member",
-    "by": "Elber",
-    "dt": "2026-07-29T08:30:18",
-    "self": true
-   },
-   {
-    "name": "Felipe Add Hoc (Elber's guest)",
-    "kind": "adhoc",
-    "by": "Elber",
-    "dt": "2026-07-29T08:30:18",
-    "self": false
-   },
-   {
-    "name": "Elio",
-    "kind": "member",
-    "by": "Elio",
-    "dt": "2026-07-29T08:30:18",
-    "self": true
-   },
-   {
-    "name": "Rogerio A.",
-    "kind": "member",
-    "by": "Rogerio A.",
-    "dt": "2026-07-29T08:31:14",
+    "by": "Marcio",
+    "dt": "2026-07-29T08:30:33",
     "self": true
    },
    {
     "name": "Akbar",
     "kind": "member",
     "by": "Akbar",
-    "dt": "2026-07-29T08:31:32",
+    "dt": "2026-07-29T08:30:33",
     "self": true
    },
    {
-    "name": "Everson",
+    "name": "Jader",
     "kind": "member",
-    "by": "Everson",
-    "dt": "2026-07-29T08:37:36",
+    "by": "Jader",
+    "dt": "2026-07-29T08:30:37",
     "self": true
    },
    {
-    "name": "Eneas",
+    "name": "Filippo",
     "kind": "member",
-    "by": "review",
-    "dt": "2026-07-29T09:14:32",
+    "by": "Filippo",
+    "dt": "2026-07-29T08:30:44",
+    "self": true,
+    "unverified": "rules-only"
+   },
+   {
+    "name": "Flavio",
+    "kind": "adhoc",
+    "by": "Flavio",
+    "dt": "2026-07-29T08:30:47",
     "self": true
    },
    {
-    "name": "Thyago",
+    "name": "Rafa",
+    "kind": "adhoc",
+    "by": "Flavio",
+    "dt": "2026-07-29T08:30:47",
+    "self": false,
+    "unverified": "rules-only"
+   },
+   {
+    "name": "Du (Flavio's guest)",
+    "kind": "adhoc",
+    "by": "Flavio",
+    "dt": "2026-07-29T08:30:48",
+    "self": false,
+    "unverified": "rules-only"
+   },
+   {
+    "name": "Claudio",
     "kind": "member",
-    "by": "review",
-    "dt": "2026-07-29T09:18:12",
+    "by": "Claudio",
+    "dt": "2026-07-29T08:32:10",
+    "self": true,
+    "unverified": "rules-only"
+   },
+   {
+    "name": "Miguel Alejandro",
+    "kind": "member",
+    "by": "Miguel Alejandro",
+    "dt": "2026-07-29T08:48:59",
     "self": true
+   },
+   {
+    "name": "Walter",
+    "kind": "member",
+    "by": "Walter",
+    "dt": "2026-07-29T09:00:12",
+    "self": true
+   },
+   {
+    "name": "Selim",
+    "kind": "adhoc",
+    "by": "Selim",
+    "dt": "2026-07-29T09:18:50",
+    "self": true,
+    "unverified": "rules-only"
+   },
+   {
+    "name": "Elber",
+    "kind": "member",
+    "by": "Elber",
+    "dt": "2026-07-29T09:23:14",
+    "self": true
+   },
+   {
+    "name": "Coming (Flavio's guest)",
+    "kind": "adhoc",
+    "by": "Flavio",
+    "dt": "2026-07-29T09:23:43",
+    "self": false,
+    "unverified": "rules-only"
    }
   ],
   "outs": [
    {
-    "name": "Juliano Brandao",
-    "dt": "2026-07-29T08:30:11"
+    "name": "Everson",
+    "dt": "2026-07-29T08:59:55"
    },
    {
-    "name": "Jader",
-    "dt": "2026-07-29T08:46:34"
+    "name": "Elio",
+    "dt": "2026-07-29T09:23:01"
+   },
+   {
+    "name": "last minute notice",
+    "dt": "2026-07-29T09:23:10"
    }
   ],
-  "flagged": [],
+  "flagged": [
+   {
+    "dt": "2026-07-29T08:30:01",
+    "sender": "Willie Austin",
+    "text": "In case people drop:",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
+    "dt": "2026-07-29T09:23:05",
+    "sender": "~ Link",
+    "text": "If he doesn’t reply. Pedro is confirmed",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
+    "dt": "2026-07-29T09:23:10",
+    "sender": "Elber",
+    "text": "Elber if any open spots",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
+    "dt": "2026-07-29T09:23:14",
+    "sender": "Thyago Oricchio",
+    "text": "@⁨Elber⁩ confirmed",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
+    "dt": "2026-07-29T09:23:15",
+    "sender": "Willie Austin",
+    "text": "They live too far away with such late notice.  All are out",
+    "why": "out-like",
+    "kind": "drop"
+   },
+   {
+    "dt": "2026-07-29T09:23:32",
+    "sender": "Flavio Duarte",
+    "text": "I can come if any spots open",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
+    "dt": "2026-07-29T09:23:42",
+    "sender": "~ Filippo Gambaccini",
+    "text": "So sorry I won’t be able to make it",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
+    "dt": "2026-07-29T08:30:00",
+    "sender": "Juliano Brandao",
+    "text": "Juliano",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-07-29T08:30:01",
+    "sender": "Willie",
+    "text": "Eli",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-07-29T08:30:01",
+    "sender": "Willie",
+    "text": "Chris",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-07-29T08:30:09",
+    "sender": "Robson",
+    "text": "Robson",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-07-29T08:30:44",
+    "sender": "Filippo",
+    "text": "Filippo",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-07-29T08:30:47",
+    "sender": "Flavio",
+    "text": "Rafa",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-07-29T08:30:48",
+    "sender": "Flavio",
+    "text": "Du (Flavio's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-07-29T08:32:10",
+    "sender": "Claudio",
+    "text": "Claudio",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-07-29T09:18:50",
+    "sender": "Selim",
+    "text": "Selim",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-07-29T09:23:43",
+    "sender": "Flavio",
+    "text": "Coming (Flavio's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Juliano Brandao",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Rogerio A.",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Thyago",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   }
+  ],
   "roster": {
    "members": [
+    "Jorge",
+    "Alberto",
+    "Willie",
+    "David",
+    "Eneas",
     "Erivan",
     "Tony",
     "Marcio",
-    "David",
-    "Alberto",
-    "Willie",
-    "Jorge",
-    "Miguel Alejandro",
-    "Claudio",
-    "Walter",
-    "Filippo",
-    "Elber",
-    "Elio",
-    "Rogerio A.",
     "Akbar",
-    "Everson",
-    "Eneas",
-    "Thyago"
+    "Jader",
+    "Filippo",
+    "Claudio",
+    "Miguel Alejandro",
+    "Walter",
+    "Elber"
    ],
    "adhocs": [
-    "Javier",
-    "Pietro (son) (Marcio's guest)",
-    "Pedro"
+    "Juliano",
+    "Pedro",
+    "Eli",
+    "Chris",
+    "Igor",
+    "Javier"
    ],
    "waitlist": [
-    "Vitor (Alberto's guest)",
     "Henry",
-    "David (Willie's guest)",
-    "Mauricio",
-    "Felipe Add Hoc (Elber's guest)"
+    "Robson",
+    "Flavio",
+    "Rafa",
+    "Du (Flavio's guest)",
+    "Selim",
+    "Coming (Flavio's guest)"
    ],
    "outs": [
-    "Juliano Brandao",
-    "Jader"
+    "Everson",
+    "Elio",
+    "last minute notice"
    ],
-   "unverified": [],
+   "unverified": [
+    "Chris",
+    "Claudio",
+    "Coming (Flavio's guest)",
+    "Du (Flavio's guest)",
+    "Eli",
+    "Filippo",
+    "Juliano",
+    "Rafa",
+    "Robson",
+    "Selim"
+   ],
    "pending": []
   }
  },
@@ -348,17 +531,17 @@
   }
  ],
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Erivan\n2 Tony\n3 Marcio\n4 David\n5 Alberto\n6 Willie\n7 Jorge\n8 Miguel Alejandro\n9 Claudio\n10 Walter\n11 Filippo\n12 Elber\n13 Elio\n14 Rogerio A.\n15 Akbar\n16 Everson\n17 Eneas\n18 Thyago\n*Ad-hocs*\n19 Javier\n20 Pietro (son) (Marcio's guest)\n21 Pedro\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nVitor (Alberto's guest)\nHenry\nDavid (Willie's guest)\nMauricio\nFelipe Add Hoc (Elber's guest)",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Alberto\n3 Willie\n4 David\n5 Eneas\n6 Erivan\n7 Tony\n8 Marcio\n9 Akbar\n10 Jader\n11 Filippo\n12 Claudio\n13 Miguel Alejandro\n14 Walter\n15 Elber\n*Ad-hocs*\n16 Juliano\n17 Pedro\n18 Eli\n19 Chris\n20 Igor\n21 Javier\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nHenry\nRobson\nFlavio\nRafa\nDu (Flavio's guest)\nSelim\nComing (Flavio's guest)",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
-  "as_of": "2026-07-29T08:45:58",
+  "as_of": "2026-07-20T22:24:15",
   "text": "(ledger omitted from the public page)"
  },
  "review_url": "https://diego-pills-ser-buried.trycloudflare.com/decide",
  "stats": {
-  "messages_total": 59339,
-  "live_logged": 60,
+  "messages_total": 59359,
+  "live_logged": 80,
   "capacity": 21
  }
 }
