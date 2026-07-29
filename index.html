@@ -63,16 +63,20 @@
   .tp.sel{background:rgba(10,132,255,.15);outline:2px solid var(--accent);outline-offset:-2px}
   .foot{color:var(--faint);font-size:11px;text-align:center;padding:8px 0 24px}
   .empty{color:var(--faint);font-size:13px;padding:6px 0}
+  .adminonly{display:none}
+  body.admin .adminonly{display:block}
+  body.admin span.adminonly,body.admin .tbar.adminonly{display:flex}
+  .alink{color:var(--faint);text-decoration:underline;cursor:pointer}
 </style>
 </head>
 <body>
 <div class="hero">
-  <h1>⚽ Pelada Manager <span class="badge">SHADOW</span><span style="margin-left:auto;display:flex;gap:6px"><button class="mbtn" style="margin-left:0" onclick="toggleTeams()">🎽 Teams</button><button class="mbtn" style="margin-left:0" onclick="toggleMembers()">👥 Members</button></span></h1>
+  <h1>⚽ Pelada Manager <span class="badge">SHADOW</span><span class="adminonly" style="margin-left:auto;gap:6px"><button class="mbtn" style="margin-left:0" onclick="toggleTeams()">🎽 Teams</button><button class="mbtn" style="margin-left:0" onclick="toggleMembers()">👥 Members</button></span></h1>
   <div class="sub" id="meta">loading…</div>
   <div class="big" id="count">–</div>
 </div>
 
-<div class="card" id="teamsCard" style="display:none">
+<div class="card adminonly" id="teamsCard" style="display:none">
   <h2>Team draw · 3 × 7</h2>
   <div class="tbar">
     <button class="copy" onclick="teamsLockDraw()">🎲 Lock 21 &amp; draw</button>
@@ -84,7 +88,7 @@
   <div id="tcols"></div>
 </div>
 
-<div class="card" id="membersCard" style="display:none">
+<div class="card adminonly" id="membersCard" style="display:none">
   <h2>Members roster · <span id="mmonth"></span></h2>
   <div class="msub">Permanent</div><div id="mperm"></div>
   <div class="msub">Temporary (month-to-month)</div><div id="mtemp"></div>
@@ -99,14 +103,37 @@
 <div class="card"><h2>Roster (parsed live from WhatsApp)</h2><div id="roster"></div></div>
 <div class="card"><h2>Waiting list</h2><div id="wl"></div></div>
 <div class="card"><h2>Out this week</h2><div id="outs"></div></div>
-<div class="card"><h2>⚠ Review queue — messages the parser didn't auto-accept</h2><div id="flags"></div></div>
-<div class="card"><h2>Draft · Gates-closed post (what would be sent)</h2><pre id="draft"></pre>
+<div class="card adminonly"><h2>⚠ Review queue — messages the parser didn't auto-accept</h2><div id="flags"></div></div>
+<div class="card adminonly"><h2>Draft · Gates-closed post (what would be sent)</h2><pre id="draft"></pre>
   <button class="copy" onclick="copyText('draft')">Copy</button></div>
-<div class="card"><h2>Ledger · Thyago's last payment report</h2><pre id="ledger"></pre></div>
-<div class="foot" id="foot">Phase 1 shadow mode — read-only. Nothing is ever posted to WhatsApp.</div>
+<div class="card adminonly"><h2>Ledger · Financials (admins only)</h2><pre id="ledger"></pre></div>
+<div style="display:none"></div>
+<div class="foot"><span id="foot">Phase 1 shadow mode — read-only. Nothing is ever posted to WhatsApp.</span><br><span class="alink" id="adminlink" onclick="adminToggle()">admin</span></div>
 
 <script>
 let FLAGS=[], REVIEW_URL=null, MEMB=[];
+// ---- admin mode: key validated SERVER-side via the /ledger endpoint
+function getKey(ask){let k=localStorage.getItem('pelada-key');
+  if(!k&&ask){k=prompt('Admin key:'); if(k)localStorage.setItem('pelada-key',k);}
+  return k;}
+async function adminValidate(k){
+  if(!REVIEW_URL||!k) return null;
+  try{const r=await fetch(REVIEW_URL.replace('/decide','/ledger'),
+      {method:'POST',body:new URLSearchParams({key:k})});
+    const j=await r.json();
+    if(j.ok){document.getElementById('ledger').textContent=(j.ledger&&j.ledger.text)||'no report yet';return true}
+    return false;
+  }catch(e){return null}}
+function adminOn(on){document.body.classList.toggle('admin',on);
+  document.getElementById('adminlink').textContent=on?'exit admin':'admin';}
+async function adminToggle(){
+  if(document.body.classList.contains('admin')){adminOn(false);return}
+  const k=getKey(true); if(!k)return;
+  const v=await adminValidate(k);
+  if(v===false){localStorage.removeItem('pelada-key');alert('Wrong key');return}
+  if(v===null){alert('Admin endpoint offline — try again in a minute.');return}
+  adminOn(true);
+}
 function toggleMembers(){
   const c=document.getElementById('membersCard');
   const show=c.style.display==='none';
@@ -152,14 +179,15 @@ const DECIDE_LABEL={member:'Member',adhoc:'Ad-hoc',ignore:'ignored',remove:'remo
   confirm_in:'confirmed in',confirm_out:'removed'};
 async function decide(i,kind,btn,target){
   const f=FLAGS[i]; if(!f||!REVIEW_URL) return;
+  const k=getKey(true); if(!k) return;
   const row=btn.closest('.flag');
   row.querySelectorAll('button').forEach(b=>b.disabled=true);
   try{
-    const body={name:f.text,kind:kind};
+    const body={name:f.text,kind:kind,key:k};
     if(target) body.target=target;
     const r=await fetch(REVIEW_URL,{method:'POST',body:new URLSearchParams(body)});
     const j=await r.json();
-    if(!j.accepted) throw new Error('rejected');
+    if(!j.accepted){ if(confirm('Rejected — wrong admin key? OK to re-enter.')) localStorage.removeItem('pelada-key'); throw new Error('rejected'); }
     const what = kind==='remove' ? `${target} removed` : DECIDE_LABEL[kind]||kind;
     row.querySelector('.fbtns').outerHTML=` <span class="fdone">→ ${esc(what)} · updates in ~1 min</span>`;
     row.style.opacity=.6;
@@ -276,11 +304,17 @@ async function load(){
     `<div class="flag"><span class="why">${esc(f.why)}</span> · <span class="who">${esc(f.sender)} · ${esc(String(f.dt).slice(5,16).replace('T',' '))}</span><br>${esc(f.text)}${btns(i)}</div>`).join('')
     || '<div class="empty">nothing needs review</div>';
   document.getElementById('draft').textContent = d.drafts?.gates_closed || '';
-  document.getElementById('ledger').textContent = (d.ledger?.text||'—') ;
   document.getElementById('foot').textContent =
     `Phase 1 shadow — read-only · dual-engine parser (rules + Claude), 0.96 precision/recall on 20-cycle backtest · ${d.stats?.messages_total??'?'} msgs parsed (${d.stats?.live_logged??0} live) · members list ${d.members_month||'?'}`;
 }
-load(); setInterval(load, 60000);
+async function adminInit(){
+  const k=getKey(false);
+  if(!k) return;
+  if(await adminValidate(k)===true) adminOn(true);
+}
+load().then(adminInit); setInterval(()=>load().then(()=>{
+  if(document.body.classList.contains('admin')) adminValidate(getKey(false));
+}), 60000);
 </script>
 </body>
 </html>
