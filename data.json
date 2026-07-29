@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-29T09:18:18",
+ "updated": "2026-07-29T09:26:37",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-07-29T08:30:00",
@@ -40,8 +40,7 @@
     "kind": "adhoc",
     "by": "Marcio",
     "dt": "2026-07-29T08:30:00",
-    "self": false,
-    "unverified": "rules-only"
+    "self": false
    },
    {
     "name": "Pedro",
@@ -55,8 +54,7 @@
     "kind": "adhoc",
     "by": "Alberto",
     "dt": "2026-07-29T08:30:00",
-    "self": false,
-    "unverified": "rules-only"
+    "self": false
    },
    {
     "name": "David",
@@ -147,8 +145,7 @@
     "kind": "adhoc",
     "by": "Elber",
     "dt": "2026-07-29T08:30:18",
-    "self": false,
-    "unverified": "rules-only"
+    "self": false
    },
    {
     "name": "Elio",
@@ -203,29 +200,7 @@
     "dt": "2026-07-29T08:46:34"
    }
   ],
-  "flagged": [
-   {
-    "dt": "2026-07-29T08:30:00",
-    "sender": "Marcio",
-    "text": "Pietro (son) (Marcio's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-07-29T08:30:00",
-    "sender": "Alberto",
-    "text": "Vitor (Alberto's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-07-29T08:30:18",
-    "sender": "Elber",
-    "text": "Felipe Add Hoc (Elber's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   }
-  ],
+  "flagged": [],
   "roster": {
    "members": [
     "Erivan",
@@ -263,11 +238,7 @@
     "Juliano Brandao",
     "Jader"
    ],
-   "unverified": [
-    "Felipe Add Hoc (Elber's guest)",
-    "Pietro (son) (Marcio's guest)",
-    "Vitor (Alberto's guest)"
-   ],
+   "unverified": [],
    "pending": []
   }
  },
