@@ -283,14 +283,13 @@ async function load(){
   document.getElementById('outs').innerHTML = (r.outs||[]).map(x=>`<div class="row"><span>${esc(x)}</span><span class="tag o">OUT</span></div>`).join('') || '<div class="empty">none</div>';
   FLAGS = c.flagged||[]; REVIEW_URL = d.review_url||null;
   renderMembers(d);
-  // a DROP asks "which player is out?" — never member/ad-hoc, that question
-  // only makes sense for an unrecognised signup
+  // Each queue item = a plain-language QUESTION + evidence + answer buttons.
   const btns = !REVIEW_URL ? ()=>'' : (i)=>{
     const f = FLAGS[i];
     if(f.kind==='disagree'){
       return '<span class="fbtns">'
-        + `<button class="fb" onclick="decide(${i},'confirm_in',this)">✓ In</button>`
-        + `<button class="fb r" onclick="decide(${i},'confirm_out',this)">✕ Not in</button></span>`;
+        + `<button class="fb" onclick="decide(${i},'confirm_in',this)">✓ Yes, playing</button>`
+        + `<button class="fb r" onclick="decide(${i},'confirm_out',this)">✕ Not playing</button></span>`;
     }
     if(f.kind==='drop'){
       const cands = f.candidates||[];
@@ -298,10 +297,28 @@ async function load(){
         `<button class="fb r" onclick="decide(${i},'remove',this,${JSON.stringify(c).replace(/"/g,'&quot;')})">Remove ${esc(c)}</button>`).join('')
         + `<button class="fb" onclick="decide(${i},'ignore',this)">Not a drop</button></span>`;
     }
-    return `<span class="fbtns"><button class="fb" onclick="decide(${i},'member',this)">Member</button><button class="fb a" onclick="decide(${i},'adhoc',this)">Ad-hoc</button></span>`;
+    // unrecognised signup: admit as member / guest, or dismiss as chat
+    return `<span class="fbtns"><button class="fb" onclick="decide(${i},'member',this)">Member</button>`
+      + `<button class="fb a" onclick="decide(${i},'adhoc',this)">Ad-hoc</button>`
+      + `<button class="fb r" onclick="decide(${i},'ignore',this)">Not a signup</button></span>`;
+  };
+  const question = (f)=>{
+    const who = esc(f.text), by = esc(f.sender||'?');
+    if(f.kind==='disagree'){
+      if((f.why||'').includes('only the model'))
+        return `Is <b>${who}</b> playing? The AI cross-check thinks they signed up, but the rules parser found no message.`;
+      return `Is <b>${who}</b> playing? The rules parser read a signup${f.sender&&f.sender!=='?'?` (posted by ${by})`:''}, but the AI cross-check doesn't see it.`;
+    }
+    if(f.kind==='drop'){
+      if(f.candidates&&f.candidates.length)
+        return `Someone posted “${who}” — <b>which player is out?</b>`;
+      return `Does “${who}” mean someone is <b>dropping out</b>?`;
+    }
+    return `${by} posted “<b>${who}</b>” — is that <b>someone signing up</b>, or just chat?`;
   };
   document.getElementById('flags').innerHTML = FLAGS.map((f,i)=>
-    `<div class="flag"><span class="why">${esc(f.why)}</span> · <span class="who">${esc(f.sender)} · ${esc(String(f.dt).slice(5,16).replace('T',' '))}</span><br>${esc(f.text)}${btns(i)}</div>`).join('')
+    `<div class="flag"><div style="font-size:14px;line-height:1.45">${question(f)}</div>`
+    + `<span class="who">${esc(f.sender||'')}${f.dt?` · ${esc(String(f.dt).slice(5,16).replace('T',' '))}`:''}</span><br>${btns(i)}</div>`).join('')
     || '<div class="empty">nothing needs review</div>';
   document.getElementById('draft').textContent = d.drafts?.gates_closed || '';
   document.getElementById('foot').textContent =
