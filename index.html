@@ -63,6 +63,8 @@
   .tp.sel{background:rgba(10,132,255,.15);outline:2px solid var(--accent);outline-offset:-2px}
   .foot{color:var(--faint);font-size:11px;text-align:center;padding:8px 0 24px}
   .empty{color:var(--faint);font-size:13px;padding:6px 0}
+  #renewCard{background:#F0F7EF;border:1px solid #BFDDBE;border-radius:12px;padding:12px;margin-top:14px}
+  #renprev{background:#fff;border:1px solid #E2E6EA;border-radius:8px;padding:10px;font-size:12px;line-height:1.5;max-height:260px;overflow:auto}
   .adminonly{display:none}
   body.admin .adminonly{display:block}
   body.admin span.adminonly,body.admin .tbar.adminonly{display:flex}
@@ -71,7 +73,7 @@
 </head>
 <body>
 <div class="hero">
-  <h1>⚽ Pelada Manager <span class="badge">SHADOW</span><span class="adminonly" style="margin-left:auto;gap:6px"><button class="mbtn" style="margin-left:0" onclick="toggleTeams()">🎽 Teams</button><button class="mbtn" style="margin-left:0" onclick="toggleMembers()">👥 Members</button></span></h1>
+  <h1>⚽ Pelada Manager <span class="badge adminonly">SHADOW</span><span class="adminonly" style="margin-left:auto;gap:6px"><button class="mbtn" style="margin-left:0" onclick="toggleTeams()">🎽 Teams</button><button class="mbtn" style="margin-left:0" onclick="toggleMembers()">👥 Members</button></span></h1>
   <div class="sub" id="meta">loading…</div>
   <div class="big" id="count">–</div>
 </div>
@@ -120,7 +122,11 @@
 <div class="card adminonly"><h2>⚠ Review queue — messages the parser didn't auto-accept</h2><div id="flags"></div></div>
 <div class="card adminonly"><h2>Draft · Gates-closed post (what would be sent)</h2><pre id="draft"></pre>
   <button class="copy" onclick="copyText('draft')">Copy</button></div>
-<div class="card adminonly"><h2>Ledger · Financials (admins only)</h2><pre id="ledger"></pre></div>
+<div class="card adminonly"><h2>Ledger · Financials (admins only)</h2>
+  <div id="charges"></div>
+  <button class="copy" id="repcopy" onclick="copyReport()" style="display:none">📋 Copy weekly report</button>
+  <div class="msub" style="margin-top:12px">Thyago's last posted report</div>
+  <pre id="ledger" style="white-space:pre-wrap;font-size:12px"></pre></div>
 <div style="display:none"></div>
 <div class="foot"><span id="foot">Phase 1 shadow mode — read-only. Nothing is ever posted to WhatsApp.</span><br><span class="alink" id="adminlink" onclick="adminToggle()">admin</span></div>
 
@@ -138,11 +144,13 @@ async function adminValidate(k){
     if(j.ok){document.getElementById('ledger').textContent=(j.ledger&&j.ledger.text)||'no report yet';
       RENPOST=j.renewal_post||null;
       const pv=document.getElementById('renprev'); if(pv&&RENPOST) pv.textContent=RENPOST;
+      renderCharges(j.charges||null);
       return true}
     return false;
   }catch(e){return null}}
 function adminOn(on){document.body.classList.toggle('admin',on);
-  document.getElementById('adminlink').textContent=on?'exit admin':'admin';}
+  document.getElementById('adminlink').textContent=on?'exit admin':'admin';
+  if(typeof updateFoot==='function') updateFoot();}
 async function adminToggle(){
   if(document.body.classList.contains('admin')){adminOn(false);return}
   const k=getKey(true); if(!k)return;
@@ -160,7 +168,7 @@ function toggleMembers(){
 function renderMembers(d){
   MEMB = d.members_detail || (d.members||[]).map(n=>({name:n,temp:false}));
   document.getElementById('mmonth').textContent =
-    `${d.members_month||'?'} · ${MEMB.length} total`;
+    `${d.members_month?monthName(d.members_month):'?'} · ${MEMB.length} total`;
   const row=(m,i)=>`<div class="row"><span>${esc(m.name)}</span>`+
     `<span class="tag ${m.temp?'w':'m'}">${m.temp?'TEMP':'PERM'}</span>`+
     `<span class="by"><button class="fb" onclick="memberSet(${i})">→ ${m.temp?'Perm':'Temp'}</button> `+
@@ -221,6 +229,36 @@ function renewSet(i){const m=RENEW&&RENEW.committed[i];
 function renewDel(i){const m=RENEW&&RENEW.committed[i];
   if(m&&confirm(`Remove ${m.name} from the ${monthName(RENEW.month)} renewal list?`))
     memberOp({op:'remove',name:m.name,temp:'0',month:RENEW.month});}
+let REPTEXT=null;
+function renderCharges(ch){
+  const box=document.getElementById('charges'); if(!box) return;
+  REPTEXT=ch&&ch.report_text||null;
+  document.getElementById('repcopy').style.display=REPTEXT&&ch.people.length?'':'none';
+  if(!ch||!ch.people||!ch.people.length){
+    box.innerHTML='<div class="empty">no outstanding payments 🎉</div>';return}
+  box.innerHTML='<div class="msub">'+esc(ch.summary)+
+    ' — tap a charge when the money arrives</div>'+
+    ch.people.map(p=>`<div class="row"><span>${esc(p.name)}</span>`+
+      `<span class="tag o">$${p.owed}</span><span class="by">`+
+      p.items.map(it=>`<button class="fb" data-ckey="${esc(it.key)}" onclick="payOp(this)">✓ ${esc(it.label)} · $${it.amount}</button>`).join(' ')+
+      `</span></div>`).join('');
+}
+async function payOp(btn){
+  const ckey=btn.getAttribute('data-ckey');
+  const k=localStorage.getItem('pelada-key'); if(!ckey||!k||!REVIEW_URL) return;
+  if(!confirm('Mark this charge as PAID?')) return;
+  btn.disabled=true;
+  try{
+    const r=await fetch(REVIEW_URL.replace('/decide','/pay'),
+      {method:'POST',body:new URLSearchParams({ckey,op:'paid',key:k})});
+    const j=await r.json();
+    if(j.ok){btn.textContent='✓ paid';}
+    else{btn.disabled=false;alert(j.error||'failed');}
+  }catch(e){btn.disabled=false;alert('Network error — try again.');}
+}
+function copyReport(){
+  if(REPTEXT) navigator.clipboard.writeText(REPTEXT).then(()=>alert('Copied — paste into the WhatsApp group.'));
+}
 function renewCopy(){
   if(!RENEW)return;
   const txt=RENPOST||(`List of members for next 4 weeks (${monthName(RENEW.month)}):\n\n`+
@@ -254,7 +292,13 @@ async function decide(i,kind,btn,target){
 const TKEY='pelada-teams', TDEF=[{n:'Team Red',c:'#C62828',e:'🔴'},
   {n:'Team Blue',c:'#1565C0',e:'🔵'},{n:'Team Green',c:'#2E7D32',e:'🟢'}];
 let TSEL=null; // {t,i} selected player
-function tload(){try{return JSON.parse(localStorage.getItem(TKEY))||null}catch(e){return null}}
+function tload(){
+  try{
+    const st=JSON.parse(localStorage.getItem(TKEY))||null;
+    // a draw belongs to one game — drop it when a new cycle starts
+    if(st&&st.game&&CURGAME&&st.game!==CURGAME){localStorage.removeItem(TKEY);return null}
+    return st;
+  }catch(e){return null}}
 function tsave(st){localStorage.setItem(TKEY,JSON.stringify(st))}
 function toggleTeams(){
   const c=document.getElementById('teamsCard');
@@ -267,7 +311,7 @@ function teamsLockDraw(){
   const locked=(r.members||[]).concat(r.adhocs||[]);
   if(locked.length<3){alert('No confirmed players loaded yet.');return}
   if(tload() && !confirm(`Lock these ${locked.length} players and draw new teams? This replaces the current draw.`))return;
-  tsave({locked:locked,teams:null,at:new Date().toISOString()});
+  tsave({locked:locked,teams:null,at:new Date().toISOString(),game:CURGAME});
   teamsDraw();
 }
 function teamsDraw(){
@@ -314,19 +358,36 @@ function teamsCopy(btn){
 
 function copyText(id){navigator.clipboard.writeText(document.getElementById(id).textContent)}
 function esc(s){return String(s??'').replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]))}
+let CURGAME=null, FOOTFULL='', FOOTSHORT='';
+function fdate(iso){
+  if(!iso) return '?';
+  try{return new Date(iso+'T12:00:00').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'})}
+  catch(e){return iso}}
+function updateFoot(){
+  const el=document.getElementById('foot');
+  if(el) el.textContent = document.body.classList.contains('admin') ? FOOTFULL : FOOTSHORT;
+}
 async function load(){
   const d = await (await fetch('data.json?ts='+Date.now())).json();
   window.__D = d;   // team-draw locks from the latest loaded roster
   const c = d.cycle||{};
   const r = c.roster||{members:[],adhocs:[],waitlist:[],outs:[]};
   const n = r.members.length + r.adhocs.length;
-  if(c.phase==='between'){
+  CURGAME = c.game_date||null;
+  const between = c.phase==='between';
+  // the three roster cards are noise while nothing is running
+  for(const id of ['roster','wl','outs']){
+    const card=document.getElementById(id).closest('.card');
+    if(card) card.style.display = between ? 'none' : '';
+  }
+  if(between){
+    const next = c.game_date ? fdate(new Date(new Date(c.game_date+'T12:00:00').getTime()+7*864e5).toISOString().slice(0,10)) : '?';
     document.getElementById('meta').textContent =
-      `Game of Tue ${c.game_date||'?'} finished · clean sheet — next count opens Thursday morning · updated ${String(d.updated||'').slice(11,16)}`;
+      `Game of ${fdate(c.game_date)} finished · next game ${next} — count opens Thursday morning · updated ${String(d.updated||'').slice(11,16)}`;
     document.getElementById('count').innerHTML = `⚽<small> see you next week</small>`;
   } else {
     document.getElementById('meta').textContent =
-      `Game: Tue ${c.game_date||'?'} · 9:00 PM · count ${c.gates_closed?'CLOSED':'OPEN'} (opened ${String(c.opened||'').slice(0,16).replace('T',' ')}) · updated ${String(d.updated||'').slice(11,16)}`;
+      `Game: ${fdate(c.game_date)} · 9:00 PM · count ${c.gates_closed?'CLOSED':'OPEN'} (opened ${String(c.opened||'').slice(0,16).replace('T',' ')}) · updated ${String(d.updated||'').slice(11,16)}`;
     document.getElementById('count').innerHTML = `${n}<small> / ${d.stats?.capacity??21} confirmed</small>`;
   }
   let i=1, html='';
@@ -382,8 +443,9 @@ async function load(){
     + `<span class="who">${esc(f.sender||'')}${f.dt?` · ${esc(String(f.dt).slice(5,16).replace('T',' '))}`:''}</span><br>${btns(i)}</div>`).join('')
     || '<div class="empty">nothing needs review</div>';
   document.getElementById('draft').textContent = d.drafts?.gates_closed || '';
-  document.getElementById('foot').textContent =
-    `Phase 1 shadow — read-only · dual-engine parser (rules + Claude), 0.96 precision/recall on 20-cycle backtest · ${d.stats?.messages_total??'?'} msgs parsed (${d.stats?.live_logged??0} live) · members list ${d.members_month||'?'}`;
+  FOOTFULL = `Phase 1 shadow — read-only · dual-engine parser (rules + Claude), 0.96 precision/recall on 20-cycle backtest · ${d.stats?.messages_total??'?'} msgs parsed (${d.stats?.live_logged??0} live) · members list ${d.members_month||'?'}`;
+  FOOTSHORT = `Updated ${String(d.updated||'').slice(11,16)} · refreshes every minute`;
+  updateFoot();
 }
 async function adminInit(){
   const k=getKey(false);
