@@ -105,7 +105,10 @@
       <select id="rstat"><option value="perm">Permanent</option><option value="temp">Temp</option></select>
       <button class="fb" onclick="renewAdd()">Add</button>
     </div>
-    <button class="copy" onclick="renewCopy()">📋 Copy list for WhatsApp</button>
+    <div class="empty" id="renmiss"></div>
+    <div class="msub">Message preview (Thyago's format)</div>
+    <pre id="renprev" style="white-space:pre-wrap">unlock with the admin key — includes payment info</pre>
+    <button class="copy" onclick="renewCopy()">📋 Copy post for WhatsApp</button>
     <div class="empty">Captured live from "Name committed" messages in the group. The copied post
     uses the official list format — once it's posted in WhatsApp it becomes the month's member list.</div>
   </div>
@@ -132,7 +135,10 @@ async function adminValidate(k){
   try{const r=await fetch(REVIEW_URL.replace('/decide','/ledger'),
       {method:'POST',body:new URLSearchParams({key:k})});
     const j=await r.json();
-    if(j.ok){document.getElementById('ledger').textContent=(j.ledger&&j.ledger.text)||'no report yet';return true}
+    if(j.ok){document.getElementById('ledger').textContent=(j.ledger&&j.ledger.text)||'no report yet';
+      RENPOST=j.renewal_post||null;
+      const pv=document.getElementById('renprev'); if(pv&&RENPOST) pv.textContent=RENPOST;
+      return true}
     return false;
   }catch(e){return null}}
 function adminOn(on){document.body.classList.toggle('admin',on);
@@ -186,7 +192,7 @@ function memberAdd(){
 }
 function memberSet(i){const m=MEMB[i]; if(m) memberOp({op:'set',name:m.name,temp:m.temp?'0':'1'});}
 function memberDel(i){const m=MEMB[i]; if(m&&confirm(`Remove ${m.name} from the members roster?`)) memberOp({op:'remove',name:m.name,temp:'0'});}
-let RENEW=null;
+let RENEW=null, RENPOST=null;
 function monthName(mm){const [y,m]=mm.split('-');
   return ['January','February','March','April','May','June','July','August',
           'September','October','November','December'][+m-1]+' '+y;}
@@ -196,6 +202,10 @@ function renderRenewal(d){
   c.style.display='';
   document.getElementById('rentitle').textContent=
     `🔄 Renewal for ${monthName(RENEW.month)} — ${RENEW.count} committed`;
+  const have=new Set((RENEW.committed||[]).map(m=>m.name.toLowerCase()));
+  const missing=(d.members_detail||[]).map(m=>m.name).filter(n=>!have.has(n.toLowerCase()));
+  document.getElementById('renmiss').textContent=
+    missing.length?`Not yet renewed (${missing.length}): ${missing.join(', ')}`:'Everyone from last month has renewed ✔';
   document.getElementById('renlist').innerHTML=(RENEW.committed||[]).map((m,i)=>
     `<div class="row"><span>${esc(m.name)}</span>`+
     `<span class="tag ${m.temp?'w':'m'}">${m.temp?'TEMP':'PERM'}</span>`+
@@ -213,9 +223,11 @@ function renewDel(i){const m=RENEW&&RENEW.committed[i];
     memberOp({op:'remove',name:m.name,temp:'0',month:RENEW.month});}
 function renewCopy(){
   if(!RENEW)return;
-  const txt=`List of members for next 4 weeks (${monthName(RENEW.month)})\n\n`+
-    (RENEW.committed||[]).map(m=>m.name+(m.temp?' Temp':'')).join('\n');
-  navigator.clipboard.writeText(txt).then(()=>alert('Copied — paste into the WhatsApp group.'));
+  const txt=RENPOST||(`List of members for next 4 weeks (${monthName(RENEW.month)}):\n\n`+
+    (RENEW.committed||[]).map(m=>m.name+(m.temp?' Temp':'')).join('\n'));
+  navigator.clipboard.writeText(txt).then(()=>alert(RENPOST
+    ?'Copied the full post (payment info included) — paste into the WhatsApp group.'
+    :'Copied the name list. Enter the admin key to get the full post with payment info.'));
 }
 const DECIDE_LABEL={member:'Member',adhoc:'Ad-hoc',ignore:'ignored',remove:'removed',
   confirm_in:'confirmed in',confirm_out:'removed'};
