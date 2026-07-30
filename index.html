@@ -98,6 +98,17 @@
     <button class="fb" onclick="memberAdd()">Add</button>
   </div>
   <div class="empty" id="mnote">Changes need the admin key (asked once) and apply to the parser too.</div>
+  <div id="renewCard" style="display:none">
+    <div class="msub" id="rentitle"></div><div id="renlist"></div>
+    <div class="maddrow">
+      <input id="rname" placeholder="Add to renewal list" maxlength="40">
+      <select id="rstat"><option value="perm">Permanent</option><option value="temp">Temp</option></select>
+      <button class="fb" onclick="renewAdd()">Add</button>
+    </div>
+    <button class="copy" onclick="renewCopy()">📋 Copy list for WhatsApp</button>
+    <div class="empty">Captured live from "Name committed" messages in the group. The copied post
+    uses the official list format — once it's posted in WhatsApp it becomes the month's member list.</div>
+  </div>
 </div>
 
 <div class="card"><h2>Roster (parsed live from WhatsApp)</h2><div id="roster"></div></div>
@@ -175,6 +186,37 @@ function memberAdd(){
 }
 function memberSet(i){const m=MEMB[i]; if(m) memberOp({op:'set',name:m.name,temp:m.temp?'0':'1'});}
 function memberDel(i){const m=MEMB[i]; if(m&&confirm(`Remove ${m.name} from the members roster?`)) memberOp({op:'remove',name:m.name,temp:'0'});}
+let RENEW=null;
+function monthName(mm){const [y,m]=mm.split('-');
+  return ['January','February','March','April','May','June','July','August',
+          'September','October','November','December'][+m-1]+' '+y;}
+function renderRenewal(d){
+  const c=document.getElementById('renewCard'); RENEW=d.renewal;
+  if(!RENEW||RENEW.consolidated||!RENEW.month){c.style.display='none';return}
+  c.style.display='';
+  document.getElementById('rentitle').textContent=
+    `🔄 Renewal for ${monthName(RENEW.month)} — ${RENEW.count} committed`;
+  document.getElementById('renlist').innerHTML=(RENEW.committed||[]).map((m,i)=>
+    `<div class="row"><span>${esc(m.name)}</span>`+
+    `<span class="tag ${m.temp?'w':'m'}">${m.temp?'TEMP':'PERM'}</span>`+
+    `<span class="by"><button class="fb" onclick="renewSet(${i})">→ ${m.temp?'Perm':'Temp'}</button> `+
+    `<button class="fb r" onclick="renewDel(${i})">✕</button></span></div>`).join('')
+    ||'<div class="empty">no commitments captured yet</div>';
+}
+function renewAdd(){const n=document.getElementById('rname').value.trim(); if(!n||!RENEW)return;
+  memberOp({op:'add',name:n,temp:document.getElementById('rstat').value==='temp'?'1':'0',month:RENEW.month});
+  document.getElementById('rname').value='';}
+function renewSet(i){const m=RENEW&&RENEW.committed[i];
+  if(m) memberOp({op:'set',name:m.name,temp:m.temp?'0':'1',month:RENEW.month});}
+function renewDel(i){const m=RENEW&&RENEW.committed[i];
+  if(m&&confirm(`Remove ${m.name} from the ${monthName(RENEW.month)} renewal list?`))
+    memberOp({op:'remove',name:m.name,temp:'0',month:RENEW.month});}
+function renewCopy(){
+  if(!RENEW)return;
+  const txt=`List of members for next 4 weeks (${monthName(RENEW.month)})\n\n`+
+    (RENEW.committed||[]).map(m=>m.name+(m.temp?' Temp':'')).join('\n');
+  navigator.clipboard.writeText(txt).then(()=>alert('Copied — paste into the WhatsApp group.'));
+}
 const DECIDE_LABEL={member:'Member',adhoc:'Ad-hoc',ignore:'ignored',remove:'removed',
   confirm_in:'confirmed in',confirm_out:'removed'};
 async function decide(i,kind,btn,target){
@@ -289,6 +331,7 @@ async function load(){
   document.getElementById('outs').innerHTML = (r.outs||[]).map(x=>`<div class="row"><span>${esc(x)}</span><span class="tag o">OUT</span></div>`).join('') || '<div class="empty">none</div>';
   FLAGS = c.flagged||[]; REVIEW_URL = d.review_url||null;
   renderMembers(d);
+  renderRenewal(d);
   // Each queue item = a plain-language QUESTION + evidence + answer buttons.
   const btns = !REVIEW_URL ? ()=>'' : (i)=>{
     const f = FLAGS[i];
