@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30T08:56:44",
+ "updated": "2026-07-30T09:37:26",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -198,9 +198,15 @@
     "temp": false,
     "dt": "2026-07-30T08:56:38",
     "self": true
+   },
+   {
+    "name": "Walter",
+    "temp": true,
+    "dt": "2026-07-30T09:37:20",
+    "self": true
    }
   ],
-  "count": 12,
+  "count": 13,
   "consolidated": false
  },
  "drafts": {
@@ -213,8 +219,8 @@
  },
  "review_url": "https://diego-pills-ser-buried.trycloudflare.com/decide",
  "stats": {
-  "messages_total": 59316,
-  "live_logged": 37,
+  "messages_total": 59317,
+  "live_logged": 38,
   "capacity": 21
  }
 }
