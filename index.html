@@ -63,6 +63,19 @@
   .tp.sel{background:rgba(10,132,255,.15);outline:2px solid var(--accent);outline-offset:-2px}
   .foot{color:var(--faint);font-size:11px;text-align:center;padding:8px 0 24px}
   .empty{color:var(--faint);font-size:13px;padding:6px 0}
+  .tabs{display:none;gap:4px;background:rgba(120,120,128,.14);border-radius:12px;padding:3px;
+    margin:0 0 12px;position:sticky;top:8px;z-index:30}
+  body.admin .tabs{display:flex}
+  .tabbtn{all:unset;box-sizing:border-box;flex:1;text-align:center;font-size:13px;font-weight:700;
+    padding:9px 2px;border-radius:9px;color:var(--t3,#8E8E93);position:relative;cursor:pointer;
+    font-family:inherit;-webkit-tap-highlight-color:transparent}
+  .tabbtn.on{background:#fff;color:var(--t1,#1C1C1E);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+  .tdot{position:absolute;top:2px;right:6px;min-width:16px;height:16px;border-radius:8px;
+    background:#C0392B;color:#fff;font-size:10px;font-weight:800;line-height:16px;padding:0 4px;text-align:center}
+  .tdot.money{background:#B9770E;min-width:auto;padding:0 6px}
+  .tview{display:none}
+  .tview.on{display:block}
+  body:not(.admin) .tview[data-view="game"]{display:block}
   #renewCard{background:#F0F7EF;border:1px solid #BFDDBE;border-radius:12px;padding:12px;margin-top:14px}
   #renprev{background:#fff;border:1px solid #E2E6EA;border-radius:8px;padding:10px;font-size:12px;line-height:1.5;max-height:260px;overflow:auto}
   .adminonly{display:none}
@@ -73,12 +86,22 @@
 </head>
 <body>
 <div class="hero">
-  <h1>⚽ Pelada Manager <span class="badge adminonly">SHADOW</span><span class="adminonly" style="margin-left:auto;gap:6px"><button class="mbtn" style="margin-left:0" onclick="toggleTeams()">🎽 Teams</button><button class="mbtn" style="margin-left:0" onclick="toggleMembers()">👥 Members</button></span></h1>
+  <h1>⚽ Pelada Manager <span class="badge adminonly">SHADOW</span></h1>
   <div class="sub" id="meta">loading…</div>
   <div class="big" id="count">–</div>
 </div>
 
-<div class="card adminonly" id="teamsCard" style="display:none">
+<!-- Admin tab bar (Claude Design "Pelada Tabs"): players never see it — their
+     whole world is the Game view. Badges: red count = review items, $ = money due. -->
+<div class="tabs adminonly" id="tabbar">
+  <button class="tabbtn on" data-tab="game" onclick="setTab('game')">Game<span class="tdot" id="gameDot" style="display:none"></span></button>
+  <button class="tabbtn" data-tab="teams" onclick="setTab('teams')">Teams</button>
+  <button class="tabbtn" data-tab="members" onclick="setTab('members')">Members</button>
+  <button class="tabbtn" data-tab="ledger" onclick="setTab('ledger')">Ledger<span class="tdot money" id="ledgerDot" style="display:none">$</span></button>
+</div>
+
+<div class="tview" data-view="teams">
+<div class="card adminonly" id="teamsCard">
   <h2>Team draw · 3 × 7</h2>
   <div class="tbar">
     <button class="copy" onclick="teamsLockDraw()">🎲 Lock 21 &amp; draw</button>
@@ -89,8 +112,10 @@
   Tap a player, then tap another player to swap — or tap a team name to move them there.</div>
   <div id="tcols"></div>
 </div>
+</div>
 
-<div class="card adminonly" id="membersCard" style="display:none">
+<div class="tview" data-view="members">
+<div class="card adminonly" id="membersCard">
   <h2>Members roster · <span id="mmonth"></span></h2>
   <div class="msub">Permanent</div><div id="mperm"></div>
   <div class="msub">Temporary (month-to-month)</div><div id="mtemp"></div>
@@ -115,18 +140,24 @@
     uses the official list format — once it's posted in WhatsApp it becomes the month's member list.</div>
   </div>
 </div>
+</div>
 
+<div class="tview on" data-view="game">
 <div class="card"><h2>Roster (parsed live from WhatsApp)</h2><div id="roster"></div></div>
 <div class="card"><h2>Waiting list</h2><div id="wl"></div></div>
 <div class="card"><h2>Out this week</h2><div id="outs"></div></div>
 <div class="card adminonly"><h2>⚠ Review queue — messages the parser didn't auto-accept</h2><div id="flags"></div></div>
 <div class="card adminonly"><h2>Draft · Gates-closed post (what would be sent)</h2><pre id="draft"></pre>
   <button class="copy" onclick="copyText('draft')">Copy</button></div>
+</div>
+
+<div class="tview" data-view="ledger">
 <div class="card adminonly"><h2>Ledger · Financials (admins only)</h2>
   <div id="charges"></div>
   <button class="copy" id="repcopy" onclick="copyReport()" style="display:none">📋 Copy weekly report</button>
   <div class="msub" style="margin-top:12px">Thyago's last posted report</div>
   <pre id="ledger" style="white-space:pre-wrap;font-size:12px"></pre></div>
+</div>
 <div style="display:none"></div>
 <div class="foot"><span id="foot">Phase 1 shadow mode — read-only. Nothing is ever posted to WhatsApp.</span><br><span class="alink" id="adminlink" onclick="adminToggle()">admin</span></div>
 
@@ -150,6 +181,7 @@ async function adminValidate(k){
   }catch(e){return null}}
 function adminOn(on){document.body.classList.toggle('admin',on);
   document.getElementById('adminlink').textContent=on?'exit admin':'admin';
+  if(!on&&typeof setTab==='function') setTab('game');
   if(typeof updateFoot==='function') updateFoot();}
 async function adminToggle(){
   if(document.body.classList.contains('admin')){adminOn(false);return}
@@ -159,12 +191,21 @@ async function adminToggle(){
   if(v===null){alert('Admin endpoint offline — try again in a minute.');return}
   adminOn(true);
 }
-function toggleMembers(){
-  const c=document.getElementById('membersCard');
-  const show=c.style.display==='none';
-  c.style.display=show?'':'none';
-  if(show) c.scrollIntoView({behavior:'smooth'});
+const TABS=['game','teams','members','ledger'];
+function setTab(t){
+  if(!TABS.includes(t)) t='game';
+  document.querySelectorAll('.tview').forEach(v=>v.classList.toggle('on',v.dataset.view===t));
+  document.querySelectorAll('.tabbtn').forEach(b=>b.classList.toggle('on',b.dataset.tab===t));
+  history.replaceState(null,'','#'+t);
+  if(t==='teams'&&typeof renderTeams==='function') renderTeams();
+  window.scrollTo({top:0});
 }
+function updateBadges(){
+  const g=document.getElementById('gameDot');
+  if(g){const n=(FLAGS||[]).length; g.style.display=n?'':'none'; g.textContent=n;}
+}
+function toggleMembers(){setTab('members')}   // legacy callers
+function toggleTeams(){setTab('teams')}
 function renderMembers(d){
   MEMB = d.members_detail || (d.members||[]).map(n=>({name:n,temp:false}));
   document.getElementById('mmonth').textContent =
@@ -233,6 +274,8 @@ let REPTEXT=null;
 function renderCharges(ch){
   const box=document.getElementById('charges'); if(!box) return;
   REPTEXT=ch&&ch.report_text||null;
+  const dot=document.getElementById('ledgerDot');
+  if(dot) dot.style.display=(ch&&ch.people&&ch.people.length)?'':'none';
   document.getElementById('repcopy').style.display=REPTEXT&&ch.people.length?'':'none';
   if(!ch||!ch.people||!ch.people.length){
     box.innerHTML='<div class="empty">no outstanding payments 🎉</div>';return}
@@ -300,12 +343,6 @@ function tload(){
     return st;
   }catch(e){return null}}
 function tsave(st){localStorage.setItem(TKEY,JSON.stringify(st))}
-function toggleTeams(){
-  const c=document.getElementById('teamsCard');
-  const show=c.style.display==='none';
-  c.style.display=show?'':'none';
-  if(show){renderTeams();c.scrollIntoView({behavior:'smooth'});}
-}
 function teamsLockDraw(){
   const d=window.__D||{}; const r=(d.cycle||{}).roster||{};
   const locked=(r.members||[]).concat(r.adhocs||[]);
@@ -403,6 +440,7 @@ async function load(){
   document.getElementById('wl').innerHTML = (r.waitlist||[]).map(x=>`<div class="row"><span>${esc(x)}</span><span class="tag w">WAIT</span></div>`).join('') || '<div class="empty">empty</div>';
   document.getElementById('outs').innerHTML = (r.outs||[]).map(x=>`<div class="row"><span>${esc(x)}</span><span class="tag o">OUT</span></div>`).join('') || '<div class="empty">none</div>';
   FLAGS = c.flagged||[]; REVIEW_URL = d.review_url||null;
+  updateBadges();
   renderMembers(d);
   renderRenewal(d);
   // Each queue item = a plain-language QUESTION + evidence + answer buttons.
@@ -450,7 +488,11 @@ async function load(){
 async function adminInit(){
   const k=getKey(false);
   if(!k) return;
-  if(await adminValidate(k)===true) adminOn(true);
+  if(await adminValidate(k)===true){
+    adminOn(true);
+    const h=(location.hash||'').slice(1);
+    if(TABS.includes(h)&&h!=='game') setTab(h);   // #ledger / #members deep links
+  }
 }
 load().then(adminInit); setInterval(()=>load().then(()=>{
   if(document.body.classList.contains('admin')) adminValidate(getKey(false));
