@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30T08:50:58",
+ "updated": "2026-07-30T08:52:44",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -123,6 +123,80 @@
    "temp": true
   }
  ],
+ "renewal": {
+  "month": "2026-08",
+  "opened": "2026-07-30T08:28:16",
+  "committed": [
+   {
+    "name": "Elber",
+    "temp": false,
+    "dt": "2026-07-30T08:28:51",
+    "self": true
+   },
+   {
+    "name": "Marcio",
+    "temp": false,
+    "dt": "2026-07-30T08:28:51",
+    "self": true
+   },
+   {
+    "name": "Claudio",
+    "temp": false,
+    "dt": "2026-07-30T08:30:46",
+    "self": true
+   },
+   {
+    "name": "Miguel Alejandro",
+    "temp": false,
+    "dt": "2026-07-30T08:30:56",
+    "self": true
+   },
+   {
+    "name": "Mauricio",
+    "temp": false,
+    "dt": "2026-07-30T08:31:16",
+    "self": true
+   },
+   {
+    "name": "Filippo",
+    "temp": true,
+    "dt": "2026-07-30T08:36:22",
+    "self": true
+   },
+   {
+    "name": "Eneas",
+    "temp": false,
+    "dt": "2026-07-30T08:36:32",
+    "self": true
+   },
+   {
+    "name": "Tony",
+    "temp": false,
+    "dt": "2026-07-30T08:40:22",
+    "self": true
+   },
+   {
+    "name": "Jorge",
+    "temp": true,
+    "dt": "2026-07-30T08:40:27",
+    "self": true
+   },
+   {
+    "name": "David",
+    "temp": false,
+    "dt": "2026-07-30T08:46:17",
+    "self": true
+   },
+   {
+    "name": "Alberto",
+    "temp": false,
+    "dt": "2026-07-30T08:50:53",
+    "self": true
+   }
+  ],
+  "count": 11,
+  "consolidated": false
+ },
  "drafts": {
   "gates_closed": "",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
