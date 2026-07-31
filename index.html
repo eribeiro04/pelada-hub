@@ -133,6 +133,7 @@
       <button class="fb" onclick="renewAdd()">Add</button>
     </div>
     <div class="empty" id="renmiss"></div>
+    <button class="fb" id="rembtn" style="display:none;margin-top:6px" onclick="renewRemind()">📣 Copy reminder for the pending</button>
     <div class="msub">Message preview (Thyago's format)</div>
     <pre id="renprev" style="white-space:pre-wrap">unlock with the admin key — includes payment info</pre>
     <button class="copy" onclick="renewCopy()">📋 Copy post for WhatsApp</button>
@@ -308,10 +309,15 @@ function renderRenewal(d){
   c.style.display='';
   document.getElementById('rentitle').textContent=
     `🔄 Renewal for ${monthName(RENEW.month)} — ${RENEW.count} committed`;
-  const have=new Set((RENEW.committed||[]).map(m=>m.name.toLowerCase()));
-  const missing=(d.members_detail||[]).map(m=>m.name).filter(n=>!have.has(n.toLowerCase()));
-  document.getElementById('renmiss').textContent=
-    missing.length?`Not yet renewed (${missing.length}): ${missing.join(', ')}`:'Everyone from last month has renewed ✔';
+  const pend=RENEW.pending||[], dec=RENEW.declined||[];
+  const miss=document.getElementById('renmiss');
+  miss.innerHTML = pend.length
+    ? `<b>Waiting on ${pend.length}:</b> ${esc(pend.join(', '))}`
+      + (dec.length?`<br><span style="opacity:.75">Not continuing: ${esc(dec.join(', '))}</span>`:'')
+    : 'Everyone from last month has answered ✔'
+      + (dec.length?`<br><span style="opacity:.75">Not continuing: ${esc(dec.join(', '))}</span>`:'');
+  const rb=document.getElementById('rembtn');
+  if(rb) rb.style.display = pend.length ? '' : 'none';
   document.getElementById('renlist').innerHTML=(RENEW.committed||[]).map((m,i)=>
     `<div class="row"><span>${esc(m.name)}</span>`+
     `<span class="tag ${m.temp?'w':'m'}">${m.temp?'TEMP':'PERM'}</span>`+
@@ -360,6 +366,13 @@ async function payOp(btn){
 }
 function copyReport(){
   if(REPTEXT) navigator.clipboard.writeText(REPTEXT).then(()=>alert('Copied — paste into the WhatsApp group.'));
+}
+function renewRemind(){
+  const t=RENEW&&RENEW.reminder;
+  if(!t){alert('Nobody is pending right now.');return}
+  navigator.clipboard.writeText(t).then(()=>alert(
+    'Reminder copied — paste into the WhatsApp group.\n\nTip: the @names are plain '
+    + 'text. To make them real mentions, retype the @ in WhatsApp and pick each name.'));
 }
 function renewCopy(){
   if(!RENEW)return;
