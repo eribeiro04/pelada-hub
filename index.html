@@ -446,7 +446,12 @@ async function load(d){
   document.getElementById('roster').innerHTML = html || '<div class="empty">no signups yet</div>';
   document.getElementById('wl').innerHTML = (r.waitlist||[]).map(x=>`<div class="row"><span>${esc(x)}</span><span class="tag w">WAIT</span></div>`).join('') || '<div class="empty">empty</div>';
   document.getElementById('outs').innerHTML = (r.outs||[]).map(x=>`<div class="row"><span>${esc(x)}</span><span class="tag o">OUT</span></div>`).join('') || '<div class="empty">none</div>';
-  FLAGS = c.flagged||[]; REVIEW_URL = d.review_url||null;
+  FLAGS = c.flagged||[];
+  // Served from pelada.org the worker IS the origin — talk to it directly
+  // (no tunnel URL, no CORS). On the GitHub Pages mirror, fall back to the
+  // published tunnel URL.
+  REVIEW_URL = location.hostname.endsWith('github.io')
+    ? (d.review_url||null) : (location.origin + '/decide');
   updateBadges();
   renderMembers(d);
   renderRenewal(d);
