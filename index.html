@@ -159,6 +159,12 @@
   <pre id="ledger" style="white-space:pre-wrap;font-size:12px"></pre></div>
 </div>
 <div style="display:none"></div>
+<div class="card" id="signinBox" style="display:none">
+  <h2>Admin sign-in</h2>
+  <div id="gsibtn"></div>
+  <div class="empty" id="signinNote" style="margin-top:8px">Sign in with the Google account you use — the first time, you'll enter your admin code once to link it.</div>
+  <button class="fb" style="margin-top:8px" onclick="adminCodeEntry()">Use my admin code instead</button>
+</div>
 <div class="foot"><span id="foot">Phase 1 shadow mode — read-only. Nothing is ever posted to WhatsApp.</span><br><span class="alink" id="adminlink" onclick="adminToggle()">admin</span></div>
 
 <script>
@@ -183,8 +189,57 @@ function adminOn(on){document.body.classList.toggle('admin',on);
   document.getElementById('adminlink').textContent=on?'exit admin':'admin';
   if(!on&&typeof setTab==='function') setTab('game');
   if(typeof updateFoot==='function') updateFoot();}
+// ---- Sign in with Google (server-verified; the code stays as fallback) ----
+let GCID=null;
+function gsiInit(id){
+  if(!id||GCID===id) return; GCID=id;
+  const s=document.createElement('script');
+  s.src='https://accounts.google.com/gsi/client'; s.async=true; s.defer=true;
+  s.onload=()=>{ try{
+    google.accounts.id.initialize({client_id:id, callback:gsiCallback});
+    const holder=document.getElementById('gsibtn');
+    if(holder) google.accounts.id.renderButton(holder,{theme:'outline',size:'large',text:'signin_with'});
+  }catch(e){} };
+  document.head.appendChild(s);
+}
+async function gsiCallback(resp){
+  const body={credential:resp.credential};
+  const have=localStorage.getItem('pelada-key');
+  if(have) body.key=have;                     // links this Google account once
+  try{
+    const r=await fetch((REVIEW_URL||'/decide').replace('/decide','/auth/google'),
+      {method:'POST',body:new URLSearchParams(body)});
+    const j=await r.json();
+    if(j.ok&&j.key){
+      localStorage.setItem('pelada-key',j.key);
+      adminOn(true); load(); adminValidate(j.key);
+      const n=document.getElementById('signinNote');
+      if(n) n.textContent=`Signed in as ${j.name}`;
+      return;
+    }
+    // not linked yet: ask for the code once, then retry the link
+    const k=prompt(j.error||'Enter your admin code to link this Google account:');
+    if(!k) return;
+    localStorage.setItem('pelada-key',k);
+    gsiCallback(resp);
+  }catch(e){ alert('Sign-in failed — try again, or use your admin code.'); }
+}
+async function adminCodeEntry(){
+  const k=getKey(true); if(!k) return;
+  const v=await adminValidate(k);
+  if(v===false){localStorage.removeItem('pelada-key');alert('Wrong code');return}
+  if(v===null){alert('Admin endpoint offline — try again in a minute.');return}
+  document.getElementById('signinBox').style.display='none';
+  adminOn(true);
+}
 async function adminToggle(){
-  if(document.body.classList.contains('admin')){adminOn(false);return}
+  if(document.body.classList.contains('admin')){
+    adminOn(false);
+    const d=document.getElementById('signinBox'); if(d) d.style.display='none';
+    return;
+  }
+  if(GCID){ const d=document.getElementById('signinBox'); if(d){ d.style.display='';
+    d.scrollIntoView({behavior:'smooth'}); return; } }
   const k=getKey(true); if(!k)return;
   const v=await adminValidate(k);
   if(v===false){localStorage.removeItem('pelada-key');alert('Wrong key');return}
@@ -452,6 +507,7 @@ async function load(d){
   // published tunnel URL.
   REVIEW_URL = location.hostname.endsWith('github.io')
     ? (d.review_url||null) : (location.origin + '/decide');
+  if(d.google_client_id) gsiInit(d.google_client_id);
   updateBadges();
   renderMembers(d);
   renderRenewal(d);
