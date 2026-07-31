@@ -231,7 +231,9 @@ async function memberOp(body){
       if((j.error||'').includes('key')) localStorage.removeItem('pelada-key');
       alert(j.error||'failed'); return;
     }
-    document.getElementById('mnote').textContent='✓ Saved — the page refreshes with it in ~1 min.';
+    document.getElementById('mnote').textContent='✓ Saved';
+    if(j.state) load(j.state);
+    adminValidate(k);                   // refresh the renewal post preview too
   }catch(e){alert('Network error — try again.');}
 }
 function memberAdd(){
@@ -295,7 +297,9 @@ async function payOp(btn){
     const r=await fetch(REVIEW_URL.replace('/decide','/pay'),
       {method:'POST',body:new URLSearchParams({ckey,op:'paid',key:k})});
     const j=await r.json();
-    if(j.ok){btn.textContent='✓ paid';}
+    // the charge list + renewal preview live in the /ledger payload, so a
+    // paid-mark needs that refetched too, not just the roster state
+    if(j.ok){btn.textContent='✓ paid'; if(j.state) load(j.state); adminValidate(k);}
     else{btn.disabled=false;alert(j.error||'failed');}
   }catch(e){btn.disabled=false;alert('Network error — try again.');}
 }
@@ -324,8 +328,9 @@ async function decide(i,kind,btn,target){
     const j=await r.json();
     if(!j.accepted){ alert('The server rejected this — the queue may have just changed. Refreshing…'); load(); throw new Error('rejected'); }
     const what = kind==='remove' ? `${target} removed` : DECIDE_LABEL[kind]||kind;
-    row.querySelector('.fbtns').outerHTML=` <span class="fdone">→ ${esc(what)} · updates in ~1 min</span>`;
+    row.querySelector('.fbtns').outerHTML=` <span class="fdone">→ ${esc(what)}</span>`;
     row.style.opacity=.6;
+    if(j.state) load(j.state);          // server truth, right now
   }catch(e){
     row.querySelectorAll('button').forEach(b=>b.disabled=false);
     alert('Could not submit the decision — refresh and try again.');
@@ -404,8 +409,10 @@ function updateFoot(){
   const el=document.getElementById('foot');
   if(el) el.textContent = document.body.classList.contains('admin') ? FOOTFULL : FOOTSHORT;
 }
-async function load(){
-  const d = await (await fetch('data.json?ts='+Date.now())).json();
+async function load(d){
+  // d supplied = state handed back by an admin action or the live poll, which
+  // skips the GitHub Pages build + CDN entirely (Elber 2026-07-31)
+  if(!d) d = await (await fetch('data.json?ts='+Date.now())).json();
   window.__D = d;   // team-draw locks from the latest loaded roster
   const c = d.cycle||{};
   const r = c.roster||{members:[],adhocs:[],waitlist:[],outs:[]};
@@ -494,9 +501,27 @@ async function adminInit(){
     if(TABS.includes(h)&&h!=='game') setTab(h);   // #ledger / #members deep links
   }
 }
-load().then(adminInit); setInterval(()=>load().then(()=>{
+// Players read the published file once a minute (cheap, cached).
+// Admins ALSO poll the worker directly every 5s — that path skips the GitHub
+// Pages build + CDN, so another admin's edit or a new WhatsApp message shows up
+// almost at once. Falls back silently to the published file if the tunnel is
+// down or rotating.
+let LIVE_FAILS=0;
+async function livePoll(){
+  if(!document.body.classList.contains('admin')) return;
+  const k=getKey(false); if(!k||!REVIEW_URL) return;
+  try{
+    const r=await fetch(REVIEW_URL.replace('/decide','/state'),
+      {method:'POST',body:new URLSearchParams({key:k})});
+    const j=await r.json();
+    if(j.ok&&j.state){ LIVE_FAILS=0; load(j.state); }
+  }catch(e){ LIVE_FAILS++; }            // published-file poll below still runs
+}
+load().then(adminInit);
+setInterval(()=>load().then(()=>{
   if(document.body.classList.contains('admin')) adminValidate(getKey(false));
 }), 60000);
+setInterval(livePoll, 5000);
 </script>
 </body>
 </html>
