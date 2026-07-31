@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31T11:12:56",
+ "updated": "2026-07-31T11:17:54",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -240,15 +240,9 @@
     "temp": false,
     "dt": "2026-07-31T05:56:21",
     "self": true
-   },
-   {
-    "name": "Pedro",
-    "temp": false,
-    "dt": "2026-07-31T11:11:04",
-    "self": false
    }
   ],
-  "count": 20,
+  "count": 19,
   "consolidated": false
  },
  "drafts": {
