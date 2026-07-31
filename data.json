@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31T14:22:29",
+ "updated": "2026-07-31T14:27:12",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -237,7 +237,7 @@
    },
    {
     "name": "Igor",
-    "temp": false,
+    "temp": true,
     "dt": "2026-07-31T05:56:21",
     "self": true
    }
