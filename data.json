@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31T17:56:49",
+ "updated": "2026-07-31T17:57:30",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -128,6 +128,12 @@
   "opened": "2026-07-30T08:28:16",
   "committed": [
    {
+    "name": "Thyago",
+    "temp": false,
+    "dt": "2026-07-30T08:28:16",
+    "self": true
+   },
+   {
     "name": "Elber",
     "temp": false,
     "dt": "2026-07-30T08:28:51",
@@ -248,14 +254,13 @@
     "self": true
    }
   ],
-  "count": 20,
+  "count": 21,
   "pending": [
    "Elio",
-   "Diego",
-   "Thyago"
+   "Diego"
   ],
   "declined": [],
-  "reminder": "Hi All,\n\nWe're closing the member list for August 2026. Still pending confirmation:\n\n@Elio\n@Diego\n@Thyago\n\nPlease confirm if you'll continue as a member — just reply with your name + \"committed\". If you're NOT continuing, let me know as well so we can open the spot to the ad-hocs.",
+  "reminder": "Hi All,\n\nWe're closing the member list for August 2026. Still pending confirmation:\n\n@Elio\n@Diego\n\nPlease confirm if you'll continue as a member — just reply with your name + \"committed\". If you're NOT continuing, let me know as well so we can open the spot to the ad-hocs.",
   "consolidated": false
  },
  "drafts": {
