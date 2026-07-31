@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31T11:27:33",
+ "updated": "2026-07-31T11:28:22",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -40,7 +40,8 @@
   "Thyago",
   "Willie",
   "Jorge",
-  "Zztest"
+  "Zztest",
+  "Zzlive"
  ],
  "members_detail": [
   {
@@ -125,6 +126,10 @@
   },
   {
    "name": "Zztest",
+   "temp": false
+  },
+  {
+   "name": "Zzlive",
    "temp": false
   }
  ],
