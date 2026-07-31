@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31T13:14:53",
+ "updated": "2026-07-31T13:17:15",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -253,7 +253,7 @@
   "as_of": "2026-07-20T22:24:15",
   "text": "(ledger omitted from the public page)"
  },
- "review_url": null,
+ "review_url": "https://pelada.org/decide",
  "stats": {
   "messages_total": 59329,
   "live_logged": 50,
