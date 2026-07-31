@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31T14:27:12",
+ "updated": "2026-07-31T17:20:13",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -240,9 +240,15 @@
     "temp": true,
     "dt": "2026-07-31T05:56:21",
     "self": true
+   },
+   {
+    "name": "Rogerio A.",
+    "temp": false,
+    "dt": "2026-07-31T17:20:07",
+    "self": true
    }
   ],
-  "count": 19,
+  "count": 20,
   "consolidated": false
  },
  "drafts": {
@@ -256,8 +262,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59329,
-  "live_logged": 50,
+  "messages_total": 59330,
+  "live_logged": 51,
   "capacity": 21
  }
 }
