@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-01T09:26:03",
+ "updated": "2026-08-01T09:26:39",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -30,6 +30,14 @@
     "dt": "2026-08-01T09:25:55",
     "self": true,
     "cond": false
+   },
+   {
+    "name": "Javier",
+    "kind": "member",
+    "by": "Javier",
+    "dt": "2026-08-01T09:26:30",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [],
@@ -38,7 +46,8 @@
    "members": [
     "Mauricio",
     "Filippo",
-    "Erivan"
+    "Erivan",
+    "Javier"
    ],
    "adhocs": [],
    "waitlist": [],
@@ -165,7 +174,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 3 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Mauricio\n2 Filippo\n3 Erivan\n*Ad-hocs*\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 4 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Mauricio\n2 Filippo\n3 Erivan\n4 Javier\n*Ad-hocs*\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -175,8 +184,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59336,
-  "live_logged": 57,
+  "messages_total": 59337,
+  "live_logged": 58,
   "capacity": 21
  }
 }
