@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-01T09:19:06",
+ "updated": "2026-08-01T09:25:06",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -18,9 +18,9 @@
    "unverified": []
   }
  },
- "members_month": "2026-07",
+ "members_month": "2026-08",
  "members": [
-  "Walter",
+  "Mauricio",
   "Filippo",
   "Alberto",
   "Elber",
@@ -32,19 +32,20 @@
   "Akbar",
   "Eneas",
   "Jader",
-  "Diego",
+  "Javier",
   "Erivan",
   "Miguel Alejandro",
   "Everson",
   "Rogerio A.",
   "Thyago",
   "Willie",
-  "Jorge"
+  "Jorge",
+  "Walter"
  ],
  "members_detail": [
   {
-   "name": "Walter",
-   "temp": true
+   "name": "Mauricio",
+   "temp": false
   },
   {
    "name": "Filippo",
@@ -91,7 +92,7 @@
    "temp": false
   },
   {
-   "name": "Diego",
+   "name": "Javier",
    "temp": true
   },
   {
@@ -121,152 +122,18 @@
   {
    "name": "Jorge",
    "temp": true
+  },
+  {
+   "name": "Walter",
+   "temp": true
   }
  ],
  "renewal": {
   "month": "2026-08",
   "opened": "2026-07-30T08:28:16",
-  "committed": [
-   {
-    "name": "Thyago",
-    "temp": false,
-    "dt": "2026-07-30T08:28:16",
-    "self": true
-   },
-   {
-    "name": "Elber",
-    "temp": false,
-    "dt": "2026-07-30T08:28:51",
-    "self": true
-   },
-   {
-    "name": "Marcio",
-    "temp": false,
-    "dt": "2026-07-30T08:28:51",
-    "self": true
-   },
-   {
-    "name": "Claudio",
-    "temp": false,
-    "dt": "2026-07-30T08:30:46",
-    "self": true
-   },
-   {
-    "name": "Miguel Alejandro",
-    "temp": false,
-    "dt": "2026-07-30T08:30:56",
-    "self": true
-   },
-   {
-    "name": "Mauricio",
-    "temp": false,
-    "dt": "2026-07-30T08:31:16",
-    "self": true
-   },
-   {
-    "name": "Filippo",
-    "temp": true,
-    "dt": "2026-07-30T08:36:22",
-    "self": true
-   },
-   {
-    "name": "Eneas",
-    "temp": false,
-    "dt": "2026-07-30T08:36:32",
-    "self": true
-   },
-   {
-    "name": "Tony",
-    "temp": false,
-    "dt": "2026-07-30T08:40:22",
-    "self": true
-   },
-   {
-    "name": "Jorge",
-    "temp": true,
-    "dt": "2026-07-30T08:40:27",
-    "self": true
-   },
-   {
-    "name": "David",
-    "temp": false,
-    "dt": "2026-07-30T08:46:17",
-    "self": true
-   },
-   {
-    "name": "Alberto",
-    "temp": false,
-    "dt": "2026-07-30T08:50:53",
-    "self": true
-   },
-   {
-    "name": "Willie",
-    "temp": false,
-    "dt": "2026-07-30T08:56:38",
-    "self": true
-   },
-   {
-    "name": "Walter",
-    "temp": true,
-    "dt": "2026-07-30T09:37:20",
-    "self": true
-   },
-   {
-    "name": "Erivan",
-    "temp": false,
-    "dt": "2026-07-30T09:39:40",
-    "self": true
-   },
-   {
-    "name": "Javier",
-    "temp": false,
-    "dt": "2026-07-30T10:05:48",
-    "self": true
-   },
-   {
-    "name": "Akbar",
-    "temp": false,
-    "dt": "2026-07-30T13:41:17",
-    "self": true
-   },
-   {
-    "name": "Everson",
-    "temp": false,
-    "dt": "2026-07-31T01:32:29",
-    "self": true
-   },
-   {
-    "name": "Jader",
-    "temp": false,
-    "dt": "2026-07-31T01:35:19",
-    "self": true
-   },
-   {
-    "name": "Igor",
-    "temp": true,
-    "dt": "2026-07-31T05:56:21",
-    "self": true
-   },
-   {
-    "name": "Rogerio A.",
-    "temp": false,
-    "dt": "2026-07-31T17:20:07",
-    "self": true
-   },
-   {
-    "name": "Elio",
-    "temp": false,
-    "dt": "2026-08-01T09:18:59",
-    "self": true
-   }
-  ],
-  "count": 22,
-  "pending": [
-   "Diego"
-  ],
-  "declined": [],
-  "reminder": "Hi All,\n\nWe're closing the member list for August 2026. Still pending confirmation:\n\n@Diego\n\nPlease confirm if you'll continue as a member — just reply with your name + \"committed\". If you're NOT continuing, let me know as well so we can open the spot to the ad-hocs.",
-  "consolidated": false
+  "committed": [],
+  "count": 0,
+  "consolidated": true
  },
  "drafts": {
   "gates_closed": "",
@@ -279,8 +146,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59331,
-  "live_logged": 52,
+  "messages_total": 59332,
+  "live_logged": 53,
   "capacity": 21
  }
 }
