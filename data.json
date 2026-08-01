@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-01T09:32:54",
+ "updated": "2026-08-01T09:35:16",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -77,8 +77,7 @@
     "by": "Alberto",
     "dt": "2026-08-01T09:32:30",
     "self": false,
-    "cond": false,
-    "unverified": "rules-only"
+    "cond": false
    },
    {
     "name": "Nikkita (Alberto's guest)",
@@ -86,8 +85,7 @@
     "by": "Alberto",
     "dt": "2026-08-01T09:32:30",
     "self": false,
-    "cond": false,
-    "unverified": "rules-only"
+    "cond": false
    },
    {
     "name": "Alberto",
@@ -103,34 +101,11 @@
     "by": "Robson",
     "dt": "2026-08-01T09:32:45",
     "self": true,
-    "cond": false,
-    "unverified": "rules-only"
+    "cond": false
    }
   ],
   "outs": [],
-  "flagged": [
-   {
-    "dt": "2026-08-01T09:32:30",
-    "sender": "Alberto",
-    "text": "Pedro",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-01T09:32:30",
-    "sender": "Alberto",
-    "text": "Nikkita (Alberto's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-01T09:32:45",
-    "sender": "Robson",
-    "text": "Robson",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   }
-  ],
+  "flagged": [],
   "roster": {
    "members": [
     "Mauricio",
@@ -150,11 +125,7 @@
    ],
    "waitlist": [],
    "outs": [],
-   "unverified": [
-    "Nikkita (Alberto's guest)",
-    "Pedro",
-    "Robson"
-   ],
+   "unverified": [],
    "pending": []
   }
  },
