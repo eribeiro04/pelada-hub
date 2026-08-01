@@ -73,6 +73,10 @@
   .tdot{position:absolute;top:2px;right:6px;min-width:16px;height:16px;border-radius:8px;
     background:#C0392B;color:#fff;font-size:10px;font-weight:800;line-height:16px;padding:0 4px;text-align:center}
   .tdot.money{background:#B9770E;min-width:auto;padding:0 6px}
+  body.viewer #ledgerTabBtn,body.viewer .tview[data-view="ledger"],
+  body.viewer #renprev,body.viewer .copy,body.viewer .maddrow,
+  body.viewer #rembtn,body.viewer .fb.r,body.viewer .lt-sw{display:none !important}
+  body.viewer .fb{opacity:.45;pointer-events:none}
   .tview{display:none}
   .tview.on{display:block}
   body:not(.admin) .tview[data-view="game"]{display:block}
@@ -97,7 +101,7 @@
   <button class="tabbtn on" data-tab="game" onclick="setTab('game')">Game<span class="tdot" id="gameDot" style="display:none"></span></button>
   <button class="tabbtn" data-tab="teams" onclick="setTab('teams')">Teams</button>
   <button class="tabbtn" data-tab="members" onclick="setTab('members')">Members</button>
-  <button class="tabbtn" data-tab="ledger" onclick="setTab('ledger')">Ledger<span class="tdot money" id="ledgerDot" style="display:none">$</span></button>
+  <button class="tabbtn" id="ledgerTabBtn" data-tab="ledger" onclick="setTab('ledger')">Ledger<span class="tdot money" id="ledgerDot" style="display:none">$</span></button>
 </div>
 
 <div class="tview" data-view="teams">
@@ -179,7 +183,10 @@ async function adminValidate(k){
   try{const r=await fetch(REVIEW_URL.replace('/decide','/ledger'),
       {method:'POST',body:new URLSearchParams({key:k})});
     const j=await r.json();
-    if(j.ok){document.getElementById('ledger').textContent=(j.ledger&&j.ledger.text)||'no report yet';
+    if(j.ok){
+      ROLE=j.role||'admin';
+      document.body.classList.toggle('viewer', ROLE==='viewer');
+      document.getElementById('ledger').textContent=(j.ledger&&j.ledger.text)||'no report yet';
       RENPOST=j.renewal_post||null;
       const pv=document.getElementById('renprev'); if(pv&&RENPOST) pv.textContent=RENPOST;
       renderCharges(j.charges||null);
@@ -299,7 +306,7 @@ function memberAdd(){
 }
 function memberSet(i){const m=MEMB[i]; if(m) memberOp({op:'set',name:m.name,temp:m.temp?'0':'1'});}
 function memberDel(i){const m=MEMB[i]; if(m&&confirm(`Remove ${m.name} from the members roster?`)) memberOp({op:'remove',name:m.name,temp:'0'});}
-let RENEW=null, RENPOST=null;
+let RENEW=null, RENPOST=null, ROLE='admin';
 function monthName(mm){const [y,m]=mm.split('-');
   return ['January','February','March','April','May','June','July','August',
           'September','October','November','December'][+m-1]+' '+y;}
