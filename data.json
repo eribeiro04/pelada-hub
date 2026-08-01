@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-01T10:12:44",
+ "updated": "2026-08-01T10:28:57",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -141,8 +141,7 @@
     "by": "Henry",
     "dt": "2026-08-01T09:46:36",
     "self": true,
-    "cond": false,
-    "unverified": "rules-only"
+    "cond": false
    },
    {
     "name": "Willie",
@@ -178,15 +177,7 @@
    }
   ],
   "outs": [],
-  "flagged": [
-   {
-    "dt": "2026-08-01T09:46:36",
-    "sender": "Henry",
-    "text": "Henry",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   }
-  ],
+  "flagged": [],
   "roster": {
    "members": [
     "Mauricio",
@@ -215,9 +206,7 @@
    ],
    "waitlist": [],
    "outs": [],
-   "unverified": [
-    "Henry"
-   ],
+   "unverified": [],
    "pending": []
   }
  },
