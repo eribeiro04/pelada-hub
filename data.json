@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-01T12:18:33",
+ "updated": "2026-08-01T12:49:25",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -192,7 +192,12 @@
     "cond": false
    }
   ],
-  "outs": [],
+  "outs": [
+   {
+    "name": "Walter",
+    "dt": "2026-08-01T12:49:13"
+   }
+  ],
   "flagged": [],
   "roster": {
    "members": [
@@ -224,7 +229,9 @@
     "Henry",
     "Pietro (Marcio's guest)"
    ],
-   "outs": [],
+   "outs": [
+    "Walter"
+   ],
    "unverified": [],
    "pending": []
   }
@@ -357,8 +364,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59354,
-  "live_logged": 75,
+  "messages_total": 59355,
+  "live_logged": 76,
   "capacity": 21
  }
 }
