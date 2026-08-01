@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-01T09:26:59",
+ "updated": "2026-08-01T09:27:29",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -54,6 +54,22 @@
     "dt": "2026-08-01T09:26:55",
     "self": true,
     "cond": false
+   },
+   {
+    "name": "Ownen Add Hoc (Elber's guest)",
+    "kind": "adhoc",
+    "by": "Elber",
+    "dt": "2026-08-01T09:27:20",
+    "self": false,
+    "cond": false
+   },
+   {
+    "name": "Nirvan Add Hoc (Elber's guest)",
+    "kind": "adhoc",
+    "by": "Elber",
+    "dt": "2026-08-01T09:27:25",
+    "self": false,
+    "cond": false
    }
   ],
   "outs": [],
@@ -67,7 +83,9 @@
     "Elber"
    ],
    "adhocs": [
-    "Felipe Add Hoc (Elber's guest)"
+    "Felipe Add Hoc (Elber's guest)",
+    "Ownen Add Hoc (Elber's guest)",
+    "Nirvan Add Hoc (Elber's guest)"
    ],
    "waitlist": [],
    "outs": [],
@@ -193,7 +211,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 6 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Mauricio\n2 Filippo\n3 Erivan\n4 Javier\n5 Elber\n*Ad-hocs*\n6 Felipe Add Hoc (Elber's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 8 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Mauricio\n2 Filippo\n3 Erivan\n4 Javier\n5 Elber\n*Ad-hocs*\n6 Felipe Add Hoc (Elber's guest)\n7 Ownen Add Hoc (Elber's guest)\n8 Nirvan Add Hoc (Elber's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -203,8 +221,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59339,
-  "live_logged": 60,
+  "messages_total": 59341,
+  "live_logged": 62,
   "capacity": 21
  }
 }
