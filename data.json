@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-02T06:53:54",
+ "updated": "2026-08-02T11:07:38",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -205,8 +205,7 @@
     "by": "Mario",
     "dt": "2026-08-02T00:52:36",
     "self": true,
-    "cond": false,
-    "unverified": "rules-only"
+    "cond": false
    },
    {
     "name": "Mario",
@@ -214,32 +213,20 @@
     "by": "14692360844-1403746604",
     "dt": "2026-08-02T00:52:36",
     "self": false,
-    "cond": false,
-    "unverified": "rules-only"
+    "cond": false
    }
   ],
   "outs": [
    {
     "name": "Walter",
     "dt": "2026-08-01T12:49:13"
-   }
-  ],
-  "flagged": [
-   {
-    "dt": "2026-08-02T00:52:36",
-    "sender": "Mario",
-    "text": "Mario",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "2026-08-02T00:52:36",
-    "sender": "14692360844-1403746604",
-    "text": "Mario",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
+    "name": "Everson",
+    "dt": "2026-08-02T11:07:27"
    }
   ],
+  "flagged": [],
   "roster": {
    "members": [
     "Mauricio",
@@ -274,11 +261,10 @@
     "Mario"
    ],
    "outs": [
-    "Walter"
+    "Walter",
+    "Everson"
    ],
-   "unverified": [
-    "Mario"
-   ],
+   "unverified": [],
    "pending": []
   }
  },
@@ -410,8 +396,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59358,
-  "live_logged": 80,
+  "messages_total": 59359,
+  "live_logged": 81,
   "capacity": 21
  }
 }
