@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-03T14:23:07",
+ "updated": "2026-08-03T15:53:28",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -187,6 +187,7 @@
     "dt": "2026-08-01T10:12:34",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -259,6 +260,13 @@
     "dt": "2026-08-01T09:42:56",
     "sender": "Elio",
     "text": "Antony Ad Hocs (Elio's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-01T10:12:34",
+    "sender": "Marcio",
+    "text": "Pietro (Marcio's guest)",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    },
@@ -338,7 +346,8 @@
     "Antony Ad Hocs (Elio's guest)",
     "Felipe Add Hoc (Elber's guest)",
     "Nirvan Add Hoc (Elber's guest)",
-    "Ownen Add Hoc (Elber's guest)"
+    "Ownen Add Hoc (Elber's guest)",
+    "Pietro (Marcio's guest)"
    ],
    "pending": []
   }
@@ -360,7 +369,6 @@
   "Javier",
   "Erivan",
   "Miguel Alejandro",
-  "Everson",
   "Rogerio A.",
   "Thyago",
   "Willie",
@@ -426,10 +434,6 @@
   },
   {
    "name": "Miguel Alejandro",
-   "temp": false
-  },
-  {
-   "name": "Everson",
    "temp": false
   },
   {
