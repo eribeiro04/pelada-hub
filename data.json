@@ -1,11 +1,11 @@
 {
- "updated": "2026-08-03T11:52:37",
+ "updated": "2026-08-03T12:35:42",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
   "open_text": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*",
   "game_date": "2026-08-04",
-  "gates_closed": false,
+  "gates_closed": true,
   "ins": [
    {
     "name": "Mauricio",
@@ -45,7 +45,8 @@
     "by": "Elber",
     "dt": "2026-08-01T09:26:50",
     "self": false,
-    "cond": false
+    "cond": false,
+    "unverified": "rules-only"
    },
    {
     "name": "Elber",
@@ -61,7 +62,8 @@
     "by": "Elber",
     "dt": "2026-08-01T09:27:20",
     "self": false,
-    "cond": false
+    "cond": false,
+    "unverified": "rules-only"
    },
    {
     "name": "Nirvan Add Hoc (Elber's guest)",
@@ -69,7 +71,8 @@
     "by": "Elber",
     "dt": "2026-08-01T09:27:25",
     "self": false,
-    "cond": false
+    "cond": false,
+    "unverified": "rules-only"
    },
    {
     "name": "Pedro",
@@ -125,7 +128,8 @@
     "by": "Elio",
     "dt": "2026-08-01T09:42:56",
     "self": false,
-    "cond": false
+    "cond": false,
+    "unverified": "rules-only"
    },
    {
     "name": "Sebas Ad Hocs (Elio's guest)",
@@ -218,7 +222,71 @@
     "dt": "2026-08-02T11:07:27"
    }
   ],
-  "flagged": [],
+  "flagged": [
+   {
+    "dt": "2026-08-01T09:26:50",
+    "sender": "Elber",
+    "text": "Felipe Add Hoc (Elber's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-01T09:27:20",
+    "sender": "Elber",
+    "text": "Ownen Add Hoc (Elber's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-01T09:27:25",
+    "sender": "Elber",
+    "text": "Nirvan Add Hoc (Elber's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-01T09:42:56",
+    "sender": "Elio",
+    "text": "Antony Ad Hocs (Elio's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Claudio",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Tony",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Rogerio A.",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Thyago",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Jorge",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   }
+  ],
   "roster": {
    "members": [
     "Mauricio",
@@ -255,7 +323,12 @@
     "Walter",
     "Everson"
    ],
-   "unverified": [],
+   "unverified": [
+    "Antony Ad Hocs (Elio's guest)",
+    "Felipe Add Hoc (Elber's guest)",
+    "Nirvan Add Hoc (Elber's guest)",
+    "Ownen Add Hoc (Elber's guest)"
+   ],
    "pending": []
   }
  },
@@ -387,8 +460,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59358,
-  "live_logged": 81,
+  "messages_total": 59359,
+  "live_logged": 82,
   "capacity": 21
  }
 }
