@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04T18:33:35",
+ "updated": "2026-08-04T18:51:53",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -54,8 +54,7 @@
     "kind": "member",
     "by": "Elber",
     "dt": "2026-08-01T09:26:55",
-    "self": true,
-    "cond": false
+    "self": true
    },
    {
     "name": "Ownen Add Hoc (Elber's guest)",
@@ -452,8 +451,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59367,
-  "live_logged": 92,
+  "messages_total": 59368,
+  "live_logged": 93,
   "capacity": 21
  }
 }
