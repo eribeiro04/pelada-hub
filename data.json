@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-03T15:53:42",
+ "updated": "2026-08-03T20:54:56",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -46,7 +46,6 @@
     "dt": "2026-08-01T09:26:50",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -64,7 +63,6 @@
     "dt": "2026-08-01T09:27:20",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -74,7 +72,6 @@
     "dt": "2026-08-01T09:27:25",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -236,27 +233,6 @@
   ],
   "flagged": [
    {
-    "dt": "2026-08-01T09:26:50",
-    "sender": "Elber",
-    "text": "Felipe Add Hoc (Elber's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-01T09:27:20",
-    "sender": "Elber",
-    "text": "Ownen Add Hoc (Elber's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-01T09:27:25",
-    "sender": "Elber",
-    "text": "Nirvan Add Hoc (Elber's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
     "dt": "2026-08-01T09:42:56",
     "sender": "Elio",
     "text": "Antony Ad Hocs (Elio's guest)",
@@ -351,9 +327,6 @@
    ],
    "unverified": [
     "Antony Ad Hocs (Elio's guest)",
-    "Felipe Add Hoc (Elber's guest)",
-    "Nirvan Add Hoc (Elber's guest)",
-    "Ownen Add Hoc (Elber's guest)",
     "Pietro (Marcio's guest)"
    ],
    "pending": []
