@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04T19:14:39",
+ "updated": "2026-08-04T19:15:42",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -221,6 +221,16 @@
     "grp": false
    },
    {
+    "name": "[media: Stickermessage] (Thyago's guest)",
+    "kind": "adhoc",
+    "by": "Thyago",
+    "dt": "2026-08-04T19:14:57",
+    "self": false,
+    "cond": false,
+    "unverified": "rules-only",
+    "grp": false
+   },
+   {
     "name": "Igor",
     "kind": "member",
     "by": "review",
@@ -295,6 +305,13 @@
     "text": "[media: Stickermessage] (Eneas's guest)",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-04T19:14:57",
+    "sender": "Thyago",
+    "text": "[media: Stickermessage] (Thyago's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
    }
   ],
   "roster": {
@@ -333,7 +350,8 @@
     "Sebas Ad Hocs (Elio's guest)",
     "Pietro (Marcio's guest)",
     "[media: Stickermessage] (Eneas's guest)",
-    "Owen (Elber's guest)"
+    "Owen (Elber's guest)",
+    "[media: Stickermessage] (Thyago's guest)"
    ],
    "outs": [
     "Walter",
@@ -343,7 +361,8 @@
    ],
    "unverified": [
     "Javier",
-    "[media: Stickermessage] (Eneas's guest)"
+    "[media: Stickermessage] (Eneas's guest)",
+    "[media: Stickermessage] (Thyago's guest)"
    ],
    "pending": []
   }
@@ -466,7 +485,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Mauricio\n2 Filippo\n3 Erivan\n4 Javier\n5 Elber\n6 David\n7 Elio\n8 Willie\n9 Eneas\n10 Marcio\n11 Miguel Alejandro\n12 Akbar\n13 Igor\n14 Rogerio A.\n15 Tony\n16 Thyago\n17 Jorge\n18 Claudio\n*Ad-hocs*\n19 Robson\n20 Henry\n21 Mario\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nFelipe Add Hoc (Elber's guest)\nOwnen Add Hoc (Elber's guest)\nNirvan Add Hoc (Elber's guest)\nPedro\nNikkita (Alberto's guest)\nAntony Ad Hocs (Elio's guest)\nSebas Ad Hocs (Elio's guest)\nPietro (Marcio's guest)\n[media: Stickermessage] (Eneas's guest)\nOwen (Elber's guest)",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Mauricio\n2 Filippo\n3 Erivan\n4 Javier\n5 Elber\n6 David\n7 Elio\n8 Willie\n9 Eneas\n10 Marcio\n11 Miguel Alejandro\n12 Akbar\n13 Igor\n14 Rogerio A.\n15 Tony\n16 Thyago\n17 Jorge\n18 Claudio\n*Ad-hocs*\n19 Robson\n20 Henry\n21 Mario\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nFelipe Add Hoc (Elber's guest)\nOwnen Add Hoc (Elber's guest)\nNirvan Add Hoc (Elber's guest)\nPedro\nNikkita (Alberto's guest)\nAntony Ad Hocs (Elio's guest)\nSebas Ad Hocs (Elio's guest)\nPietro (Marcio's guest)\n[media: Stickermessage] (Eneas's guest)\nOwen (Elber's guest)\n[media: Stickermessage] (Thyago's guest)",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -476,8 +495,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59373,
-  "live_logged": 100,
+  "messages_total": 59374,
+  "live_logged": 101,
   "capacity": 21
  }
 }
