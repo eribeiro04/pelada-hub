@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-04T19:13:23",
+ "updated": "2026-08-04T19:14:00",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-01T09:25:10",
@@ -212,6 +212,15 @@
     "grp": false
    },
    {
+    "name": "Owen (Elber's guest)",
+    "kind": "adhoc",
+    "by": "Elber",
+    "dt": "2026-08-04T19:13:47",
+    "self": false,
+    "cond": false,
+    "grp": false
+   },
+   {
     "name": "Igor",
     "kind": "member",
     "by": "review",
@@ -323,7 +332,8 @@
     "Antony Ad Hocs (Elio's guest)",
     "Sebas Ad Hocs (Elio's guest)",
     "Pietro (Marcio's guest)",
-    "[media: Stickermessage] (Eneas's guest)"
+    "[media: Stickermessage] (Eneas's guest)",
+    "Owen (Elber's guest)"
    ],
    "outs": [
     "Walter",
@@ -456,7 +466,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Mauricio\n2 Filippo\n3 Erivan\n4 Javier\n5 Elber\n6 David\n7 Elio\n8 Willie\n9 Eneas\n10 Marcio\n11 Miguel Alejandro\n12 Akbar\n13 Igor\n14 Rogerio A.\n15 Tony\n16 Thyago\n17 Jorge\n18 Claudio\n*Ad-hocs*\n19 Robson\n20 Henry\n21 Mario\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nFelipe Add Hoc (Elber's guest)\nOwnen Add Hoc (Elber's guest)\nNirvan Add Hoc (Elber's guest)\nPedro\nNikkita (Alberto's guest)\nAntony Ad Hocs (Elio's guest)\nSebas Ad Hocs (Elio's guest)\nPietro (Marcio's guest)\n[media: Stickermessage] (Eneas's guest)",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Mauricio\n2 Filippo\n3 Erivan\n4 Javier\n5 Elber\n6 David\n7 Elio\n8 Willie\n9 Eneas\n10 Marcio\n11 Miguel Alejandro\n12 Akbar\n13 Igor\n14 Rogerio A.\n15 Tony\n16 Thyago\n17 Jorge\n18 Claudio\n*Ad-hocs*\n19 Robson\n20 Henry\n21 Mario\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nFelipe Add Hoc (Elber's guest)\nOwnen Add Hoc (Elber's guest)\nNirvan Add Hoc (Elber's guest)\nPedro\nNikkita (Alberto's guest)\nAntony Ad Hocs (Elio's guest)\nSebas Ad Hocs (Elio's guest)\nPietro (Marcio's guest)\n[media: Stickermessage] (Eneas's guest)\nOwen (Elber's guest)",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -466,8 +476,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59371,
-  "live_logged": 96,
+  "messages_total": 59372,
+  "live_logged": 97,
   "capacity": 21
  }
 }
