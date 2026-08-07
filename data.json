@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-06T20:13:03",
+ "updated": "2026-08-06T20:13:18",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -146,8 +146,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59390,
-  "live_logged": 130,
+  "messages_total": 59392,
+  "live_logged": 133,
   "capacity": 21
  }
 }
