@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-07T10:44:57",
+ "updated": "2026-08-07T10:49:57",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-07T08:18:59",
@@ -166,6 +166,14 @@
     "dt": "2026-08-07T10:44:44",
     "self": true,
     "cond": false
+   },
+   {
+    "name": "Willie",
+    "kind": "member",
+    "by": "Willie",
+    "dt": "2026-08-07T10:49:45",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [],
@@ -182,7 +190,8 @@
     "Akbar",
     "Walter",
     "Marcio",
-    "Filippo"
+    "Filippo",
+    "Willie"
    ],
    "adhocs": [
     "Selim",
@@ -318,7 +327,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 19 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Javier\n2 Elber\n3 Igor\n4 Alberto\n5 Mauricio\n6 Claudio\n7 Jorge\n8 Akbar\n9 Walter\n10 Marcio\n11 Filippo\n*Ad-hocs*\n12 Selim\n13 Isaque\n14 Henry\n15 Robson\n16 Babith\n17 Juliano\n18 Felipe addhoc\n19 Pedro\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 20 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Javier\n2 Elber\n3 Igor\n4 Alberto\n5 Mauricio\n6 Claudio\n7 Jorge\n8 Akbar\n9 Walter\n10 Marcio\n11 Filippo\n12 Willie\n*Ad-hocs*\n13 Selim\n14 Isaque\n15 Henry\n16 Robson\n17 Babith\n18 Juliano\n19 Felipe addhoc\n20 Pedro\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -328,8 +337,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59423,
-  "live_logged": 167,
+  "messages_total": 59424,
+  "live_logged": 168,
   "capacity": 21
  }
 }
