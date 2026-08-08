@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-07T18:48:30",
+ "updated": "2026-08-07T19:03:32",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-07T08:18:59",
@@ -224,6 +224,14 @@
     "cond": false,
     "unverified": "rules-only",
     "grp": false
+   },
+   {
+    "name": "Tony",
+    "kind": "member",
+    "by": "Tony",
+    "dt": "2026-08-07T19:03:19",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [
@@ -259,15 +267,16 @@
     "Rogerio A.",
     "David",
     "Erivan",
-    "Jader"
+    "Jader",
+    "Tony"
    ],
    "adhocs": [
     "Selim",
     "Isaque",
-    "Henry",
-    "Robson"
+    "Henry"
    ],
    "waitlist": [
+    "Robson",
     "Babith",
     "Juliano",
     "Felipe addhoc",
@@ -401,7 +410,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Javier\n2 Elber\n3 Igor\n4 Alberto\n5 Mauricio\n6 Claudio\n7 Jorge\n8 Akbar\n9 Walter\n10 Marcio\n11 Filippo\n12 Willie\n13 Elio\n14 Rogerio A.\n15 David\n16 Erivan\n17 Jader\n*Ad-hocs*\n18 Selim\n19 Isaque\n20 Henry\n21 Robson\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nBabith\nJuliano\nFelipe addhoc\nPedro\n[media: Stickermessage] (Elber's guest)",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Javier\n2 Elber\n3 Igor\n4 Alberto\n5 Mauricio\n6 Claudio\n7 Jorge\n8 Akbar\n9 Walter\n10 Marcio\n11 Filippo\n12 Willie\n13 Elio\n14 Rogerio A.\n15 David\n16 Erivan\n17 Jader\n18 Tony\n*Ad-hocs*\n19 Selim\n20 Isaque\n21 Henry\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nRobson\nBabith\nJuliano\nFelipe addhoc\nPedro\n[media: Stickermessage] (Elber's guest)",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -411,8 +420,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59431,
-  "live_logged": 175,
+  "messages_total": 59432,
+  "live_logged": 176,
   "capacity": 21
  }
 }
