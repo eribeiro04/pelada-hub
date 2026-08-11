@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11T18:51:14",
+ "updated": "2026-08-11T18:52:25",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-07T08:18:59",
@@ -228,6 +228,10 @@
    {
     "name": "Jader",
     "dt": "2026-08-11T18:50:42"
+   },
+   {
+    "name": "Juliano Brandao",
+    "dt": "2026-08-11T18:52:13"
    }
   ],
   "flagged": [
@@ -310,7 +314,8 @@
     "Alberto",
     "Tony",
     "David",
-    "Jader"
+    "Jader",
+    "Juliano Brandao"
    ],
    "unverified": [
     "Carlos",
@@ -454,8 +459,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59446,
-  "live_logged": 193,
+  "messages_total": 59447,
+  "live_logged": 194,
   "capacity": 21
  }
 }
