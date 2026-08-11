@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11T18:37:24",
+ "updated": "2026-08-11T18:38:13",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-07T08:18:59",
@@ -175,8 +175,7 @@
     "by": "Rogerio A.",
     "dt": "2026-08-07T13:25:51",
     "self": true,
-    "cond": false,
-    "unverified": "rules-only"
+    "cond": false
    },
    {
     "name": "David",
@@ -269,18 +268,18 @@
     "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "2026-08-07T13:25:51",
-    "sender": "Rogerio A.",
-    "text": "Rogerio A.",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
     "dt": "2026-08-08T09:19:34",
     "sender": "Carlos",
     "text": "Carlos",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Alberto",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
    }
   ],
   "roster": {
@@ -326,8 +325,7 @@
     "Felipe addhoc",
     "Juliano",
     "Pedro",
-    "Robson",
-    "Rogerio A."
+    "Robson"
    ],
    "pending": [
     "Robson"
@@ -462,8 +460,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59441,
-  "live_logged": 188,
+  "messages_total": 59442,
+  "live_logged": 189,
   "capacity": 21
  }
 }
