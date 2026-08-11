@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11T18:47:59",
+ "updated": "2026-08-11T18:50:55",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-07T08:18:59",
@@ -187,14 +187,6 @@
     "cond": false
    },
    {
-    "name": "Jader",
-    "kind": "member",
-    "by": "Jader",
-    "dt": "2026-08-07T14:33:17",
-    "self": true,
-    "cond": false
-   },
-   {
     "name": "Miguel Alejandro",
     "kind": "member",
     "by": "Miguel Alejandro",
@@ -233,6 +225,10 @@
    {
     "name": "David",
     "dt": "2026-08-11T18:43:22"
+   },
+   {
+    "name": "Jader",
+    "dt": "2026-08-11T18:50:42"
    }
   ],
   "flagged": [
@@ -302,7 +298,6 @@
     "Elio",
     "Rogerio A.",
     "Erivan",
-    "Jader",
     "Miguel Alejandro"
    ],
    "adhocs": [
@@ -310,10 +305,10 @@
     "Isaque",
     "Henry",
     "Robson",
-    "Juliano"
+    "Juliano",
+    "Carlos"
    ],
    "waitlist": [
-    "Carlos",
     "Felipe addhoc",
     "Pedro"
    ],
@@ -322,7 +317,8 @@
     "Babith",
     "Alberto",
     "Tony",
-    "David"
+    "David",
+    "Jader"
    ],
    "unverified": [
     "Carlos",
@@ -334,7 +330,8 @@
    ],
    "pending": [
     "Robson",
-    "Juliano"
+    "Juliano",
+    "Carlos"
    ]
   }
  },
@@ -456,7 +453,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Javier\n2 Elber\n3 Igor\n4 Mauricio\n5 Claudio\n6 Jorge\n7 Akbar\n8 Walter\n9 Marcio\n10 Filippo\n11 Willie\n12 Elio\n13 Rogerio A.\n14 Erivan\n15 Jader\n16 Miguel Alejandro\n*Ad-hocs*\n17 Selim\n18 Isaque\n19 Henry\n20 Robson\n21 Juliano\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nCarlos\nFelipe addhoc\nPedro",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Javier\n2 Elber\n3 Igor\n4 Mauricio\n5 Claudio\n6 Jorge\n7 Akbar\n8 Walter\n9 Marcio\n10 Filippo\n11 Willie\n12 Elio\n13 Rogerio A.\n14 Erivan\n15 Miguel Alejandro\n*Ad-hocs*\n16 Selim\n17 Isaque\n18 Henry\n19 Robson\n20 Juliano\n21 Carlos\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nFelipe addhoc\nPedro",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -466,8 +463,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59444,
-  "live_logged": 191,
+  "messages_total": 59445,
+  "live_logged": 192,
   "capacity": 21
  }
 }
