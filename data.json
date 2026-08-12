@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11T19:19:36",
+ "updated": "2026-08-11T19:20:12",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-07T08:18:59",
@@ -256,6 +256,13 @@
     "kind": "signup"
    },
    {
+    "dt": "2026-08-11T19:20:00",
+    "sender": "Rogerio",
+    "text": "We have one spot availble",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
     "dt": "2026-08-07T08:19:19",
     "sender": "Elber",
     "text": "Felipe addhoc",
@@ -287,13 +294,6 @@
     "dt": "",
     "sender": "Claude",
     "text": "Alberto",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Jader",
     "kind": "disagree",
     "why": "only the model saw this signup"
    }
@@ -479,8 +479,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59457,
-  "live_logged": 205,
+  "messages_total": 59458,
+  "live_logged": 206,
   "capacity": 21
  }
 }
