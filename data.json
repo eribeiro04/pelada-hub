@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11T19:07:31",
+ "updated": "2026-08-11T19:11:12",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-07T08:18:59",
@@ -14,6 +14,7 @@
     "dt": "2026-08-07T08:19:09",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -23,6 +24,7 @@
     "dt": "2026-08-07T08:19:19",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -229,6 +231,10 @@
    {
     "name": "Juliano Brandao",
     "dt": "2026-08-11T18:52:13"
+   },
+   {
+    "name": "Jader",
+    "dt": "2026-08-11T19:11:04"
    }
   ],
   "flagged": [
@@ -245,6 +251,20 @@
     "text": "I'm in if there is still a spot",
     "why": "not-a-name?",
     "kind": "signup"
+   },
+   {
+    "dt": "2026-08-07T08:19:09",
+    "sender": "Selim",
+    "text": "Selim",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-07T08:19:19",
+    "sender": "Elber",
+    "text": "Felipe addhoc",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
    },
    {
     "dt": "2026-08-07T08:21:19",
@@ -271,6 +291,13 @@
     "dt": "",
     "sender": "Claude",
     "text": "Alberto",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Jader",
     "kind": "disagree",
     "why": "only the model saw this signup"
    }
@@ -312,12 +339,15 @@
     "Tony",
     "David",
     "Jader",
-    "Juliano Brandao"
+    "Juliano Brandao",
+    "Jader"
    ],
    "unverified": [
     "Carlos",
+    "Felipe addhoc",
     "Juliano",
-    "Pedro"
+    "Pedro",
+    "Selim"
    ],
    "pending": [
     "Juliano",
@@ -453,8 +483,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59452,
-  "live_logged": 199,
+  "messages_total": 59455,
+  "live_logged": 202,
   "capacity": 21
  }
 }
