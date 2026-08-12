@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-11T19:05:32",
+ "updated": "2026-08-11T19:05:56",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-07T08:18:59",
@@ -14,7 +14,6 @@
     "dt": "2026-08-07T08:19:09",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -56,6 +55,7 @@
     "dt": "2026-08-07T08:21:19",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -122,6 +122,7 @@
     "dt": "2026-08-07T09:13:35",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -180,8 +181,7 @@
     "by": "Erivan",
     "dt": "2026-08-07T14:15:00",
     "self": true,
-    "cond": false,
-    "unverified": "rules-only"
+    "cond": false
    },
    {
     "name": "Miguel Alejandro",
@@ -198,6 +198,7 @@
     "dt": "2026-08-08T09:19:34",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    }
   ],
@@ -240,9 +241,16 @@
     "kind": "signup"
    },
    {
-    "dt": "2026-08-07T08:19:09",
-    "sender": "Selim",
-    "text": "Selim",
+    "dt": "2026-08-07T08:21:19",
+    "sender": "Alberto",
+    "text": "Pedro",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-07T09:13:35",
+    "sender": "Robson",
+    "text": "Robson",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    },
@@ -254,9 +262,9 @@
     "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "2026-08-07T14:15:00",
-    "sender": "Erivan",
-    "text": "Erivan",
+    "dt": "2026-08-08T09:19:34",
+    "sender": "Carlos",
+    "text": "Carlos",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    },
@@ -308,9 +316,10 @@
     "Juliano Brandao"
    ],
    "unverified": [
-    "Erivan",
+    "Carlos",
     "Juliano",
-    "Selim"
+    "Pedro",
+    "Robson"
    ],
    "pending": [
     "Robson",
@@ -447,8 +456,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59450,
-  "live_logged": 197,
+  "messages_total": 59451,
+  "live_logged": 198,
   "capacity": 21
  }
 }
