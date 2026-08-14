@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-14T07:54:11",
+ "updated": "2026-08-14T07:54:27",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -65,8 +65,15 @@
     "dt": "2026-08-14T07:54:02",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
+   },
+   {
+    "name": "Mauricio",
+    "kind": "member",
+    "by": "Mauricio",
+    "dt": "2026-08-14T07:54:17",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [],
@@ -77,13 +84,6 @@
     "text": "Selim",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T07:54:02",
-    "sender": "Babith",
-    "text": "Babith",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
    }
   ],
   "roster": {
@@ -91,7 +91,8 @@
     "Elber",
     "Filippo",
     "David",
-    "Javier"
+    "Javier",
+    "Mauricio"
    ],
    "adhocs": [
     "Selim",
@@ -101,7 +102,6 @@
    "waitlist": [],
    "outs": [],
    "unverified": [
-    "Babith",
     "Selim"
    ],
    "pending": []
@@ -225,7 +225,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 7 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Elber\n2 Filippo\n3 David\n4 Javier\n*Ad-hocs*\n5 Selim\n6 Babith\n7 Felipe\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 8 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Elber\n2 Filippo\n3 David\n4 Javier\n5 Mauricio\n*Ad-hocs*\n6 Selim\n7 Babith\n8 Felipe\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -235,8 +235,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59469,
-  "live_logged": 217,
+  "messages_total": 59470,
+  "live_logged": 218,
   "capacity": 21
  }
 }
