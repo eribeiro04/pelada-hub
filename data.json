@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-14T08:16:14",
+ "updated": "2026-08-14T08:30:02",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -139,6 +139,14 @@
     "self": false,
     "cond": false,
     "grp": false
+   },
+   {
+    "name": "Claudio",
+    "kind": "member",
+    "by": "Claudio",
+    "dt": "2026-08-14T08:29:50",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [
@@ -175,7 +183,8 @@
     "Eneas",
     "Walter",
     "Jader",
-    "Marcio"
+    "Marcio",
+    "Claudio"
    ],
    "adhocs": [
     "Selim",
@@ -310,7 +319,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 16 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Elber\n2 Filippo\n3 David\n4 Javier\n5 Mauricio\n6 Jorge\n7 Igor\n8 Eneas\n9 Walter\n10 Jader\n11 Marcio\n*Ad-hocs*\n12 Selim\n13 Babith\n14 Carlos\n15 Felipe\n16 Pietro (Marcio's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 17 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Elber\n2 Filippo\n3 David\n4 Javier\n5 Mauricio\n6 Jorge\n7 Igor\n8 Eneas\n9 Walter\n10 Jader\n11 Marcio\n12 Claudio\n*Ad-hocs*\n13 Selim\n14 Babith\n15 Carlos\n16 Felipe\n17 Pietro (Marcio's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -320,8 +329,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59480,
-  "live_logged": 228,
+  "messages_total": 59481,
+  "live_logged": 229,
   "capacity": 21
  }
 }
