@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-14T08:12:09",
+ "updated": "2026-08-14T08:14:14",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -105,6 +105,15 @@
     "dt": "2026-08-14T08:11:59",
     "self": true,
     "cond": false
+   },
+   {
+    "name": "Carlos",
+    "kind": "adhoc",
+    "by": "Carlos",
+    "dt": "2026-08-14T08:14:04",
+    "self": true,
+    "cond": false,
+    "grp": true
    }
   ],
   "outs": [
@@ -144,6 +153,7 @@
    "adhocs": [
     "Selim",
     "Babith",
+    "Carlos",
     "Felipe"
    ],
    "waitlist": [],
@@ -272,7 +282,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 12 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Elber\n2 Filippo\n3 David\n4 Javier\n5 Mauricio\n6 Jorge\n7 Igor\n8 Eneas\n9 Walter\n*Ad-hocs*\n10 Selim\n11 Babith\n12 Felipe\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 13 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Elber\n2 Filippo\n3 David\n4 Javier\n5 Mauricio\n6 Jorge\n7 Igor\n8 Eneas\n9 Walter\n*Ad-hocs*\n10 Selim\n11 Babith\n12 Carlos\n13 Felipe\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -282,8 +292,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59476,
-  "live_logged": 224,
+  "messages_total": 59477,
+  "live_logged": 225,
   "capacity": 21
  }
 }
