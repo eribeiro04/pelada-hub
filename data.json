@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-14T07:54:27",
+ "updated": "2026-08-14T07:57:57",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -65,6 +65,7 @@
     "dt": "2026-08-14T07:54:02",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -76,12 +77,24 @@
     "cond": false
    }
   ],
-  "outs": [],
+  "outs": [
+   {
+    "name": "Alberto",
+    "dt": "2026-08-14T07:57:48"
+   }
+  ],
   "flagged": [
    {
     "dt": "2026-08-14T07:52:42",
     "sender": "Selim",
     "text": "Selim",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-14T07:54:02",
+    "sender": "Babith",
+    "text": "Babith",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    }
@@ -100,8 +113,11 @@
     "Felipe"
    ],
    "waitlist": [],
-   "outs": [],
+   "outs": [
+    "Alberto"
+   ],
    "unverified": [
+    "Babith",
     "Selim"
    ],
    "pending": []
@@ -235,8 +251,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59470,
-  "live_logged": 218,
+  "messages_total": 59471,
+  "live_logged": 219,
   "capacity": 21
  }
 }
