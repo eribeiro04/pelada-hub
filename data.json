@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-14T19:38:07",
+ "updated": "2026-08-14T22:45:54",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -48,6 +48,7 @@
     "dt": "2026-08-14T07:52:42",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -65,6 +66,7 @@
     "dt": "2026-08-14T07:54:02",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -114,6 +116,7 @@
     "dt": "2026-08-14T08:14:04",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -156,6 +159,7 @@
     "dt": "2026-08-14T08:33:36",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -189,6 +193,7 @@
     "dt": "2026-08-14T10:11:28",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -206,6 +211,7 @@
     "dt": "2026-08-14T13:30:42",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -215,7 +221,16 @@
     "dt": "2026-08-14T19:37:56",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
+   },
+   {
+    "name": "Miguel Alejandro",
+    "kind": "member",
+    "by": "Miguel Alejandro",
+    "dt": "2026-08-14T22:45:43",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [
@@ -244,11 +259,53 @@
     "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Tiago",
+    "dt": "2026-08-14T07:52:42",
+    "sender": "Selim",
+    "text": "Selim",
     "kind": "disagree",
-    "why": "only the model saw this signup"
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-14T07:54:02",
+    "sender": "Babith",
+    "text": "Babith",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-14T08:14:04",
+    "sender": "Carlos",
+    "text": "Carlos",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-14T08:33:36",
+    "sender": "Robson",
+    "text": "Robson",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-14T10:11:28",
+    "sender": "Marlon",
+    "text": "Marlon",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-14T13:30:42",
+    "sender": "Henry",
+    "text": "Henry",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-14T19:37:56",
+    "sender": "Alberto",
+    "text": "Nikkita (Alberto's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
    }
   ],
   "roster": {
@@ -268,16 +325,17 @@
     "Elio",
     "Willie",
     "Erivan",
-    "Akbar"
+    "Akbar",
+    "Miguel Alejandro"
    ],
    "adhocs": [
     "Selim",
     "Babith",
     "Carlos",
-    "Robson",
-    "Marlon"
+    "Robson"
    ],
    "waitlist": [
+    "Marlon",
     "Henry",
     "Felipe",
     "Pietro (Marcio's guest)",
@@ -288,7 +346,14 @@
     "Everson"
    ],
    "unverified": [
-    "Felipe"
+    "Babith",
+    "Carlos",
+    "Felipe",
+    "Henry",
+    "Marlon",
+    "Nikkita (Alberto's guest)",
+    "Robson",
+    "Selim"
    ],
    "pending": []
   }
@@ -411,7 +476,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Elber\n2 Filippo\n3 David\n4 Javier\n5 Mauricio\n6 Jorge\n7 Igor\n8 Eneas\n9 Walter\n10 Jader\n11 Marcio\n12 Claudio\n13 Elio\n14 Willie\n15 Erivan\n16 Akbar\n*Ad-hocs*\n17 Selim\n18 Babith\n19 Carlos\n20 Robson\n21 Marlon\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nHenry\nFelipe\nPietro (Marcio's guest)\nNikkita (Alberto's guest)",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Elber\n2 Filippo\n3 David\n4 Javier\n5 Mauricio\n6 Jorge\n7 Igor\n8 Eneas\n9 Walter\n10 Jader\n11 Marcio\n12 Claudio\n13 Elio\n14 Willie\n15 Erivan\n16 Akbar\n17 Miguel Alejandro\n*Ad-hocs*\n18 Selim\n19 Babith\n20 Carlos\n21 Robson\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nMarlon\nHenry\nFelipe\nPietro (Marcio's guest)\nNikkita (Alberto's guest)",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -421,8 +486,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59490,
-  "live_logged": 238,
+  "messages_total": 59491,
+  "live_logged": 239,
   "capacity": 21
  }
 }
