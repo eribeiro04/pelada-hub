@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-14T13:30:54",
+ "updated": "2026-08-14T19:22:45",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -30,7 +30,6 @@
     "dt": "2026-08-14T07:51:37",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -48,7 +47,6 @@
     "dt": "2026-08-14T07:52:42",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -66,7 +64,6 @@
     "dt": "2026-08-14T07:54:02",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -116,7 +113,6 @@
     "dt": "2026-08-14T08:14:04",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -159,7 +155,6 @@
     "dt": "2026-08-14T08:33:36",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -193,7 +188,6 @@
     "dt": "2026-08-14T10:11:28",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -211,7 +205,6 @@
     "dt": "2026-08-14T13:30:42",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    }
   ],
@@ -219,6 +212,10 @@
    {
     "name": "Alberto",
     "dt": "2026-08-14T07:57:48"
+   },
+   {
+    "name": "Everson",
+    "dt": "2026-08-14T19:22:34"
    }
   ],
   "flagged": [
@@ -230,53 +227,11 @@
     "kind": "signup"
    },
    {
-    "dt": "2026-08-14T07:51:37",
-    "sender": "Elber",
-    "text": "Felipe",
+    "dt": "",
+    "sender": "Claude",
+    "text": "Tiago",
     "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T07:52:42",
-    "sender": "Selim",
-    "text": "Selim",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T07:54:02",
-    "sender": "Babith",
-    "text": "Babith",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T08:14:04",
-    "sender": "Carlos",
-    "text": "Carlos",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T08:33:36",
-    "sender": "Robson",
-    "text": "Robson",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T10:11:28",
-    "sender": "Marlon",
-    "text": "Marlon",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T13:30:42",
-    "sender": "Henry",
-    "text": "Henry",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
+    "why": "only the model saw this signup"
    }
   ],
   "roster": {
@@ -311,17 +266,10 @@
     "Pietro (Marcio's guest)"
    ],
    "outs": [
-    "Alberto"
+    "Alberto",
+    "Everson"
    ],
-   "unverified": [
-    "Babith",
-    "Carlos",
-    "Felipe",
-    "Henry",
-    "Marlon",
-    "Robson",
-    "Selim"
-   ],
+   "unverified": [],
    "pending": []
   }
  },
@@ -453,8 +401,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59488,
-  "live_logged": 236,
+  "messages_total": 59489,
+  "live_logged": 237,
   "capacity": 21
  }
 }
