@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-18T18:08:41",
+ "updated": "2026-08-18T18:08:49",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -122,7 +122,6 @@
     "dt": "2026-08-14T08:14:04",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -215,7 +214,6 @@
     "dt": "2026-08-14T13:30:42",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -225,7 +223,6 @@
     "dt": "2026-08-14T19:37:56",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -270,27 +267,6 @@
     "text": "Team - i am put today..if someone next  can step in",
     "why": "not-a-name?",
     "kind": "signup"
-   },
-   {
-    "dt": "2026-08-14T08:14:04",
-    "sender": "Carlos",
-    "text": "Carlos",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T13:30:42",
-    "sender": "Henry",
-    "text": "Henry",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T19:37:56",
-    "sender": "Alberto",
-    "text": "Nikkita (Alberto's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
    }
   ],
   "roster": {
@@ -333,11 +309,7 @@
     "Alberto",
     "Everson"
    ],
-   "unverified": [
-    "Carlos",
-    "Henry",
-    "Nikkita (Alberto's guest)"
-   ],
+   "unverified": [],
    "pending": []
   }
  },
