@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-18T18:08:31",
+ "updated": "2026-08-18T18:08:41",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -148,7 +148,6 @@
     "dt": "2026-08-14T08:16:04",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -166,7 +165,6 @@
     "dt": "2026-08-14T08:33:36",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -200,7 +198,6 @@
     "dt": "2026-08-14T10:11:28",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -282,27 +279,6 @@
     "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "2026-08-14T08:16:04",
-    "sender": "Marcio",
-    "text": "Pietro (Marcio's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T08:33:36",
-    "sender": "Robson",
-    "text": "Robson",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T10:11:28",
-    "sender": "Marlon",
-    "text": "Marlon",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
     "dt": "2026-08-14T13:30:42",
     "sender": "Henry",
     "text": "Henry",
@@ -360,10 +336,7 @@
    "unverified": [
     "Carlos",
     "Henry",
-    "Marlon",
-    "Nikkita (Alberto's guest)",
-    "Pietro (Marcio's guest)",
-    "Robson"
+    "Nikkita (Alberto's guest)"
    ],
    "pending": []
   }
