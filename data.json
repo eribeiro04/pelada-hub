@@ -1,11 +1,11 @@
 {
- "updated": "2026-08-17T19:34:06",
+ "updated": "2026-08-17T20:22:53",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
   "open_text": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*\n\nMembers, please add your name in the group. If you don’t add the name you will be considered as not playing.",
   "game_date": "2026-08-18",
-  "gates_closed": false,
+  "gates_closed": true,
   "ins": [
    {
     "name": "Elber",
@@ -48,7 +48,6 @@
     "dt": "2026-08-14T07:52:42",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -66,7 +65,6 @@
     "dt": "2026-08-14T07:54:02",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -142,6 +140,7 @@
     "dt": "2026-08-14T08:16:04",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -275,23 +274,16 @@
     "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "2026-08-14T07:52:42",
-    "sender": "Selim",
-    "text": "Selim",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T07:54:02",
-    "sender": "Babith",
-    "text": "Babith",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
     "dt": "2026-08-14T08:14:04",
     "sender": "Carlos",
     "text": "Carlos",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-14T08:16:04",
+    "sender": "Marcio",
+    "text": "Pietro (Marcio's guest)",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    },
@@ -364,14 +356,13 @@
     "Everson"
    ],
    "unverified": [
-    "Babith",
     "Carlos",
     "Felipe",
     "Henry",
     "Marlon",
     "Nikkita (Alberto's guest)",
-    "Robson",
-    "Selim"
+    "Pietro (Marcio's guest)",
+    "Robson"
    ],
    "pending": []
   }
@@ -504,8 +495,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59493,
-  "live_logged": 241,
+  "messages_total": 59494,
+  "live_logged": 242,
   "capacity": 21
  }
 }
