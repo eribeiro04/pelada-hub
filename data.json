@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-18T18:04:34",
+ "updated": "2026-08-18T18:08:31",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -30,7 +30,6 @@
     "dt": "2026-08-14T07:51:37",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -65,7 +64,6 @@
     "dt": "2026-08-14T07:54:02",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -277,20 +275,6 @@
     "kind": "signup"
    },
    {
-    "dt": "2026-08-14T07:51:37",
-    "sender": "Elber",
-    "text": "Felipe",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-14T07:54:02",
-    "sender": "Babith",
-    "text": "Babith",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
     "dt": "2026-08-14T08:14:04",
     "sender": "Carlos",
     "text": "Carlos",
@@ -374,9 +358,7 @@
     "Everson"
    ],
    "unverified": [
-    "Babith",
     "Carlos",
-    "Felipe",
     "Henry",
     "Marlon",
     "Nikkita (Alberto's guest)",
