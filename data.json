@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-18T16:28:52",
+ "updated": "2026-08-18T18:04:34",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -65,6 +65,7 @@
     "dt": "2026-08-14T07:54:02",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -269,9 +270,23 @@
   ],
   "flagged": [
    {
+    "dt": "2026-08-18T18:04:22",
+    "sender": "BT✨",
+    "text": "Team - i am put today..if someone next  can step in",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
     "dt": "2026-08-14T07:51:37",
     "sender": "Elber",
     "text": "Felipe",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-14T07:54:02",
+    "sender": "Babith",
+    "text": "Babith",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    },
@@ -359,6 +374,7 @@
     "Everson"
    ],
    "unverified": [
+    "Babith",
     "Carlos",
     "Felipe",
     "Henry",
@@ -498,8 +514,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59495,
-  "live_logged": 243,
+  "messages_total": 59496,
+  "live_logged": 244,
   "capacity": 21
  }
 }
