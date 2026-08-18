@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-17T22:24:33",
+ "updated": "2026-08-17T22:25:27",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -82,6 +82,15 @@
     "dt": "2026-08-14T08:01:23",
     "self": true,
     "cond": false
+   },
+   {
+    "name": "Tiago",
+    "kind": "adhoc",
+    "by": "Tiago Calheiros",
+    "dt": "2026-08-14T08:03:18",
+    "self": true,
+    "cond": false,
+    "grp": true
    },
    {
     "name": "Igor",
@@ -246,14 +255,6 @@
     "dt": "2026-08-17T19:33:53",
     "self": true,
     "cond": false
-   },
-   {
-    "name": "Tiago",
-    "kind": "adhoc",
-    "by": "review",
-    "dt": "2026-08-14T08:03:18",
-    "self": true,
-    "grp": true
    }
   ],
   "outs": [
