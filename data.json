@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-18T19:30:27",
+ "updated": "2026-08-18T19:31:22",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-14T07:51:22",
@@ -268,6 +268,13 @@
   ],
   "flagged": [
    {
+    "dt": "2026-08-18T19:31:10",
+    "sender": "Nicanor",
+    "text": "Give 5 mins plz",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
     "dt": "2026-08-14T07:52:42",
     "sender": "Selim",
     "text": "Selim",
@@ -452,8 +459,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59505,
-  "live_logged": 253,
+  "messages_total": 59506,
+  "live_logged": 254,
   "capacity": 21
  }
 }
