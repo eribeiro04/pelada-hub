@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21T08:23:34",
+ "updated": "2026-08-21T08:25:22",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -47,23 +47,62 @@
     "dt": "2026-08-21T08:23:24",
     "self": true,
     "cond": false
+   },
+   {
+    "name": "Nikkita (Alberto's guest)",
+    "kind": "adhoc",
+    "by": "Alberto",
+    "dt": "2026-08-21T08:25:14",
+    "self": false,
+    "cond": false,
+    "unverified": "rules-only",
+    "grp": false
+   },
+   {
+    "name": "Alberto",
+    "kind": "member",
+    "by": "Alberto",
+    "dt": "2026-08-21T08:25:14",
+    "self": true,
+    "cond": false,
+    "unverified": "rules-only"
    }
   ],
   "outs": [],
-  "flagged": [],
+  "flagged": [
+   {
+    "dt": "2026-08-21T08:25:14",
+    "sender": "Alberto",
+    "text": "Nikkita (Alberto's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-21T08:25:14",
+    "sender": "Alberto",
+    "text": "Alberto",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   }
+  ],
   "roster": {
    "members": [
     "Jorge",
     "Javier",
     "Mauricio",
-    "Igor"
+    "Igor",
+    "Alberto"
    ],
    "adhocs": [
-    "Juliano"
+    "Juliano",
+    "Nikkita (Alberto's guest)"
    ],
    "waitlist": [],
    "outs": [],
-   "unverified": [],
+   "unverified": [
+    "Alberto",
+    "Nikkita (Alberto's guest)"
+   ],
    "pending": []
   }
  },
@@ -185,7 +224,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 5 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Javier\n3 Mauricio\n4 Igor\n*Ad-hocs*\n5 Juliano\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 7 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Javier\n3 Mauricio\n4 Igor\n5 Alberto\n*Ad-hocs*\n6 Juliano\n7 Nikkita (Alberto's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -195,8 +234,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59517,
-  "live_logged": 266,
+  "messages_total": 59519,
+  "live_logged": 268,
   "capacity": 21
  }
 }
