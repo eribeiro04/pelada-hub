@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21T08:36:09",
+ "updated": "2026-08-21T08:38:29",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -30,6 +30,7 @@
     "dt": "2026-08-21T08:23:14",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -55,6 +56,7 @@
     "dt": "2026-08-21T08:25:14",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -72,6 +74,7 @@
     "dt": "2026-08-21T08:25:39",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -113,10 +116,40 @@
     "dt": "2026-08-21T08:36:05",
     "self": true,
     "cond": false
+   },
+   {
+    "name": "Claudio",
+    "kind": "member",
+    "by": "Claudio",
+    "dt": "2026-08-21T08:38:20",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [],
-  "flagged": [],
+  "flagged": [
+   {
+    "dt": "2026-08-21T08:23:14",
+    "sender": "Juliano Brandao",
+    "text": "Juliano",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-21T08:25:14",
+    "sender": "Alberto",
+    "text": "Nikkita (Alberto's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-21T08:25:39",
+    "sender": "Carlos",
+    "text": "Carlos",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   }
+  ],
   "roster": {
    "members": [
     "Jorge",
@@ -128,7 +161,8 @@
     "Eneas",
     "Marcio",
     "David",
-    "Filippo"
+    "Filippo",
+    "Claudio"
    ],
    "adhocs": [
     "Juliano",
@@ -137,7 +171,11 @@
    ],
    "waitlist": [],
    "outs": [],
-   "unverified": [],
+   "unverified": [
+    "Carlos",
+    "Juliano",
+    "Nikkita (Alberto's guest)"
+   ],
    "pending": []
   }
  },
@@ -259,7 +297,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 13 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Javier\n3 Mauricio\n4 Igor\n5 Alberto\n6 Walter\n7 Eneas\n8 Marcio\n9 David\n10 Filippo\n*Ad-hocs*\n11 Juliano\n12 Carlos\n13 Nikkita (Alberto's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 14 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Javier\n3 Mauricio\n4 Igor\n5 Alberto\n6 Walter\n7 Eneas\n8 Marcio\n9 David\n10 Filippo\n11 Claudio\n*Ad-hocs*\n12 Juliano\n13 Carlos\n14 Nikkita (Alberto's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -269,8 +307,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59525,
-  "live_logged": 274,
+  "messages_total": 59526,
+  "live_logged": 275,
   "capacity": 21
  }
 }
