@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21T12:51:57",
+ "updated": "2026-08-21T13:06:13",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -188,6 +188,14 @@
     "dt": "2026-08-21T12:51:46",
     "self": true,
     "cond": false
+   },
+   {
+    "name": "Tony",
+    "kind": "member",
+    "by": "Tony",
+    "dt": "2026-08-21T13:06:02",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [
@@ -214,16 +222,17 @@
     "Elio",
     "Elber",
     "Erivan",
-    "Willie"
+    "Willie",
+    "Tony"
    ],
    "adhocs": [
     "Juliano",
     "Carlos",
     "Tiago",
-    "Robson",
-    "Everson"
+    "Robson"
    ],
    "waitlist": [
+    "Everson",
     "Nikkita (Alberto's guest)"
    ],
    "outs": [
@@ -351,7 +360,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Javier\n3 Mauricio\n4 Igor\n5 Alberto\n6 Walter\n7 Eneas\n8 Marcio\n9 David\n10 Filippo\n11 Claudio\n12 Jader\n13 Elio\n14 Elber\n15 Erivan\n16 Willie\n*Ad-hocs*\n17 Juliano\n18 Carlos\n19 Tiago\n20 Robson\n21 Everson\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nNikkita (Alberto's guest)",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Javier\n3 Mauricio\n4 Igor\n5 Alberto\n6 Walter\n7 Eneas\n8 Marcio\n9 David\n10 Filippo\n11 Claudio\n12 Jader\n13 Elio\n14 Elber\n15 Erivan\n16 Willie\n17 Tony\n*Ad-hocs*\n18 Juliano\n19 Carlos\n20 Tiago\n21 Robson\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nEverson\nNikkita (Alberto's guest)",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -361,8 +370,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59535,
-  "live_logged": 284,
+  "messages_total": 59536,
+  "live_logged": 285,
   "capacity": 21
  }
 }
