@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21T19:41:48",
+ "updated": "2026-08-21T19:42:00",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -240,6 +240,13 @@
   ],
   "flagged": [
    {
+    "dt": "2026-08-21T19:41:47",
+    "sender": "Akbar",
+    "text": "Out this week. Work travel",
+    "why": "out-like",
+    "kind": "drop"
+   },
+   {
     "dt": "2026-08-21T08:23:14",
     "sender": "Juliano Brandao",
     "text": "Juliano",
@@ -473,7 +480,7 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59539,
+  "messages_total": 59540,
   "live_logged": 289,
   "capacity": 21
  }
