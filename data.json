@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T17:52:10",
+ "updated": "2026-08-25T18:05:56",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -284,6 +284,13 @@
     "kind": "signup"
    },
    {
+    "dt": "2026-08-25T17:57:49",
+    "sender": "Link",
+    "text": "@7284398772438 he is here. But I just called him and is is out today",
+    "why": "out-like",
+    "kind": "drop"
+   },
+   {
     "dt": "2026-08-21T08:25:14",
     "sender": "Alberto",
     "text": "Nikkita (Alberto's guest)",
@@ -515,8 +522,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59562,
-  "live_logged": 313,
+  "messages_total": 59563,
+  "live_logged": 314,
   "capacity": 21
  }
 }
