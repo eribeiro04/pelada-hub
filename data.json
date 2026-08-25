@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-24T13:47:50",
+ "updated": "2026-08-24T19:39:43",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -90,8 +90,7 @@
     "kind": "member",
     "by": "Eneas",
     "dt": "2026-08-21T08:30:39",
-    "self": true,
-    "cond": false
+    "self": true
    },
    {
     "name": "Marcio",
@@ -518,8 +517,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59543,
-  "live_logged": 293,
+  "messages_total": 59544,
+  "live_logged": 294,
   "capacity": 21
  }
 }
