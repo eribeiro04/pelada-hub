@@ -1,11 +1,11 @@
 {
- "updated": "2026-08-24T19:48:54",
+ "updated": "2026-08-24T19:49:38",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
   "open_text": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*\n\nMembers, please add your name in the group. If you don’t add the name you will be considered as not playing.",
   "game_date": "2026-08-25",
-  "gates_closed": false,
+  "gates_closed": true,
   "ins": [
    {
     "name": "Jorge",
@@ -55,6 +55,7 @@
     "dt": "2026-08-21T08:25:14",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -128,6 +129,7 @@
     "dt": "2026-08-21T08:49:57",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -137,6 +139,7 @@
     "dt": "2026-08-21T08:56:42",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -170,6 +173,7 @@
     "dt": "2026-08-21T11:24:59",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -211,6 +215,7 @@
     "dt": "2026-08-21T18:14:46",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -220,6 +225,7 @@
     "dt": "2026-08-21T19:41:37",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -229,6 +235,7 @@
     "dt": "2026-08-22T07:59:00",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -263,6 +270,55 @@
     "text": "Out this week. Work travel",
     "why": "out-like",
     "kind": "drop"
+   },
+   {
+    "dt": "2026-08-21T08:25:14",
+    "sender": "Alberto",
+    "text": "Nikkita (Alberto's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-21T08:49:57",
+    "sender": "Tiago Calheiros",
+    "text": "Tiago",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-21T08:56:42",
+    "sender": "Robson",
+    "text": "Robson",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-21T11:24:59",
+    "sender": "Everson",
+    "text": "Everson",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-21T18:14:46",
+    "sender": "Flavio",
+    "text": "Flavio",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-21T19:41:37",
+    "sender": "Henry",
+    "text": "Henry",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-22T07:59:00",
+    "sender": "Rogerio A.",
+    "text": "Rogério R",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
    },
    {
     "dt": "2026-08-23T19:44:11",
@@ -312,6 +368,13 @@
     "Rogerio A."
    ],
    "unverified": [
+    "Everson",
+    "Flavio",
+    "Henry",
+    "Nikkita (Alberto's guest)",
+    "Robson",
+    "Rogério R",
+    "Tiago",
     "🎵 [audio] (Luisinho's guest)"
    ],
    "pending": []
@@ -445,8 +508,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59545,
-  "live_logged": 295,
+  "messages_total": 59546,
+  "live_logged": 296,
   "capacity": 21
  }
 }
