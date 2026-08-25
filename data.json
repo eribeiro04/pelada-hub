@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T16:44:21",
+ "updated": "2026-08-25T16:46:38",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -49,14 +49,6 @@
     "cond": false,
     "unverified": "rules-only",
     "grp": false
-   },
-   {
-    "name": "Alberto",
-    "kind": "member",
-    "by": "Alberto",
-    "dt": "2026-08-21T08:25:14",
-    "self": true,
-    "cond": false
    },
    {
     "name": "Carlos",
@@ -263,6 +255,10 @@
    {
     "name": "Eneas",
     "dt": "2026-08-25T16:37:21"
+   },
+   {
+    "name": "Alberto",
+    "dt": "2026-08-25T16:46:27"
    }
   ],
   "flagged": [
@@ -349,6 +345,13 @@
     "text": "Confimed (Robson's guest)",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Alberto",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
    }
   ],
   "roster": {
@@ -356,7 +359,6 @@
     "Jorge",
     "Javier",
     "Igor",
-    "Alberto",
     "Walter",
     "Marcio",
     "David",
@@ -375,10 +377,10 @@
     "Juliano",
     "Carlos",
     "Tiago",
-    "Robson"
+    "Robson",
+    "Everson"
    ],
    "waitlist": [
-    "Everson",
     "Flavio",
     "Henry",
     "Nikkita (Alberto's guest)",
@@ -389,7 +391,8 @@
    "outs": [
     "Rogerio A.",
     "Mauricio",
-    "Eneas"
+    "Eneas",
+    "Alberto"
    ],
    "unverified": [
     "Confimed (Robson's guest)",
@@ -402,7 +405,8 @@
     "🎵 [audio] (Luisinho's guest)"
    ],
    "pending": [
-    "Robson"
+    "Robson",
+    "Everson"
    ]
   }
  },
@@ -524,7 +528,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Javier\n3 Igor\n4 Alberto\n5 Walter\n6 Marcio\n7 David\n8 Filippo\n9 Claudio\n10 Jader\n11 Elio\n12 Elber\n13 Erivan\n14 Willie\n15 Tony\n16 Miguel Alejandro\n17 Thyago\n*Ad-hocs*\n18 Juliano\n19 Carlos\n20 Tiago\n21 Robson\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nEverson\nFlavio\nHenry\nNikkita (Alberto's guest)\nRogério R\n🎵 [audio] (Luisinho's guest)\nConfimed (Robson's guest)",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Javier\n3 Igor\n4 Walter\n5 Marcio\n6 David\n7 Filippo\n8 Claudio\n9 Jader\n10 Elio\n11 Elber\n12 Erivan\n13 Willie\n14 Tony\n15 Miguel Alejandro\n16 Thyago\n*Ad-hocs*\n17 Juliano\n18 Carlos\n19 Tiago\n20 Robson\n21 Everson\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nFlavio\nHenry\nNikkita (Alberto's guest)\nRogério R\n🎵 [audio] (Luisinho's guest)\nConfimed (Robson's guest)",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -534,8 +538,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59556,
-  "live_logged": 307,
+  "messages_total": 59557,
+  "live_logged": 308,
   "capacity": 21
  }
 }
