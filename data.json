@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T18:05:56",
+ "updated": "2026-08-25T18:32:31",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -189,8 +189,6 @@
     "by": "Henry",
     "dt": "2026-08-21T19:41:37",
     "self": true,
-    "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -305,13 +303,6 @@
     "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "2026-08-21T19:41:37",
-    "sender": "Henry",
-    "text": "Henry",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
     "dt": "2026-08-22T07:59:00",
     "sender": "Rogerio A.",
     "text": "Rogério R",
@@ -331,13 +322,6 @@
     "text": "Confimed (Robson's guest)",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Alberto",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
    }
   ],
   "roster": {
@@ -383,7 +367,6 @@
    "unverified": [
     "Confimed (Robson's guest)",
     "David",
-    "Henry",
     "Nikkita (Alberto's guest)",
     "Rogério R",
     "🎵 [audio] (Luisinho's guest)"
@@ -522,8 +505,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59563,
-  "live_logged": 314,
+  "messages_total": 59564,
+  "live_logged": 315,
   "capacity": 21
  }
 }
