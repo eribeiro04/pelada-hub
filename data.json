@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-24T19:39:43",
+ "updated": "2026-08-24T19:48:54",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -30,7 +30,6 @@
     "dt": "2026-08-21T08:23:14",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -56,7 +55,6 @@
     "dt": "2026-08-21T08:25:14",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -74,7 +72,6 @@
     "dt": "2026-08-21T08:25:39",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -131,7 +128,6 @@
     "dt": "2026-08-21T08:49:57",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -141,7 +137,6 @@
     "dt": "2026-08-21T08:56:42",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -175,7 +170,6 @@
     "dt": "2026-08-21T11:24:59",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -217,7 +211,6 @@
     "dt": "2026-08-21T18:14:46",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -227,7 +220,6 @@
     "dt": "2026-08-21T19:41:37",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -237,7 +229,6 @@
     "dt": "2026-08-22T07:59:00",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -249,6 +240,14 @@
     "cond": false,
     "unverified": "rules-only",
     "grp": false
+   },
+   {
+    "name": "Thyago",
+    "kind": "member",
+    "by": "Thyago",
+    "dt": "2026-08-24T19:48:42",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [
@@ -264,69 +263,6 @@
     "text": "Out this week. Work travel",
     "why": "out-like",
     "kind": "drop"
-   },
-   {
-    "dt": "2026-08-21T08:23:14",
-    "sender": "Juliano Brandao",
-    "text": "Juliano",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-21T08:25:14",
-    "sender": "Alberto",
-    "text": "Nikkita (Alberto's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-21T08:25:39",
-    "sender": "Carlos",
-    "text": "Carlos",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-21T08:49:57",
-    "sender": "Tiago Calheiros",
-    "text": "Tiago",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-21T08:56:42",
-    "sender": "Robson",
-    "text": "Robson",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-21T11:24:59",
-    "sender": "Everson",
-    "text": "Everson",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-21T18:14:46",
-    "sender": "Flavio",
-    "text": "Flavio",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-21T19:41:37",
-    "sender": "Henry",
-    "text": "Henry",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-22T07:59:00",
-    "sender": "Rogerio A.",
-    "text": "Rogério R",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
    },
    {
     "dt": "2026-08-23T19:44:11",
@@ -355,14 +291,15 @@
     "Erivan",
     "Willie",
     "Tony",
-    "Miguel Alejandro"
+    "Miguel Alejandro",
+    "Thyago"
    ],
    "adhocs": [
     "Juliano",
-    "Carlos",
-    "Tiago"
+    "Carlos"
    ],
    "waitlist": [
+    "Tiago",
     "Robson",
     "Everson",
     "Flavio",
@@ -375,15 +312,6 @@
     "Rogerio A."
    ],
    "unverified": [
-    "Carlos",
-    "Everson",
-    "Flavio",
-    "Henry",
-    "Juliano",
-    "Nikkita (Alberto's guest)",
-    "Robson",
-    "Rogério R",
-    "Tiago",
     "🎵 [audio] (Luisinho's guest)"
    ],
    "pending": []
@@ -507,7 +435,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Javier\n3 Mauricio\n4 Igor\n5 Alberto\n6 Walter\n7 Eneas\n8 Marcio\n9 David\n10 Filippo\n11 Claudio\n12 Jader\n13 Elio\n14 Elber\n15 Erivan\n16 Willie\n17 Tony\n18 Miguel Alejandro\n*Ad-hocs*\n19 Juliano\n20 Carlos\n21 Tiago\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nRobson\nEverson\nFlavio\nHenry\nNikkita (Alberto's guest)\nRogério R\n🎵 [audio] (Luisinho's guest)",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Jorge\n2 Javier\n3 Mauricio\n4 Igor\n5 Alberto\n6 Walter\n7 Eneas\n8 Marcio\n9 David\n10 Filippo\n11 Claudio\n12 Jader\n13 Elio\n14 Elber\n15 Erivan\n16 Willie\n17 Tony\n18 Miguel Alejandro\n19 Thyago\n*Ad-hocs*\n20 Juliano\n21 Carlos\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nTiago\nRobson\nEverson\nFlavio\nHenry\nNikkita (Alberto's guest)\nRogério R\n🎵 [audio] (Luisinho's guest)",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -517,8 +445,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59544,
-  "live_logged": 294,
+  "messages_total": 59545,
+  "live_logged": 295,
   "capacity": 21
  }
 }
