@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T11:19:19",
+ "updated": "2026-08-25T13:03:54",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -47,6 +47,7 @@
     "dt": "2026-08-21T08:25:14",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -121,7 +122,6 @@
     "dt": "2026-08-21T08:49:57",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -284,16 +284,16 @@
     "kind": "drop"
    },
    {
-    "dt": "2026-08-21T08:36:00",
-    "sender": "David",
-    "text": "David",
+    "dt": "2026-08-21T08:25:14",
+    "sender": "Alberto",
+    "text": "Nikkita (Alberto's guest)",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "2026-08-21T08:49:57",
-    "sender": "Tiago Calheiros",
-    "text": "Tiago",
+    "dt": "2026-08-21T08:36:00",
+    "sender": "David",
+    "text": "David",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    },
@@ -386,13 +386,11 @@
     "Everson",
     "Flavio",
     "Henry",
+    "Nikkita (Alberto's guest)",
     "Rogério R",
-    "Tiago",
     "🎵 [audio] (Luisinho's guest)"
    ],
-   "pending": [
-    "Tiago"
-   ]
+   "pending": []
   }
  },
  "members_month": "2026-08",
@@ -523,8 +521,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59551,
-  "live_logged": 302,
+  "messages_total": 59552,
+  "live_logged": 303,
   "capacity": 21
  }
 }
