@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T10:07:46",
+ "updated": "2026-08-25T10:49:02",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -47,7 +47,6 @@
     "dt": "2026-08-21T08:25:14",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -276,13 +275,6 @@
     "kind": "drop"
    },
    {
-    "dt": "2026-08-21T08:25:14",
-    "sender": "Alberto",
-    "text": "Nikkita (Alberto's guest)",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
     "dt": "2026-08-21T08:36:00",
     "sender": "David",
     "text": "David",
@@ -383,7 +375,6 @@
     "Everson",
     "Flavio",
     "Henry",
-    "Nikkita (Alberto's guest)",
     "Robson",
     "Rogério R",
     "Tiago",
@@ -522,8 +513,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59548,
-  "live_logged": 298,
+  "messages_total": 59549,
+  "live_logged": 299,
   "capacity": 21
  }
 }
