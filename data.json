@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T16:37:32",
+ "updated": "2026-08-25T16:44:09",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -281,6 +281,13 @@
     "kind": "drop"
    },
    {
+    "dt": "2026-08-25T16:43:57",
+    "sender": "LRossini",
+    "text": "Decide",
+    "why": "unknown name",
+    "kind": "signup"
+   },
+   {
     "dt": "2026-08-21T08:25:14",
     "sender": "Alberto",
     "text": "Nikkita (Alberto's guest)",
@@ -520,8 +527,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59554,
-  "live_logged": 305,
+  "messages_total": 59555,
+  "live_logged": 307,
   "capacity": 21
  }
 }
