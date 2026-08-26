@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T18:34:41",
+ "updated": "2026-08-25T19:19:30",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -289,6 +289,13 @@
     "kind": "drop"
    },
    {
+    "dt": "2026-08-25T19:19:18",
+    "sender": "Flavio Duarte",
+    "text": "I will bring my 2 sons",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
     "dt": "2026-08-21T08:25:14",
     "sender": "Alberto",
     "text": "Nikkita (Alberto's guest)",
@@ -512,8 +519,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59566,
-  "live_logged": 317,
+  "messages_total": 59567,
+  "live_logged": 318,
   "capacity": 21
  }
 }
