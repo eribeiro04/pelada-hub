@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26T17:36:31",
+ "updated": "2026-08-26T17:37:31",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -143,16 +143,21 @@
     "temp": false,
     "dt": "2026-08-26T17:36:25",
     "self": true
+   },
+   {
+    "name": "Marcio",
+    "temp": false,
+    "dt": "2026-08-26T17:37:25",
+    "self": true
    }
   ],
-  "count": 2,
+  "count": 3,
   "pending": [
    "Mauricio",
    "Filippo",
    "Alberto",
    "Elber",
    "Claudio",
-   "Marcio",
    "Elio",
    "Tony",
    "David",
@@ -168,7 +173,7 @@
    "Walter"
   ],
   "declined": [],
-  "reminder": "Hi All,\n\nWe're closing the member list for September 2026. Still pending confirmation:\n\n@Mauricio\n@Filippo\n@Alberto\n@Elber\n@Claudio\n@Marcio\n@Elio\n@Tony\n@David\n@Akbar\n@Eneas\n@Jader\n@Javier\n@Miguel Alejandro\n@Everson\n@Rogerio A.\n@Willie\n@Jorge\n@Walter\n\nPlease confirm if you'll continue as a member — just reply with your name + \"committed\". If you're NOT continuing, let me know as well so we can open the spot to the ad-hocs.",
+  "reminder": "Hi All,\n\nWe're closing the member list for September 2026. Still pending confirmation:\n\n@Mauricio\n@Filippo\n@Alberto\n@Elber\n@Claudio\n@Elio\n@Tony\n@David\n@Akbar\n@Eneas\n@Jader\n@Javier\n@Miguel Alejandro\n@Everson\n@Rogerio A.\n@Willie\n@Jorge\n@Walter\n\nPlease confirm if you'll continue as a member — just reply with your name + \"committed\". If you're NOT continuing, let me know as well so we can open the spot to the ad-hocs.",
   "consolidated": false
  },
  "drafts": {
@@ -182,8 +187,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59580,
-  "live_logged": 331,
+  "messages_total": 59581,
+  "live_logged": 332,
   "capacity": 21
  }
 }
