@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26T14:12:31",
+ "updated": "2026-08-26T17:35:41",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -129,11 +129,42 @@
   }
  ],
  "renewal": {
-  "month": "2026-08",
-  "opened": "2026-07-30T08:28:16",
-  "committed": [],
-  "count": 0,
-  "consolidated": true
+  "month": "2026-09",
+  "opened": "2026-08-26T17:35:35",
+  "committed": [
+   {
+    "name": "Thyago",
+    "temp": false,
+    "dt": "2026-08-26T17:35:35",
+    "self": true
+   }
+  ],
+  "count": 1,
+  "pending": [
+   "Mauricio",
+   "Filippo",
+   "Alberto",
+   "Elber",
+   "Claudio",
+   "Marcio",
+   "Elio",
+   "Tony",
+   "David",
+   "Akbar",
+   "Eneas",
+   "Jader",
+   "Javier",
+   "Erivan",
+   "Miguel Alejandro",
+   "Everson",
+   "Rogerio A.",
+   "Willie",
+   "Jorge",
+   "Walter"
+  ],
+  "declined": [],
+  "reminder": "Hi All,\n\nWe're closing the member list for September 2026. Still pending confirmation:\n\n@Mauricio\n@Filippo\n@Alberto\n@Elber\n@Claudio\n@Marcio\n@Elio\n@Tony\n@David\n@Akbar\n@Eneas\n@Jader\n@Javier\n@Erivan\n@Miguel Alejandro\n@Everson\n@Rogerio A.\n@Willie\n@Jorge\n@Walter\n\nPlease confirm if you'll continue as a member — just reply with your name + \"committed\". If you're NOT continuing, let me know as well so we can open the spot to the ad-hocs.",
+  "consolidated": false
  },
  "drafts": {
   "gates_closed": "",
@@ -146,8 +177,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59578,
-  "live_logged": 329,
+  "messages_total": 59579,
+  "live_logged": 330,
   "capacity": 21
  }
 }
