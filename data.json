@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T19:31:02",
+ "updated": "2026-08-25T19:45:48",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -322,6 +322,13 @@
     "kind": "signup"
    },
    {
+    "dt": "2026-08-25T19:45:36",
+    "sender": "Nicanor",
+    "text": "Sorry, I won’t be able to make it to the game. Out",
+    "why": "out-like",
+    "kind": "drop"
+   },
+   {
     "dt": "2026-08-21T08:23:14",
     "sender": "Juliano Brandao",
     "text": "Juliano",
@@ -577,8 +584,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59570,
-  "live_logged": 321,
+  "messages_total": 59571,
+  "live_logged": 322,
   "capacity": 21
  }
 }
