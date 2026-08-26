@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T19:59:49",
+ "updated": "2026-08-25T20:00:14",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -30,7 +30,6 @@
     "dt": "2026-08-21T08:23:14",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -353,11 +352,11 @@
     "kind": "signup"
    },
    {
-    "dt": "2026-08-21T08:23:14",
-    "sender": "Juliano Brandao",
-    "text": "Juliano",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
+    "dt": "2026-08-25T20:00:03",
+    "sender": "Igor Vainshtein",
+    "text": "But yeah I was thinking another year or two :)",
+    "why": "not-a-name?",
+    "kind": "signup"
    },
    {
     "dt": "2026-08-21T08:25:14",
@@ -477,7 +476,6 @@
     "David",
     "Go (Flavio's guest)",
     "Henry",
-    "Juliano",
     "Nikkita (Alberto's guest)",
     "Rogério R",
     "🎵 [audio] (Luisinho's guest)",
@@ -617,8 +615,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59575,
-  "live_logged": 326,
+  "messages_total": 59576,
+  "live_logged": 327,
   "capacity": 21
  }
 }
