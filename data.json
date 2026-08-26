@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T20:00:14",
+ "updated": "2026-08-25T20:51:20",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-21T08:19:59",
@@ -359,6 +359,13 @@
     "kind": "signup"
    },
    {
+    "dt": "2026-08-25T20:50:59",
+    "sender": "Elio Rotjes",
+    "text": "10 min late",
+    "why": "not-a-name?",
+    "kind": "signup"
+   },
+   {
     "dt": "2026-08-21T08:25:14",
     "sender": "Alberto",
     "text": "Nikkita (Alberto's guest)",
@@ -615,8 +622,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59576,
-  "live_logged": 327,
+  "messages_total": 59577,
+  "live_logged": 328,
   "capacity": 21
  }
 }
