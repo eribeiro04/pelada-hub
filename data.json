@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26T23:26:31",
+ "updated": "2026-08-26T23:28:37",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -209,21 +209,26 @@
     "temp": true,
     "dt": "2026-08-26T23:26:25",
     "self": true
+   },
+   {
+    "name": "Javier",
+    "temp": true,
+    "dt": "2026-08-26T23:28:30",
+    "self": true
    }
   ],
-  "count": 13,
+  "count": 14,
   "pending": [
    "Mauricio",
    "Alberto",
    "Claudio",
    "Tony",
    "Akbar",
-   "Javier",
    "Rogerio A.",
    "Walter"
   ],
   "declined": [],
-  "reminder": "Hi All,\n\nWe're closing the member list for September 2026. Still pending confirmation:\n\n@Mauricio\n@Alberto\n@Claudio\n@Tony\n@Akbar\n@Javier\n@Rogerio A.\n@Walter\n\nPlease confirm if you'll continue as a member — just reply with your name + \"committed\". If you're NOT continuing, let me know as well so we can open the spot to the ad-hocs.",
+  "reminder": "Hi All,\n\nWe're closing the member list for September 2026. Still pending confirmation:\n\n@Mauricio\n@Alberto\n@Claudio\n@Tony\n@Akbar\n@Rogerio A.\n@Walter\n\nPlease confirm if you'll continue as a member — just reply with your name + \"committed\". If you're NOT continuing, let me know as well so we can open the spot to the ad-hocs.",
   "consolidated": false
  },
  "drafts": {
@@ -237,8 +242,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59596,
-  "live_logged": 348,
+  "messages_total": 59597,
+  "live_logged": 349,
   "capacity": 21
  }
 }
