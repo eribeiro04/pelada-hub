@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-28T11:35:54",
+ "updated": "2026-08-28T12:33:53",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -22,7 +22,6 @@
     "dt": "2026-08-28T07:56:22",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -48,7 +47,6 @@
     "dt": "2026-08-28T08:22:37",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -66,7 +64,6 @@
     "dt": "2026-08-28T08:36:43",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -76,7 +73,6 @@
     "dt": "2026-08-28T08:55:49",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -86,7 +82,6 @@
     "dt": "2026-08-28T10:11:45",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -94,6 +89,14 @@
     "kind": "member",
     "by": "Rogerio A.",
     "dt": "2026-08-28T11:09:21",
+    "self": true,
+    "cond": false
+   },
+   {
+    "name": "Erivan",
+    "kind": "member",
+    "by": "Erivan",
+    "dt": "2026-08-28T12:33:44",
     "self": true,
     "cond": false
    }
@@ -104,50 +107,15 @@
     "dt": "2026-08-28T11:35:44"
    }
   ],
-  "flagged": [
-   {
-    "dt": "2026-08-28T07:56:22",
-    "sender": "Selim",
-    "text": "Selim",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-28T08:22:37",
-    "sender": "Isaque",
-    "text": "Isaque",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-28T08:36:43",
-    "sender": "Leko",
-    "text": "Leko adhc",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-28T08:55:49",
-    "sender": "Robson",
-    "text": "Robson",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-28T10:11:45",
-    "sender": "Henry",
-    "text": "Henry",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   }
-  ],
+  "flagged": [],
   "roster": {
    "members": [
     "Walter",
     "Filippo",
     "Jorge",
     "Alberto",
-    "Rogerio A."
+    "Rogerio A.",
+    "Erivan"
    ],
    "adhocs": [
     "Selim",
@@ -160,13 +128,7 @@
    "outs": [
     "Akbar"
    ],
-   "unverified": [
-    "Henry",
-    "Isaque",
-    "Leko adhc",
-    "Robson",
-    "Selim"
-   ],
+   "unverified": [],
    "pending": []
   }
  },
@@ -288,7 +250,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 10 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Filippo\n3 Jorge\n4 Alberto\n5 Rogerio A.\n*Ad-hocs*\n6 Selim\n7 Isaque\n8 Robson\n9 Henry\n10 Leko adhc\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 11 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Filippo\n3 Jorge\n4 Alberto\n5 Rogerio A.\n6 Erivan\n*Ad-hocs*\n7 Selim\n8 Isaque\n9 Robson\n10 Henry\n11 Leko adhc\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -298,8 +260,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59614,
-  "live_logged": 366,
+  "messages_total": 59615,
+  "live_logged": 367,
   "capacity": 21
  }
 }
