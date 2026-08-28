@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-27T17:50:47",
+ "updated": "2026-08-27T20:07:52",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -18,9 +18,9 @@
    "unverified": []
   }
  },
- "members_month": "2026-08",
+ "members_month": "2026-09",
  "members": [
-  "Mauricio",
+  "Igor",
   "Filippo",
   "Alberto",
   "Elber",
@@ -35,21 +35,21 @@
   "Javier",
   "Erivan",
   "Miguel Alejandro",
+  "Everson",
   "Rogerio A.",
   "Thyago",
   "Willie",
   "Jorge",
-  "Walter",
-  "Igor"
+  "Walter"
  ],
  "members_detail": [
   {
-   "name": "Mauricio",
-   "temp": false
+   "name": "Igor",
+   "temp": true
   },
   {
    "name": "Filippo",
-   "temp": true
+   "temp": false
   },
   {
    "name": "Alberto",
@@ -104,6 +104,10 @@
    "temp": false
   },
   {
+   "name": "Everson",
+   "temp": false
+  },
+  {
    "name": "Rogerio A.",
    "temp": false
   },
@@ -117,129 +121,19 @@
   },
   {
    "name": "Jorge",
-   "temp": true
+   "temp": false
   },
   {
    "name": "Walter",
-   "temp": true
-  },
-  {
-   "name": "Igor",
-   "temp": true
+   "temp": false
   }
  ],
  "renewal": {
   "month": "2026-09",
   "opened": "2026-08-26T17:35:35",
-  "committed": [
-   {
-    "name": "Thyago",
-    "temp": false,
-    "dt": "2026-08-26T17:35:35",
-    "self": true
-   },
-   {
-    "name": "Erivan",
-    "temp": false,
-    "dt": "2026-08-26T17:36:25",
-    "self": true
-   },
-   {
-    "name": "Marcio",
-    "temp": false,
-    "dt": "2026-08-26T17:37:25",
-    "self": true
-   },
-   {
-    "name": "Jader",
-    "temp": false,
-    "dt": "2026-08-26T17:43:46",
-    "self": true
-   },
-   {
-    "name": "Elber",
-    "temp": false,
-    "dt": "2026-08-26T17:45:21",
-    "self": true
-   },
-   {
-    "name": "Willie",
-    "temp": false,
-    "dt": "2026-08-26T17:46:46",
-    "self": true
-   },
-   {
-    "name": "Eneas",
-    "temp": false,
-    "dt": "2026-08-26T18:27:58",
-    "self": true
-   },
-   {
-    "name": "Jorge",
-    "temp": true,
-    "dt": "2026-08-26T18:46:29",
-    "self": true
-   },
-   {
-    "name": "Everson",
-    "temp": false,
-    "dt": "2026-08-26T19:09:56",
-    "self": true
-   },
-   {
-    "name": "Miguel Alejandro",
-    "temp": false,
-    "dt": "2026-08-26T20:53:29",
-    "self": true
-   },
-   {
-    "name": "David",
-    "temp": false,
-    "dt": "2026-08-26T20:54:24",
-    "self": true
-   },
-   {
-    "name": "Elio",
-    "temp": false,
-    "dt": "2026-08-26T22:35:00",
-    "self": true
-   },
-   {
-    "name": "Filippo",
-    "temp": true,
-    "dt": "2026-08-26T23:26:25",
-    "self": true
-   },
-   {
-    "name": "Javier",
-    "temp": true,
-    "dt": "2026-08-26T23:28:30",
-    "self": true
-   },
-   {
-    "name": "Walter",
-    "temp": true,
-    "dt": "2026-08-27T00:06:47",
-    "self": true
-   },
-   {
-    "name": "Claudio",
-    "temp": false,
-    "dt": "2026-08-27T05:43:02",
-    "self": true
-   }
-  ],
-  "count": 16,
-  "pending": [
-   "Mauricio",
-   "Alberto",
-   "Tony",
-   "Akbar",
-   "Rogerio A."
-  ],
-  "declined": [],
-  "reminder": "Hi All,\n\nWe're closing the member list for September 2026. Still pending confirmation:\n\n@Mauricio\n@Alberto\n@Tony\n@Akbar\n@Rogerio A.\n\nPlease confirm if you'll continue as a member — just reply with your name + \"committed\". If you're NOT continuing, let me know as well so we can open the spot to the ad-hocs.",
-  "consolidated": false
+  "committed": [],
+  "count": 0,
+  "consolidated": true
  },
  "drafts": {
   "gates_closed": "",
@@ -252,8 +146,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59599,
-  "live_logged": 351,
+  "messages_total": 59600,
+  "live_logged": 352,
   "capacity": 21
  }
 }
