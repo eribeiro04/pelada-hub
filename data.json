@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-28T08:55:58",
+ "updated": "2026-08-28T10:25:59",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -22,6 +22,7 @@
     "dt": "2026-08-28T07:56:22",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -47,6 +48,7 @@
     "dt": "2026-08-28T08:22:37",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -74,15 +76,54 @@
     "dt": "2026-08-28T08:55:49",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
+    "grp": true
+   },
+   {
+    "name": "Henry",
+    "kind": "adhoc",
+    "by": "Henry",
+    "dt": "2026-08-28T10:11:45",
+    "self": true,
+    "cond": false,
+    "unverified": "rules-only",
     "grp": true
    }
   ],
   "outs": [],
   "flagged": [
    {
+    "dt": "2026-08-28T07:56:22",
+    "sender": "Selim",
+    "text": "Selim",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-28T08:22:37",
+    "sender": "Isaque",
+    "text": "Isaque",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
     "dt": "2026-08-28T08:36:43",
     "sender": "Leko",
     "text": "Leko adhc",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-28T08:55:49",
+    "sender": "Robson",
+    "text": "Robson",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-28T10:11:45",
+    "sender": "Henry",
+    "text": "Henry",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    }
@@ -98,12 +139,17 @@
     "Selim",
     "Isaque",
     "Robson",
+    "Henry",
     "Leko adhc"
    ],
    "waitlist": [],
    "outs": [],
    "unverified": [
-    "Leko adhc"
+    "Henry",
+    "Isaque",
+    "Leko adhc",
+    "Robson",
+    "Selim"
    ],
    "pending": []
   }
@@ -226,7 +272,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 8 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Filippo\n3 Jorge\n4 Alberto\n*Ad-hocs*\n5 Selim\n6 Isaque\n7 Robson\n8 Leko adhc\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 9 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Filippo\n3 Jorge\n4 Alberto\n*Ad-hocs*\n5 Selim\n6 Isaque\n7 Robson\n8 Henry\n9 Leko adhc\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -236,8 +282,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59611,
-  "live_logged": 363,
+  "messages_total": 59612,
+  "live_logged": 364,
   "capacity": 21
  }
 }
