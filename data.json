@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-27T20:08:47",
+ "updated": "2026-08-27T20:09:32",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -140,14 +140,14 @@
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
-  "as_of": "2026-07-20T22:24:15",
+  "as_of": "2026-08-27T20:09:26",
   "text": "(ledger omitted from the public page)"
  },
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59601,
-  "live_logged": 353,
+  "messages_total": 59602,
+  "live_logged": 354,
   "capacity": 21
  }
 }
