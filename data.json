@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-30T10:47:06",
+ "updated": "2026-08-30T10:47:30",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -115,6 +115,14 @@
     "dt": "2026-08-30T09:36:03",
     "self": true,
     "cond": false
+   },
+   {
+    "name": "David",
+    "kind": "member",
+    "by": "David",
+    "dt": "2026-08-30T10:47:20",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [
@@ -149,7 +157,8 @@
     "Rogerio A.",
     "Erivan",
     "Miguel Alejandro",
-    "Everson"
+    "Everson",
+    "David"
    ],
    "adhocs": [
     "Selim",
@@ -286,7 +295,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 13 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Filippo\n3 Jorge\n4 Alberto\n5 Rogerio A.\n6 Erivan\n7 Miguel Alejandro\n8 Everson\n*Ad-hocs*\n9 Selim\n10 Isaque\n11 Robson\n12 Henry\n13 Leko adhc\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 14 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Filippo\n3 Jorge\n4 Alberto\n5 Rogerio A.\n6 Erivan\n7 Miguel Alejandro\n8 Everson\n9 David\n*Ad-hocs*\n10 Selim\n11 Isaque\n12 Robson\n13 Henry\n14 Leko adhc\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -296,8 +305,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59619,
-  "live_logged": 371,
+  "messages_total": 59620,
+  "live_logged": 372,
   "capacity": 21
  }
 }
