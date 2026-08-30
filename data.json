@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-30T05:02:46",
+ "updated": "2026-08-30T09:50:14",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -22,7 +22,6 @@
     "dt": "2026-08-28T07:56:22",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -108,6 +107,14 @@
     "dt": "2026-08-29T10:59:10",
     "self": true,
     "cond": false
+   },
+   {
+    "name": "Everson",
+    "kind": "member",
+    "by": "Everson",
+    "dt": "2026-08-30T09:36:03",
+    "self": true,
+    "cond": false
    }
   ],
   "outs": [
@@ -116,15 +123,7 @@
     "dt": "2026-08-28T11:35:44"
    }
   ],
-  "flagged": [
-   {
-    "dt": "2026-08-28T07:56:22",
-    "sender": "Selim",
-    "text": "Selim",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   }
-  ],
+  "flagged": [],
   "roster": {
    "members": [
     "Walter",
@@ -133,7 +132,8 @@
     "Alberto",
     "Rogerio A.",
     "Erivan",
-    "Miguel Alejandro"
+    "Miguel Alejandro",
+    "Everson"
    ],
    "adhocs": [
     "Selim",
@@ -146,9 +146,7 @@
    "outs": [
     "Akbar"
    ],
-   "unverified": [
-    "Selim"
-   ],
+   "unverified": [],
    "pending": []
   }
  },
@@ -270,7 +268,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 12 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Filippo\n3 Jorge\n4 Alberto\n5 Rogerio A.\n6 Erivan\n7 Miguel Alejandro\n*Ad-hocs*\n8 Selim\n9 Isaque\n10 Robson\n11 Henry\n12 Leko adhc\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 13 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Filippo\n3 Jorge\n4 Alberto\n5 Rogerio A.\n6 Erivan\n7 Miguel Alejandro\n8 Everson\n*Ad-hocs*\n9 Selim\n10 Isaque\n11 Robson\n12 Henry\n13 Leko adhc\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -280,8 +278,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59616,
-  "live_logged": 368,
+  "messages_total": 59617,
+  "live_logged": 369,
   "capacity": 21
  }
 }
