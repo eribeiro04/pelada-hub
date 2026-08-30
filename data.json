@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-30T09:50:14",
+ "updated": "2026-08-30T10:27:12",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -121,6 +121,10 @@
    {
     "name": "Akbar",
     "dt": "2026-08-28T11:35:44"
+   },
+   {
+    "name": "Igor",
+    "dt": "2026-08-30T10:27:02"
    }
   ],
   "flagged": [],
@@ -144,7 +148,8 @@
    ],
    "waitlist": [],
    "outs": [
-    "Akbar"
+    "Akbar",
+    "Igor"
    ],
    "unverified": [],
    "pending": []
@@ -278,8 +283,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59617,
-  "live_logged": 369,
+  "messages_total": 59618,
+  "live_logged": 370,
   "capacity": 21
  }
 }
