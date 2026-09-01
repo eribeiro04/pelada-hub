@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01T13:07:47",
+ "updated": "2026-09-01T13:08:41",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -55,7 +55,6 @@
     "dt": "2026-08-28T08:15:29",
     "self": false,
     "cond": false,
-    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -230,13 +229,6 @@
   ],
   "flagged": [
    {
-    "dt": "2026-08-28T08:15:29",
-    "sender": "Rogerio A.",
-    "text": "Rogerio R",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
     "dt": "2026-09-01T10:36:05",
     "sender": "Robson",
     "text": "Robson IN",
@@ -246,28 +238,7 @@
    {
     "dt": "",
     "sender": "Claude",
-    "text": "Filippo",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Eneas",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
     "text": "Willie",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Rogerio Rocha",
     "kind": "disagree",
     "why": "only the model saw this signup"
    }
@@ -312,8 +283,7 @@
     "David"
    ],
    "unverified": [
-    "Robson IN",
-    "Rogerio R"
+    "Robson IN"
    ],
    "pending": [
     "Esgard (Elio's guest)"
@@ -448,8 +418,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59635,
-  "live_logged": 405,
+  "messages_total": 59636,
+  "live_logged": 406,
   "capacity": 21
  }
 }
