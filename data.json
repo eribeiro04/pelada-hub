@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01T18:49:44",
+ "updated": "2026-09-01T18:51:14",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -294,13 +294,6 @@
    {
     "dt": "",
     "sender": "Claude",
-    "text": "David",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
     "text": "Eneas",
     "kind": "disagree",
     "why": "only the model saw this signup"
@@ -323,6 +316,13 @@
     "dt": "",
     "sender": "Claude",
     "text": "Carlos N",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Rogerio Rocha",
     "kind": "disagree",
     "why": "only the model saw this signup"
    },
@@ -521,8 +521,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59649,
-  "live_logged": 420,
+  "messages_total": 59650,
+  "live_logged": 421,
   "capacity": 21
  }
 }
