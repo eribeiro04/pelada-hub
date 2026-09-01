@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01T14:40:11",
+ "updated": "2026-09-01T14:40:50",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -156,6 +156,7 @@
     "dt": "2026-08-31T19:29:15",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -268,6 +269,13 @@
     "why": "only the rules engine saw this signup"
    },
    {
+    "dt": "2026-08-31T19:29:15",
+    "sender": "Elio",
+    "text": "Esgard (Elio's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
     "dt": "2026-09-01T10:36:05",
     "sender": "Robson",
     "text": "Robson IN",
@@ -322,6 +330,20 @@
     "text": "Edgar",
     "kind": "disagree",
     "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Luis",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Nicko",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
    }
   ],
   "roster": {
@@ -366,6 +388,7 @@
     "David"
    ],
    "unverified": [
+    "Esgard (Elio's guest)",
     "Robson IN",
     "Rogerio R",
     "🎨 [sticker] (Eneas's guest)"
@@ -501,8 +524,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59643,
-  "live_logged": 414,
+  "messages_total": 59645,
+  "live_logged": 416,
   "capacity": 21
  }
 }
