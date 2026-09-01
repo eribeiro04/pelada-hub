@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01T18:29:57",
+ "updated": "2026-09-01T18:30:32",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -147,6 +147,7 @@
     "dt": "2026-08-31T19:29:15",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -231,6 +232,10 @@
    {
     "name": "Carlos",
     "dt": "2026-09-01T18:25:44"
+   },
+   {
+    "name": "Luis in edgar",
+    "dt": "2026-09-01T18:30:20"
    }
   ],
   "flagged": [
@@ -263,6 +268,13 @@
     "why": "only the rules engine saw this signup"
    },
    {
+    "dt": "2026-08-31T19:29:15",
+    "sender": "Elio",
+    "text": "Esgard (Elio's guest)",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
     "dt": "2026-09-01T10:36:05",
     "sender": "Robson",
     "text": "Robson IN",
@@ -279,7 +291,7 @@
    {
     "dt": "",
     "sender": "Claude",
-    "text": "David",
+    "text": "Eneas",
     "kind": "disagree",
     "why": "only the model saw this signup"
    },
@@ -301,6 +313,13 @@
     "dt": "",
     "sender": "Claude",
     "text": "Rogerio Rocha",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Edgar",
     "kind": "disagree",
     "why": "only the model saw this signup"
    },
@@ -357,9 +376,11 @@
     "Eneas",
     "Robson",
     "David",
-    "Carlos"
+    "Carlos",
+    "Luis in edgar"
    ],
    "unverified": [
+    "Esgard (Elio's guest)",
     "Robson IN",
     "Rogerio R",
     "🎨 [sticker] (Eneas's guest)"
@@ -497,8 +518,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59647,
-  "live_logged": 418,
+  "messages_total": 59648,
+  "live_logged": 419,
   "capacity": 21
  }
 }
