@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-31T21:46:49",
+ "updated": "2026-08-31T21:55:40",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -21,6 +21,7 @@
     "dt": "2026-08-28T07:56:22",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -40,12 +41,49 @@
     "cond": false
    },
    {
+    "name": "Javier",
+    "kind": "member",
+    "by": "Javier",
+    "dt": "2026-08-28T08:12:37",
+    "self": true,
+    "cond": false
+   },
+   {
+    "name": "Carlos",
+    "kind": "adhoc",
+    "by": "Carlos",
+    "dt": "2026-08-28T08:14:08",
+    "self": true,
+    "cond": false,
+    "unverified": "rules-only",
+    "grp": true
+   },
+   {
+    "name": "Rogerio R",
+    "kind": "adhoc",
+    "by": "Rogerio A.",
+    "dt": "2026-08-28T08:15:29",
+    "self": false,
+    "cond": false,
+    "unverified": "rules-only",
+    "grp": false
+   },
+   {
+    "name": "Marcio",
+    "kind": "member",
+    "by": "Marcio",
+    "dt": "2026-08-28T08:16:04",
+    "self": true,
+    "cond": false
+   },
+   {
     "name": "Isaque",
     "kind": "adhoc",
     "by": "Isaque",
     "dt": "2026-08-28T08:22:37",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -55,6 +93,7 @@
     "dt": "2026-08-28T08:36:43",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -64,6 +103,17 @@
     "dt": "2026-08-28T08:55:49",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
+    "grp": true
+   },
+   {
+    "name": "Tiago",
+    "kind": "adhoc",
+    "by": "Tiago Calheiros",
+    "dt": "2026-08-28T10:17:30",
+    "self": true,
+    "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -71,6 +121,23 @@
     "kind": "member",
     "by": "Rogerio A.",
     "dt": "2026-08-28T11:09:21",
+    "self": true,
+    "cond": false,
+    "unverified": "rules-only"
+   },
+   {
+    "name": "Jader",
+    "kind": "member",
+    "by": "Jader",
+    "dt": "2026-08-28T11:31:27",
+    "self": true,
+    "cond": false
+   },
+   {
+    "name": "Claudio",
+    "kind": "member",
+    "by": "Claudio",
+    "dt": "2026-08-28T12:07:57",
     "self": true,
     "cond": false
    },
@@ -158,13 +225,81 @@
     "dt": "2026-08-31T20:55:50"
    }
   ],
-  "flagged": [],
+  "flagged": [
+   {
+    "dt": "2026-08-28T07:56:22",
+    "sender": "Selim",
+    "text": "Selim",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-28T08:14:08",
+    "sender": "Carlos",
+    "text": "Carlos",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-28T08:15:29",
+    "sender": "Rogerio A.",
+    "text": "Rogerio R",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-28T08:22:37",
+    "sender": "Isaque",
+    "text": "Isaque",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-28T08:36:43",
+    "sender": "Leko",
+    "text": "Leko adhc",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-28T08:55:49",
+    "sender": "Robson",
+    "text": "Robson",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-28T10:17:30",
+    "sender": "Tiago Calheiros",
+    "text": "Tiago",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "2026-08-28T11:09:21",
+    "sender": "Rogerio A.",
+    "text": "Rogerio A.",
+    "kind": "disagree",
+    "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Igor",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   }
+  ],
   "roster": {
    "members": [
     "Walter",
     "Filippo",
     "Jorge",
+    "Javier",
+    "Marcio",
     "Rogerio A.",
+    "Jader",
+    "Claudio",
     "Erivan",
     "Miguel Alejandro",
     "Everson",
@@ -174,12 +309,16 @@
    ],
    "adhocs": [
     "Selim",
+    "Carlos",
     "Isaque",
     "Robson",
-    "Leko adhc",
+    "Tiago",
+    "Rogerio R",
+    "Leko adhc"
+   ],
+   "waitlist": [
     "Esgard (Elio's guest)"
    ],
-   "waitlist": [],
    "outs": [
     "Akbar",
     "Igor",
@@ -188,7 +327,16 @@
     "Henry",
     "Alberto"
    ],
-   "unverified": [],
+   "unverified": [
+    "Carlos",
+    "Isaque",
+    "Leko adhc",
+    "Robson",
+    "Rogerio A.",
+    "Rogerio R",
+    "Selim",
+    "Tiago"
+   ],
    "pending": []
   }
  },
@@ -310,7 +458,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 15 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Filippo\n3 Jorge\n4 Rogerio A.\n5 Erivan\n6 Miguel Alejandro\n7 Everson\n8 David\n9 Elio\n10 Thyago\n*Ad-hocs*\n11 Selim\n12 Isaque\n13 Robson\n14 Leko adhc\n15 Esgard (Elio's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Filippo\n3 Jorge\n4 Javier\n5 Marcio\n6 Rogerio A.\n7 Jader\n8 Claudio\n9 Erivan\n10 Miguel Alejandro\n11 Everson\n12 David\n13 Elio\n14 Thyago\n*Ad-hocs*\n15 Selim\n16 Carlos\n17 Isaque\n18 Robson\n19 Tiago\n20 Rogerio R\n21 Leko adhc\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nEsgard (Elio's guest)",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -320,8 +468,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59627,
-  "live_logged": 379,
+  "messages_total": 59618,
+  "live_logged": 388,
   "capacity": 21
  }
 }
