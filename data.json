@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01T18:30:32",
+ "updated": "2026-09-01T18:49:44",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -83,14 +83,6 @@
     "self": true,
     "cond": false,
     "grp": true
-   },
-   {
-    "name": "Rogerio A.",
-    "kind": "member",
-    "by": "Rogerio A.",
-    "dt": "2026-08-28T11:09:21",
-    "self": true,
-    "cond": false
    },
    {
     "name": "Jader",
@@ -236,6 +228,10 @@
    {
     "name": "Luis in edgar",
     "dt": "2026-09-01T18:30:20"
+   },
+   {
+    "name": "Rogerio A.",
+    "dt": "2026-09-01T18:49:32"
    }
   ],
   "flagged": [
@@ -291,7 +287,28 @@
    {
     "dt": "",
     "sender": "Claude",
+    "text": "Filippo",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "David",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
     "text": "Eneas",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Rogerio A.",
     "kind": "disagree",
     "why": "only the model saw this signup"
    },
@@ -306,20 +323,6 @@
     "dt": "",
     "sender": "Claude",
     "text": "Carlos N",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Rogerio Rocha",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Edgar",
     "kind": "disagree",
     "why": "only the model saw this signup"
    },
@@ -344,7 +347,6 @@
     "Jorge",
     "Javier",
     "Marcio",
-    "Rogerio A.",
     "Jader",
     "Claudio",
     "Erivan",
@@ -377,7 +379,8 @@
     "Robson",
     "David",
     "Carlos",
-    "Luis in edgar"
+    "Luis in edgar",
+    "Rogerio A."
    ],
    "unverified": [
     "Esgard (Elio's guest)",
@@ -508,7 +511,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Jorge\n3 Javier\n4 Marcio\n5 Rogerio A.\n6 Jader\n7 Claudio\n8 Erivan\n9 Miguel Alejandro\n10 Everson\n11 Elio\n12 Thyago\n*Ad-hocs*\n13 Selim\n14 Isaque\n15 Leko\n16 Tiago\n17 Rogerio R\n18 Esgard (Elio's guest)\n19 Leko in\n20 Robson IN\n21 🎨 [sticker] (Eneas's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 20 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Jorge\n3 Javier\n4 Marcio\n5 Jader\n6 Claudio\n7 Erivan\n8 Miguel Alejandro\n9 Everson\n10 Elio\n11 Thyago\n*Ad-hocs*\n12 Selim\n13 Isaque\n14 Leko\n15 Tiago\n16 Rogerio R\n17 Esgard (Elio's guest)\n18 Leko in\n19 Robson IN\n20 🎨 [sticker] (Eneas's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -518,8 +521,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59648,
-  "live_logged": 419,
+  "messages_total": 59649,
+  "live_logged": 420,
   "capacity": 21
  }
 }
