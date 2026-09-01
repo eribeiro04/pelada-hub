@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01T13:04:20",
+ "updated": "2026-09-01T13:05:06",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -91,7 +91,6 @@
     "dt": "2026-08-28T10:17:30",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -242,18 +241,18 @@
     "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "2026-08-28T10:17:30",
-    "sender": "Tiago Calheiros",
-    "text": "Tiago",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
     "dt": "2026-09-01T10:36:05",
     "sender": "Robson",
     "text": "Robson IN",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Eneas",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
    },
    {
     "dt": "",
@@ -312,8 +311,7 @@
    ],
    "unverified": [
     "Robson IN",
-    "Rogerio R",
-    "Tiago"
+    "Rogerio R"
    ],
    "pending": [
     "Esgard (Elio's guest)"
@@ -448,8 +446,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59631,
-  "live_logged": 401,
+  "messages_total": 59632,
+  "live_logged": 402,
   "capacity": 21
  }
 }
