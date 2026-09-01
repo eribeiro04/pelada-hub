@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-31T22:00:11",
+ "updated": "2026-08-31T22:08:22",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -21,6 +21,7 @@
     "dt": "2026-08-28T07:56:22",
     "self": true,
     "cond": false,
+    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -89,7 +90,6 @@
     "dt": "2026-08-28T08:36:43",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -99,7 +99,6 @@
     "dt": "2026-08-28T08:55:49",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -109,7 +108,6 @@
     "dt": "2026-08-28T10:17:30",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -223,23 +221,9 @@
   ],
   "flagged": [
    {
-    "dt": "2026-08-28T08:36:43",
-    "sender": "Leko",
-    "text": "Leko",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-28T08:55:49",
-    "sender": "Robson",
-    "text": "Robson",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-28T10:17:30",
-    "sender": "Tiago Calheiros",
-    "text": "Tiago",
+    "dt": "2026-08-28T07:56:22",
+    "sender": "Selim",
+    "text": "Selim",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    },
@@ -303,10 +287,8 @@
     "Alberto"
    ],
    "unverified": [
-    "Leko",
-    "Robson",
     "Rogerio A.",
-    "Tiago"
+    "Selim"
    ],
    "pending": []
   }
@@ -439,8 +421,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59619,
-  "live_logged": 389,
+  "messages_total": 59620,
+  "live_logged": 390,
   "capacity": 21
  }
 }
