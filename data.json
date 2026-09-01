@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01T18:25:56",
+ "updated": "2026-09-01T18:29:57",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -106,8 +106,7 @@
     "by": "Claudio",
     "dt": "2026-08-28T12:07:57",
     "self": true,
-    "cond": false,
-    "unverified": "rules-only"
+    "cond": false
    },
    {
     "name": "Erivan",
@@ -264,13 +263,6 @@
     "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "2026-08-28T12:07:57",
-    "sender": "Claudio",
-    "text": "Claudio",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
     "dt": "2026-09-01T10:36:05",
     "sender": "Robson",
     "text": "Robson IN",
@@ -287,6 +279,13 @@
    {
     "dt": "",
     "sender": "Claude",
+    "text": "David",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
     "text": "Willie",
     "kind": "disagree",
     "why": "only the model saw this signup"
@@ -294,14 +293,14 @@
    {
     "dt": "",
     "sender": "Claude",
-    "text": "Rogerio Rocha",
+    "text": "Carlos N",
     "kind": "disagree",
     "why": "only the model saw this signup"
    },
    {
     "dt": "",
     "sender": "Claude",
-    "text": "Edgar",
+    "text": "Rogerio Rocha",
     "kind": "disagree",
     "why": "only the model saw this signup"
    },
@@ -361,7 +360,6 @@
     "Carlos"
    ],
    "unverified": [
-    "Claudio",
     "Robson IN",
     "Rogerio R",
     "🎨 [sticker] (Eneas's guest)"
@@ -499,8 +497,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59646,
-  "live_logged": 417,
+  "messages_total": 59647,
+  "live_logged": 418,
   "capacity": 21
  }
 }
