@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01T09:44:59",
+ "updated": "2026-09-01T10:36:17",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "opened": "2026-08-28T07:55:57",
@@ -21,7 +21,6 @@
     "dt": "2026-08-28T07:56:22",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -56,6 +55,7 @@
     "dt": "2026-08-28T08:15:29",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -91,7 +91,6 @@
     "dt": "2026-08-28T08:55:49",
     "self": true,
     "cond": false,
-    "unverified": "rules-only",
     "grp": true
    },
    {
@@ -175,6 +174,7 @@
     "dt": "2026-08-31T19:29:15",
     "self": false,
     "cond": false,
+    "unverified": "rules-only",
     "grp": false
    },
    {
@@ -190,6 +190,15 @@
     "kind": "adhoc",
     "by": "Leko",
     "dt": "2026-08-31T22:09:00",
+    "self": false,
+    "cond": false,
+    "grp": false
+   },
+   {
+    "name": "Robson IN",
+    "kind": "adhoc",
+    "by": "Robson",
+    "dt": "2026-09-01T10:36:05",
     "self": false,
     "cond": false,
     "grp": false
@@ -231,16 +240,9 @@
   ],
   "flagged": [
    {
-    "dt": "2026-08-28T07:56:22",
-    "sender": "Selim",
-    "text": "Selim",
-    "kind": "disagree",
-    "why": "only the rules engine saw this signup"
-   },
-   {
-    "dt": "2026-08-28T08:55:49",
-    "sender": "Robson",
-    "text": "Robson",
+    "dt": "2026-08-28T08:15:29",
+    "sender": "Rogerio A.",
+    "text": "Rogerio R",
     "kind": "disagree",
     "why": "only the rules engine saw this signup"
    },
@@ -252,30 +254,23 @@
     "why": "only the rules engine saw this signup"
    },
    {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Filippo",
+    "dt": "2026-08-31T19:29:15",
+    "sender": "Elio",
+    "text": "Esgard (Elio's guest)",
     "kind": "disagree",
-    "why": "only the model saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Igor",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
-   },
-   {
-    "dt": "",
-    "sender": "Claude",
-    "text": "Alberto",
-    "kind": "disagree",
-    "why": "only the model saw this signup"
+    "why": "only the rules engine saw this signup"
    },
    {
     "dt": "",
     "sender": "Claude",
     "text": "Willie",
+    "kind": "disagree",
+    "why": "only the model saw this signup"
+   },
+   {
+    "dt": "",
+    "sender": "Claude",
+    "text": "Rogerio Rocha",
     "kind": "disagree",
     "why": "only the model saw this signup"
    }
@@ -307,7 +302,8 @@
     "Esgard (Elio's guest)"
    ],
    "waitlist": [
-    "Leko in"
+    "Leko in",
+    "Robson IN"
    ],
    "outs": [
     "Akbar",
@@ -320,8 +316,8 @@
     "Eneas"
    ],
    "unverified": [
-    "Robson",
-    "Selim",
+    "Esgard (Elio's guest)",
+    "Rogerio R",
     "Tiago"
    ],
    "pending": [
@@ -447,7 +443,7 @@
   "consolidated": true
  },
  "drafts": {
-  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Jorge\n3 Javier\n4 Marcio\n5 Rogerio A.\n6 Jader\n7 Claudio\n8 Erivan\n9 Miguel Alejandro\n10 Everson\n11 David\n12 Elio\n13 Thyago\n*Ad-hocs*\n14 Selim\n15 Carlos\n16 Isaque\n17 Leko\n18 Robson\n19 Tiago\n20 Rogerio R\n21 Esgard (Elio's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nLeko in",
+  "gates_closed": "Hi All,\n\nGates are closed for Tuesday with 21 players. Remember, we are playing 90 minutes.\n\nGAME START TIME - *9:00pm* (please, arrive 10 minutes before the start time).\n\nConfirmed players:\n\n*Members*\n1 Walter\n2 Jorge\n3 Javier\n4 Marcio\n5 Rogerio A.\n6 Jader\n7 Claudio\n8 Erivan\n9 Miguel Alejandro\n10 Everson\n11 David\n12 Elio\n13 Thyago\n*Ad-hocs*\n14 Selim\n15 Carlos\n16 Isaque\n17 Leko\n18 Robson\n19 Tiago\n20 Rogerio R\n21 Esgard (Elio's guest)\n\n*Ad-hocs, please send $15 to my PayPal (thyclau@icloud.com) or Zelle (+1 469-953-0614) before Tuesday*\n\n*Ad-hocs waiting list* (in case somebody drops until Tuesday):\nLeko in\nRobson IN",
   "count_open": "Hi all,\nStarting the count for next Tuesday.\n\n*game starts at 9pm*"
  },
  "ledger": {
@@ -457,8 +453,8 @@
  "review_url": "https://pelada.org/decide",
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
-  "messages_total": 59626,
-  "live_logged": 396,
+  "messages_total": 59627,
+  "live_logged": 397,
   "capacity": 21
  }
 }
