@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-02T19:35:31",
+ "updated": "2026-09-02T19:35:41",
  "mode": "SHADOW — read-only, nothing is posted to WhatsApp",
  "cycle": {
   "phase": "between",
@@ -147,7 +147,7 @@
  "google_client_id": "974979921022-2ptggf80tq5uvskig2fv5o5r5hprcpf2.apps.googleusercontent.com",
  "stats": {
   "messages_total": 59655,
-  "live_logged": 430,
+  "live_logged": 431,
   "capacity": 21
  }
 }
